@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<IAP>
+  <Currencies>
+    <Currency name="mango" desc="base currency" localID="local_mango_id" spriteIcon="-"></Currency>
+    <Currency name="gem" desc="gem currency" localID="local_gem_id" spriteIcon="-"></Currency>
+  </Currencies>
+  
+  <CurrencyPacks>
+    <CurrencyPack name="1000 Mangos" desc="1000 Mangos" currencyID="local_mango_id" localID="local_1000Mangos_id" cloudID="cloud_1000Mangos_id" amount ="1000" cost="0.5" spriteIcon="-"></CurrencyPack>
+    <CurrencyPack name="10000 Mangos" desc="10000 Mangos" currencyID="local_mango_id" localID="local_10000Mangos_id" cloudID="cloud_10000Mangos_id" amount ="10000" cost="0.5" spriteIcon="-"></CurrencyPack>
+    <CurrencyPack name="50000 Mangos" desc="50000 Mangos" currencyID="local_mango_id" localID="local_50000Mangos_id" cloudID="cloud_50000Mangos_id" amount ="50000" cost="1" spriteIcon="-"></CurrencyPack>
+  </CurrencyPacks>
+
+  <LifetimeVGs>
+    <LifetimeVG name="Red_material" desc="Testing - red material" type="LIFETIME_VG" localID="red_material_local_id" currencyID="local_mango_id" currencyCost="25" spriteIcon="font_number_sprite_0"></LifetimeVG>
+    <LifetimeVG name="Green_material" desc="Testing - green material" type="LIFETIME_VG" localID="green_material_local_id" currencyID="local_mango_id" currencyCost="900" spriteIcon="font_number_sprite_1"></LifetimeVG>
+    <LifetimeVG name="Blue_material" desc="Testing - blue material" type="LIFETIME_VG" localID="blue_material_local_id" currencyID="local_mango_id" currencyCost="1000" spriteIcon="font_number_sprite_2"></LifetimeVG>
+  </LifetimeVGs>
+
+  <EquippableVGs>
+    <EquippableVG name="Red_materialE" desc="Testing - red material" type="LIFETIME_VG" localID="red_materialE_local_id" currencyCost="100" spriteIcon="font_number_sprite_0"></EquippableVG>
+    <EquippableVG name="Green_materialE" desc="Testing - green material" type="LIFETIME_VG" localID="green_materialE_local_id" currencyCost="200" spriteIcon="font_number_sprite_1"></EquippableVG>
+    <EquippableVG name="Blue_materialE" desc="Testing - blue material" type="LIFETIME_VG" localID="blue_materialE_local_id" currencyCost="300" spriteIcon="font_number_sprite_2"></EquippableVG>
+  </EquippableVGs>
+
+  <SingleUseVGs>
+    <SingleUseVG name="Red_materialS" desc="Testing - red material" type="LIFETIME_VG" localID="red_materialS_local_id" currencyCost="100" spriteIcon="font_number_sprite_0"></SingleUseVG>
+    <SingleUseVG name="Green_materialS" desc="Testing - green material" type="LIFETIME_VG" localID="green_materialS_local_id" currencyCost="200" spriteIcon="font_number_sprite_1"></SingleUseVG>
+    <SingleUseVG name="Blue_materialS" desc="Testing - blue material" type="LIFETIME_VG" localID="blue_materialS_local_id" currencyCost="300" spriteIcon="font_number_sprite_2"></SingleUseVG>
+  </SingleUseVGs>
+
+  </IAP>

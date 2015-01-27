@@ -1,0 +1,74 @@
+﻿<Escenaris>
+  <Escenari nom="Beach">
+    <Dificultat id ="0" timer ="40">
+      <Obstacles>
+        <Obstacle nom ="boya" quantitat="1" length="2"></Obstacle>
+      </Obstacles>
+      <Enemics>
+        <Enemic nom ="pinguino"></Enemic>
+      </Enemics>
+      <Plataformes>
+        <Plataforma tipus ="c" quantitat = "2" length="10"></Plataforma>
+      </Plataformes>
+      <Granotes>
+        <Granota color="verd" percent ="100"></Granota>
+      </Granotes>
+    </Dificultat>
+    <Dificultat id ="1" timer ="40">
+      <Obstacles>
+        <Obstacle nom ="boya" quantitat="1"></Obstacle>
+        <Obstacle nom ="boya campana" quantitat="1"></Obstacle>
+      </Obstacles>
+      <Enemics>
+        <Enemic nom ="pinguino"></Enemic>
+        <Enemic nom ="vaixell pirata"></Enemic>
+      </Enemics>
+      <Plataformes>
+        <Plataforma tipus ="c" quantitat = "3"></Plataforma>
+      </Plataformes>
+      <Granotes>
+        <Granota color="verd" percent ="100"></Granota>
+      </Granotes>
+    </Dificultat>
+    <!--
+    0_sky
+    1_clouds
+    2_far_mountains
+    3_mountains
+    4_islands
+    5_ships
+    6_corals
+    9_player
+    -->
+    <Layers>
+      <Layer id ="2_far_mountains_layer">
+        <Element2D nom ="far_mountain_0"  y ="-2.2" ></Element2D>
+        <Element2D nom ="far_mountain_1"  y ="-2.2" ></Element2D>
+        <Element2D nom ="far_mountain_2"  y ="-2.2" ></Element2D>
+        <Element2D nom ="far_mountain_3"  y ="-2.2" ></Element2D>
+      </Layer>
+      <Layer id ="3_mountains_layer">
+        <Element2D nom ="mountain_0"      y ="-2" ></Element2D>
+        <Element2D nom ="mountain_1"      y ="-2" ></Element2D>
+        <Element2D nom ="mountain_2"      y ="-2" ></Element2D>
+        <Element2D nom ="mountain_3"      y ="-2" ></Element2D>
+        <Element2D nom ="mountain_4"      y ="-2" ></Element2D>
+        <Element2D nom ="mountain_5"      y ="-2" ></Element2D>
+      </Layer>
+      <Layer id ="4_island_layer">
+        <Element2D nom ="island_0"        y ="-2" ></Element2D>
+        <Element2D nom ="island_1"        y ="-2" ></Element2D>
+        <Element2D nom ="island_2"        y ="-2" ></Element2D>
+        <Element2D nom ="island_3"        y ="-2" ></Element2D>
+      </Layer>
+      <Layer id ="5_ship_layer">
+        <Element2D nom ="ship_0"          y ="-1.9" ></Element2D>
+        <Element2D nom ="ship_1"          y ="-1.9" ></Element2D>
+        <Element2D nom ="ship_2"          y ="-1.9" ></Element2D>
+      </Layer>
+      <Layer id ="6_planes_layer">
+        <Element2D nom ="plane_0"          y ="2.8" ></Element2D>
+       </Layer>
+    </Layers>
+  </Escenari>
+</Escenaris>

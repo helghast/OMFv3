@@ -1,0 +1,313 @@
+fileFormatVersion: 2
+guid: fe450c540ab9dbd4b937e5789d181b06
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Set textura Menu 2_0
+    21300002: Set textura Menu 2_1
+    21300004: Set textura Menu 2_2
+    21300006: Set textura Menu 2_3
+    21300008: Set textura Menu 2_4
+    21300010: Set textura Menu 2_5
+    21300012: Set textura Menu 2_6
+    21300014: Set textura Menu 2_7
+    21300016: Set textura Menu 2_8
+    21300018: Set textura Menu 2_9
+    21300020: Set textura Menu 2_10
+    21300022: Set textura Menu 2_11
+    21300024: Set textura Menu 2_12
+    21300026: Set textura Menu 2_13
+    21300028: Set textura Menu 2_14
+    21300030: Set textura Menu 2_15
+    21300032: Set textura Menu 2_16
+    21300034: Set textura Menu 2_17
+    21300036: Set textura Menu 2_18
+    21300038: Set textura Menu 2_19
+    21300040: Set textura Menu 2_20
+    21300042: Set textura Menu 2_21
+    21300044: Set textura Menu 2_22
+    21300046: Set textura Menu 2_23
+    21300048: Set textura Menu 2_24
+    21300050: Set textura Menu 2_25
+    21300052: Set textura Menu 2_26
+    21300054: Set textura Menu 2_27
+    21300056: Set textura Menu 2_28
+    21300058: Set textura Menu 2_29
+    21300060: Set textura Menu 2_30
+    21300062: Set textura Menu 2_31
+    21300064: Set textura Menu 2_32
+    21300066: Set textura Menu 2_33
+    21300068: Set textura Menu 2_34
+    21300070: Set textura Menu 2_35
+    21300072: Set textura Menu 2_36
+    21300074: Set textura Menu 2_37
+    21300076: Set textura Menu 2_38
+    21300078: Set textura Menu 2_39
+    21300080: Set textura Menu 2_40
+    21300082: Set textura Menu 2_41
+    21300084: Set textura Menu 2_42
+    21300086: Set textura Menu 2_43
+    21300088: Set textura Menu 2_44
+    21300090: Set textura Menu 2_45
+    21300092: Set textura Menu 2_46
+    21300094: Set textura Menu 2_47
+    21300096: Set textura Menu 2_48
+    21300098: Set textura Menu 2_49
+    21300100: Set textura Menu 2_50
+    21300102: Set textura Menu 2_51
+    21300104: Set textura Menu 2_52
+    21300106: Set textura Menu 2_53
+    21300108: Set textura Menu 2_54
+    21300110: Set textura Menu 2_55
+    21300112: Set textura Menu 2_56
+    21300114: Set textura Menu 2_57
+    21300116: Set textura Menu 2_58
+    21300118: Set textura Menu 2_59
+    21300120: Set textura Menu 2_60
+    21300122: Set textura Menu 2_61
+    21300124: Set textura Menu 2_62
+    21300126: Set textura Menu 2_63
+    21300128: Set textura Menu 2_64
+    21300130: Set textura Menu 2_65
+    21300132: Set textura Menu 2_66
+    21300134: Set textura Menu 2_67
+    21300136: Set textura Menu 2_68
+    21300138: Set textura Menu 2_69
+    21300140: Set textura Menu 2_70
+    21300142: Set textura Menu 2_71
+    21300144: Set textura Menu 2_72
+    21300146: Set textura Menu 2_73
+    21300148: Set textura Menu 2_74
+    21300150: Set textura Menu 2_75
+    21300152: Set textura Menu 2_76
+    21300154: Set textura Menu 2_77
+    21300156: Set textura Menu 2_78
+    21300158: Set textura Menu 2_79
+    21300160: Set textura Menu 2_80
+    21300162: Set textura Menu 2_81
+    21300164: Set textura Menu 2_82
+    21300166: Set textura Menu 2_83
+    21300168: Set textura Menu 2_84
+    21300170: Set textura Menu 2_85
+    21300172: Set textura Menu 2_86
+    21300174: Set textura Menu 2_87
+    21300176: Set textura Menu 2_88
+    21300178: Set textura Menu 2_89
+    21300180: Set textura Menu 2_90
+    21300182: Set textura Menu 2_91
+    21300184: Set textura Menu 2_92
+    21300186: Set textura Menu 2_93
+    21300188: Set textura Menu 2_94
+    21300190: Set textura Menu 2_95
+    21300192: Set textura Menu 2_96
+    21300194: Set textura Menu 2_97
+    21300196: Set textura Menu 2_98
+    21300198: Set textura Menu 2_99
+    21300200: Set textura Menu 2_100
+    21300202: Set textura Menu 2_101
+    21300204: Set textura Menu 2_102
+    21300206: Set textura Menu 2_103
+    21300208: Set textura Menu 2_104
+    21300210: Set textura Menu 2_105
+    21300212: Set textura Menu 2_106
+    21300214: Set textura Menu 2_107
+    21300216: Set textura Menu 2_108
+    21300218: Set textura Menu 2_109
+    21300220: Set textura Menu 2_110
+    21300222: Set textura Menu 2_111
+    21300224: Set textura Menu 2_112
+    21300226: Set textura Menu 2_113
+    21300228: Set textura Menu 2_114
+    21300230: Set textura Menu 2_115
+    21300232: Set textura Menu 2_116
+    21300234: Set textura Menu 2_117
+    21300236: Set textura Menu 2_118
+    21300238: Set textura Menu 2_119
+    21300240: Set textura Menu 2_120
+    21300242: Set textura Menu 2_121
+    21300244: Set textura Menu 2_122
+    21300246: Set textura Menu 2_123
+    21300248: Set textura Menu 2_124
+    21300250: Set textura Menu 2_125
+    21300252: Set textura Menu 2_126
+    21300254: Set textura Menu 2_127
+    21300256: Set textura Menu 2_128
+    21300258: Set textura Menu 2_129
+    21300260: Set textura Menu 2_130
+    21300262: Set textura Menu 2_131
+    21300264: Set textura Menu 2_132
+    21300266: Set textura Menu 2_133
+    21300268: Set textura Menu 2_134
+    21300270: Set textura Menu 2_135
+    21300272: Set textura Menu 2_136
+    21300274: Set textura Menu 2_137
+    21300276: Set textura Menu 2_138
+    21300278: Set textura Menu 2_139
+    21300280: Set textura Menu 2_140
+    21300282: Set textura Menu 2_141
+    21300284: Set textura Menu 2_142
+    21300286: Set textura Menu 2_143
+    21300288: Set textura Menu 2_144
+    21300290: Set textura Menu 2_145
+    21300292: Set textura Menu 2_146
+    21300294: Set textura Menu 2_147
+    21300296: Set textura Menu 2_148
+    21300298: Set textura Menu 2_149
+    21300300: Set textura Menu 2_150
+    21300302: Set textura Menu 2_151
+    21300304: Set textura Menu 2_152
+    21300306: Set textura Menu 2_153
+    21300308: Set textura Menu 2_154
+    21300310: Set textura Menu 2_155
+    21300312: Set textura Menu 2_156
+    21300314: Set textura Menu 2_157
+    21300316: Set textura Menu 2_158
+    21300318: Set textura Menu 2_159
+    21300320: Set textura Menu 2_160
+    21300322: Set textura Menu 2_161
+    21300324: Set textura Menu 2_162
+    21300326: Set textura Menu 2_163
+    21300328: Set textura Menu 2_164
+    21300330: Set textura Menu 2_165
+    21300332: Set textura Menu 2_166
+    21300334: Set textura Menu 2_167
+    21300336: Set textura Menu 2_168
+    21300338: Set textura Menu 2_169
+    21300340: Set textura Menu 2_170
+    21300342: Set textura Menu 2_171
+    21300344: Set textura Menu 2_172
+    21300346: Set textura Menu 2_173
+    21300348: Set textura Menu 2_174
+    21300350: Set textura Menu 2_175
+    21300352: Set textura Menu 2_176
+    21300354: Set textura Menu 2_177
+    21300356: Set textura Menu 2_178
+    21300358: Set textura Menu 2_179
+    21300360: Set textura Menu 2_180
+    21300362: Set textura Menu 2_181
+    21300364: Set textura Menu 2_182
+    21300366: Set textura Menu 2_183
+    21300368: Set textura Menu 2_184
+    21300370: Set textura Menu 2_185
+    21300372: Set textura Menu 2_186
+    21300374: Set textura Menu 2_187
+    21300376: Set textura Menu 2_188
+    21300378: Set textura Menu 2_189
+    21300380: Set textura Menu 2_190
+    21300382: Set textura Menu 2_191
+    21300384: Set textura Menu 2_192
+    21300386: Set textura Menu 2_193
+    21300388: Set textura Menu 2_194
+    21300390: Set textura Menu 2_195
+    21300392: Set textura Menu 2_196
+    21300394: Set textura Menu 2_197
+    21300396: Set textura Menu 2_198
+    21300398: Set textura Menu 2_199
+    21300400: Set textura Menu 2_200
+    21300402: Set textura Menu 2_201
+    21300404: Set textura Menu 2_202
+    21300406: Set textura Menu 2_203
+    21300408: Set textura Menu 2_204
+    21300410: Set textura Menu 2_205
+    21300412: Set textura Menu 2_206
+    21300414: Set textura Menu 2_207
+    21300416: Set textura Menu 2_208
+    21300418: Set textura Menu 2_209
+    21300420: Set textura Menu 2_210
+    21300422: Set textura Menu 2_211
+    21300424: Set textura Menu 2_212
+    21300426: Set textura Menu 2_213
+    21300428: Set textura Menu 2_214
+    21300430: Set textura Menu 2_215
+    21300432: Set textura Menu 2_216
+    21300434: Set textura Menu 2_217
+    21300436: Set textura Menu 2_218
+    21300438: Set textura Menu 2_219
+    21300440: Set textura Menu 2_220
+    21300442: Set textura Menu 2_221
+    21300444: Set textura Menu 2_222
+    21300446: Set textura Menu 2_223
+    21300448: Set textura Menu 2_224
+    21300450: Set textura Menu 2_225
+    21300452: Set textura Menu 2_226
+    21300454: Set textura Menu 2_227
+    21300456: Set textura Menu 2_228
+    21300458: Set textura Menu 2_229
+    21300460: Set textura Menu 2_230
+    21300462: Set textura Menu 2_231
+    21300464: Set textura Menu 2_232
+    21300466: Set textura Menu 2_233
+    21300468: Set textura Menu 2_234
+    21300470: Set textura Menu 2_235
+    21300472: Set textura Menu 2_236
+    21300474: Set textura Menu 2_237
+    21300476: Set textura Menu 2_238
+    21300478: Set textura Menu 2_239
+    21300480: Set textura Menu 2_240
+    21300482: Set textura Menu 2_241
+    21300484: Set textura Menu 2_242
+    21300486: Set textura Menu 2_243
+    21300488: Set textura Menu 2_244
+    21300490: Set textura Menu 2_245
+    21300492: Set textura Menu 2_246
+    21300494: Set textura Menu 2_247
+    21300496: Set textura Menu 2_248
+    21300498: Set textura Menu 2_249
+    21300500: Set textura Menu 2_250
+    21300502: Set textura Menu 2_251
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: Android
+    maxTextureSize: 512
+    textureFormat: -1
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: Set textura Menu 2_143
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 20
+        width: 1145
+        height: 606
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

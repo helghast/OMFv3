@@ -1,0 +1,142 @@
+fileFormatVersion: 2
+guid: f8257b5c368cef64297a8008ddf6ca75
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: platCornerA01
+    100004: platCornerA01Collider
+    100006: platCornerA02
+    100008: platCornerA02Collider
+    100010: platCornerB01
+    100012: platCornerB01Collider
+    100014: platCornerB02
+    100016: platCornerB02Collider
+    100018: platCornerB03
+    100020: platCornerB03Collider
+    100022: platInner01
+    100024: platInner01Collider
+    100026: platInner02
+    100028: platInner02Collider
+    100030: platInner03
+    100032: platInner03Collider
+    400000: //RootNode
+    400002: platCornerA01
+    400004: platCornerA01Collider
+    400006: platCornerA02
+    400008: platCornerA02Collider
+    400010: platCornerB01
+    400012: platCornerB01Collider
+    400014: platCornerB02
+    400016: platCornerB02Collider
+    400018: platCornerB03
+    400020: platCornerB03Collider
+    400022: platInner01
+    400024: platInner01Collider
+    400026: platInner02
+    400028: platInner02Collider
+    400030: platInner03
+    400032: platInner03Collider
+    2300000: platCornerA01
+    2300002: platCornerA01Collider
+    2300004: platCornerA02
+    2300006: platCornerA02Collider
+    2300008: platCornerB01
+    2300010: platCornerB01Collider
+    2300012: platCornerB02
+    2300014: platCornerB02Collider
+    2300016: platCornerB03
+    2300018: platCornerB03Collider
+    2300020: platInner01
+    2300022: platInner01Collider
+    2300024: platInner02
+    2300026: platInner02Collider
+    2300028: platInner03
+    2300030: platInner03Collider
+    3300000: platCornerA01
+    3300002: platCornerA01Collider
+    3300004: platCornerA02
+    3300006: platCornerA02Collider
+    3300008: platCornerB01
+    3300010: platCornerB01Collider
+    3300012: platCornerB02
+    3300014: platCornerB02Collider
+    3300016: platCornerB03
+    3300018: platCornerB03Collider
+    3300020: platInner01
+    3300022: platInner01Collider
+    3300024: platInner02
+    3300026: platInner02Collider
+    3300028: platInner03
+    3300030: platInner03Collider
+    4300000: platInner01Collider
+    4300002: platCornerA01Collider
+    4300004: platCornerA02Collider
+    4300006: platCornerB01Collider
+    4300008: platInner02Collider
+    4300010: platInner03Collider
+    4300012: platCornerB02Collider
+    4300014: platCornerB03Collider
+    4300016: platCornerB03
+    4300018: platCornerB02
+    4300020: platInner03
+    4300022: platInner02
+    4300024: platCornerB01
+    4300026: platCornerA02
+    4300028: platCornerA01
+    4300030: platInner01
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

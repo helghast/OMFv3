@@ -1,0 +1,690 @@
+fileFormatVersion: 2
+guid: 9c94c06de8f63b84fae8bb1e92460421
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Anim_hips
+    100002: hinge_arma
+    100004: hinge_barret
+    100006: //RootNode
+    100008: KAPPA_RIG
+    100010: Mesh_Kappa
+    100012: ORG_chest
+    100014: ORG_fingers.L
+    100016: ORG_fingers.R
+    100018: ORG_foot.L
+    100020: ORG_foot.R
+    100022: ORG_forearm.L
+    100024: ORG_forearm.R
+    100026: ORG_hand.L
+    100028: ORG_hand.R
+    100030: ORG_hats
+    100032: ORG_head
+    100034: ORG_hips
+    100036: ORG_shin.L
+    100038: ORG_shin.R
+    100040: ORG_shoulder.L
+    100042: ORG_shoulder.R
+    100044: ORG_surfboard
+    100046: ORG_TapaRabos_01
+    100048: ORG_TapaRabos_02
+    100050: ORG_thigh.L
+    100052: ORG_thigh.R
+    100054: ORG_thumb.L
+    100056: ORG_thumb.R
+    100058: ORG_upper_arm.L
+    100060: ORG_upper_arm.R
+    100062: ORG_weapon
+    100064: prop_Bruja
+    100066: prop_Bruja_hat
+    100068: prop_cazabichos
+    100070: prop_cazabichos_hat
+    100072: prop_chef
+    100074: prop_chef_hat
+    100076: prop_fontanero
+    100078: prop_fontanero_hat
+    100080: prop_infermero
+    100082: prop_infermero_hat
+    100084: prop_palodedo
+    100086: prop_palodedo_hat
+    100088: prop_Pirata
+    100090: prop_Pirata_hat
+    100092: prop_surfboard
+    100094: Root
+    100096: spine_hinge
+    400000: Anim_hips
+    400002: hinge_arma
+    400004: hinge_barret
+    400006: //RootNode
+    400008: KAPPA_RIG
+    400010: Mesh_Kappa
+    400012: ORG_chest
+    400014: ORG_fingers.L
+    400016: ORG_fingers.R
+    400018: ORG_foot.L
+    400020: ORG_foot.R
+    400022: ORG_forearm.L
+    400024: ORG_forearm.R
+    400026: ORG_hand.L
+    400028: ORG_hand.R
+    400030: ORG_hats
+    400032: ORG_head
+    400034: ORG_hips
+    400036: ORG_shin.L
+    400038: ORG_shin.R
+    400040: ORG_shoulder.L
+    400042: ORG_shoulder.R
+    400044: ORG_surfboard
+    400046: ORG_TapaRabos_01
+    400048: ORG_TapaRabos_02
+    400050: ORG_thigh.L
+    400052: ORG_thigh.R
+    400054: ORG_thumb.L
+    400056: ORG_thumb.R
+    400058: ORG_upper_arm.L
+    400060: ORG_upper_arm.R
+    400062: ORG_weapon
+    400064: prop_Bruja
+    400066: prop_Bruja_hat
+    400068: prop_cazabichos
+    400070: prop_cazabichos_hat
+    400072: prop_chef
+    400074: prop_chef_hat
+    400076: prop_fontanero
+    400078: prop_fontanero_hat
+    400080: prop_infermero
+    400082: prop_infermero_hat
+    400084: prop_palodedo
+    400086: prop_palodedo_hat
+    400088: prop_Pirata
+    400090: prop_Pirata_hat
+    400092: prop_surfboard
+    400094: Root
+    400096: spine_hinge
+    4300000: Mesh_Kappa
+    4300002: prop_palodedo
+    4300004: prop_chef
+    4300006: prop_Pirata
+    4300008: prop_Bruja
+    4300010: prop_cazabichos
+    4300012: prop_infermero
+    4300014: prop_fontanero
+    4300016: prop_fontanero_hat
+    4300018: prop_infermero_hat
+    4300020: prop_cazabichos_hat
+    4300022: prop_Bruja_hat
+    4300024: prop_Pirata_hat
+    4300026: prop_chef_hat
+    4300028: prop_palodedo_hat
+    4300030: prop_surfboard
+    7400000: KAPPA_RIGAction
+    7400002: KAPPA_RIG|AAA_ZeroPosition
+    7400004: KAPPA_RIG|Andar
+    7400006: KAPPA_RIG|Idle_surf
+    9500000: //RootNode
+    13700000: Mesh_Kappa
+    13700002: prop_Bruja
+    13700004: prop_Bruja_hat
+    13700006: prop_cazabichos
+    13700008: prop_cazabichos_hat
+    13700010: prop_chef
+    13700012: prop_chef_hat
+    13700014: prop_fontanero
+    13700016: prop_fontanero_hat
+    13700018: prop_infermero
+    13700020: prop_infermero_hat
+    13700022: prop_palodedo
+    13700024: prop_palodedo_hat
+    13700026: prop_Pirata
+    13700028: prop_Pirata_hat
+    13700030: prop_surfboard
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: KAPPA_RIGAction
+      takeName: KAPPA_RIGAction
+      firstFrame: 0
+      lastFrame: 26
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: KAPPA_RIG
+        weight: 1
+      - path: KAPPA_RIG/ORG_surfboard
+        weight: 1
+      - path: KAPPA_RIG/Root
+        weight: 1
+      - path: KAPPA_RIG/Root/Anim_hips
+        weight: 1
+      - path: KAPPA_RIG/Root/Anim_hips/ORG_hips
+        weight: 1
+      - path: KAPPA_RIG/Root/Anim_hips/ORG_hips/ORG_TapaRabos_01
+        weight: 1
+      - path: KAPPA_RIG/Root/Anim_hips/ORG_hips/ORG_TapaRabos_01/ORG_TapaRabos_02
+        weight: 1
+      - path: KAPPA_RIG/Root/Anim_hips/ORG_hips/ORG_thigh.L
+        weight: 1
+      - path: KAPPA_RIG/Root/Anim_hips/ORG_hips/ORG_thigh.L/ORG_shin.L
+        weight: 1
+      - path: KAPPA_RIG/Root/Anim_hips/ORG_hips/ORG_thigh.L/ORG_shin.L/ORG_foot.L
+        weight: 1
+      - path: KAPPA_RIG/Root/Anim_hips/ORG_hips/ORG_thigh.R
+        weight: 1
+      - path: KAPPA_RIG/Root/Anim_hips/ORG_hips/ORG_thigh.R/ORG_shin.R
+        weight: 1
+      - path: KAPPA_RIG/Root/Anim_hips/ORG_hips/ORG_thigh.R/ORG_shin.R/ORG_foot.R
+        weight: 1
+      - path: KAPPA_RIG/Root/hinge_arma
+        weight: 1
+      - path: KAPPA_RIG/Root/hinge_arma/ORG_weapon
+        weight: 1
+      - path: KAPPA_RIG/Root/hinge_barret
+        weight: 1
+      - path: KAPPA_RIG/Root/hinge_barret/ORG_hats
+        weight: 1
+      - path: KAPPA_RIG/spine_hinge
+        weight: 1
+      - path: KAPPA_RIG/spine_hinge/ORG_chest
+        weight: 1
+      - path: KAPPA_RIG/spine_hinge/ORG_chest/ORG_head
+        weight: 1
+      - path: KAPPA_RIG/spine_hinge/ORG_chest/ORG_shoulder.L
+        weight: 1
+      - path: KAPPA_RIG/spine_hinge/ORG_chest/ORG_shoulder.L/ORG_upper_arm.L
+        weight: 1
+      - path: KAPPA_RIG/spine_hinge/ORG_chest/ORG_shoulder.L/ORG_upper_arm.L/ORG_forearm.L
+        weight: 1
+      - path: KAPPA_RIG/spine_hinge/ORG_chest/ORG_shoulder.L/ORG_upper_arm.L/ORG_forearm.L/ORG_hand.L
+        weight: 1
+      - path: KAPPA_RIG/spine_hinge/ORG_chest/ORG_shoulder.L/ORG_upper_arm.L/ORG_forearm.L/ORG_hand.L/ORG_fingers.L
+        weight: 1
+      - path: KAPPA_RIG/spine_hinge/ORG_chest/ORG_shoulder.L/ORG_upper_arm.L/ORG_forearm.L/ORG_hand.L/ORG_thumb.L
+        weight: 1
+      - path: KAPPA_RIG/spine_hinge/ORG_chest/ORG_shoulder.R
+        weight: 1
+      - path: KAPPA_RIG/spine_hinge/ORG_chest/ORG_shoulder.R/ORG_upper_arm.R
+        weight: 1
+      - path: KAPPA_RIG/spine_hinge/ORG_chest/ORG_shoulder.R/ORG_upper_arm.R/ORG_forearm.R
+        weight: 1
+      - path: KAPPA_RIG/spine_hinge/ORG_chest/ORG_shoulder.R/ORG_upper_arm.R/ORG_forearm.R/ORG_hand.R
+        weight: 1
+      - path: KAPPA_RIG/spine_hinge/ORG_chest/ORG_shoulder.R/ORG_upper_arm.R/ORG_forearm.R/ORG_hand.R/ORG_fingers.R
+        weight: 1
+      - path: KAPPA_RIG/spine_hinge/ORG_chest/ORG_shoulder.R/ORG_upper_arm.R/ORG_forearm.R/ORG_hand.R/ORG_thumb.R
+        weight: 1
+      - path: Mesh_Kappa
+        weight: 1
+      - path: prop_Bruja
+        weight: 1
+      - path: prop_Bruja_hat
+        weight: 1
+      - path: prop_cazabichos
+        weight: 1
+      - path: prop_cazabichos_hat
+        weight: 1
+      - path: prop_chef
+        weight: 1
+      - path: prop_chef_hat
+        weight: 1
+      - path: prop_fontanero
+        weight: 1
+      - path: prop_fontanero_hat
+        weight: 1
+      - path: prop_infermero
+        weight: 1
+      - path: prop_infermero_hat
+        weight: 1
+      - path: prop_palodedo
+        weight: 1
+      - path: prop_palodedo_hat
+        weight: 1
+      - path: prop_Pirata
+        weight: 1
+      - path: prop_Pirata_hat
+        weight: 1
+      - path: prop_surfboard
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: KAPPA_RIG|AAA_ZeroPosition
+      takeName: KAPPA_RIG|AAA_ZeroPosition
+      firstFrame: 0
+      lastFrame: 26
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: KAPPA_RIG
+        weight: 1
+      - path: KAPPA_RIG/ORG_surfboard
+        weight: 1
+      - path: KAPPA_RIG/Root
+        weight: 1
+      - path: KAPPA_RIG/Root/Anim_hips
+        weight: 1
+      - path: KAPPA_RIG/Root/Anim_hips/ORG_hips
+        weight: 1
+      - path: KAPPA_RIG/Root/Anim_hips/ORG_hips/ORG_TapaRabos_01
+        weight: 1
+      - path: KAPPA_RIG/Root/Anim_hips/ORG_hips/ORG_TapaRabos_01/ORG_TapaRabos_02
+        weight: 1
+      - path: KAPPA_RIG/Root/Anim_hips/ORG_hips/ORG_thigh.L
+        weight: 1
+      - path: KAPPA_RIG/Root/Anim_hips/ORG_hips/ORG_thigh.L/ORG_shin.L
+        weight: 1
+      - path: KAPPA_RIG/Root/Anim_hips/ORG_hips/ORG_thigh.L/ORG_shin.L/ORG_foot.L
+        weight: 1
+      - path: KAPPA_RIG/Root/Anim_hips/ORG_hips/ORG_thigh.R
+        weight: 1
+      - path: KAPPA_RIG/Root/Anim_hips/ORG_hips/ORG_thigh.R/ORG_shin.R
+        weight: 1
+      - path: KAPPA_RIG/Root/Anim_hips/ORG_hips/ORG_thigh.R/ORG_shin.R/ORG_foot.R
+        weight: 1
+      - path: KAPPA_RIG/Root/hinge_arma
+        weight: 1
+      - path: KAPPA_RIG/Root/hinge_arma/ORG_weapon
+        weight: 1
+      - path: KAPPA_RIG/Root/hinge_barret
+        weight: 1
+      - path: KAPPA_RIG/Root/hinge_barret/ORG_hats
+        weight: 1
+      - path: KAPPA_RIG/spine_hinge
+        weight: 1
+      - path: KAPPA_RIG/spine_hinge/ORG_chest
+        weight: 1
+      - path: KAPPA_RIG/spine_hinge/ORG_chest/ORG_head
+        weight: 1
+      - path: KAPPA_RIG/spine_hinge/ORG_chest/ORG_shoulder.L
+        weight: 1
+      - path: KAPPA_RIG/spine_hinge/ORG_chest/ORG_shoulder.L/ORG_upper_arm.L
+        weight: 1
+      - path: KAPPA_RIG/spine_hinge/ORG_chest/ORG_shoulder.L/ORG_upper_arm.L/ORG_forearm.L
+        weight: 1
+      - path: KAPPA_RIG/spine_hinge/ORG_chest/ORG_shoulder.L/ORG_upper_arm.L/ORG_forearm.L/ORG_hand.L
+        weight: 1
+      - path: KAPPA_RIG/spine_hinge/ORG_chest/ORG_shoulder.L/ORG_upper_arm.L/ORG_forearm.L/ORG_hand.L/ORG_fingers.L
+        weight: 1
+      - path: KAPPA_RIG/spine_hinge/ORG_chest/ORG_shoulder.L/ORG_upper_arm.L/ORG_forearm.L/ORG_hand.L/ORG_thumb.L
+        weight: 1
+      - path: KAPPA_RIG/spine_hinge/ORG_chest/ORG_shoulder.R
+        weight: 1
+      - path: KAPPA_RIG/spine_hinge/ORG_chest/ORG_shoulder.R/ORG_upper_arm.R
+        weight: 1
+      - path: KAPPA_RIG/spine_hinge/ORG_chest/ORG_shoulder.R/ORG_upper_arm.R/ORG_forearm.R
+        weight: 1
+      - path: KAPPA_RIG/spine_hinge/ORG_chest/ORG_shoulder.R/ORG_upper_arm.R/ORG_forearm.R/ORG_hand.R
+        weight: 1
+      - path: KAPPA_RIG/spine_hinge/ORG_chest/ORG_shoulder.R/ORG_upper_arm.R/ORG_forearm.R/ORG_hand.R/ORG_fingers.R
+        weight: 1
+      - path: KAPPA_RIG/spine_hinge/ORG_chest/ORG_shoulder.R/ORG_upper_arm.R/ORG_forearm.R/ORG_hand.R/ORG_thumb.R
+        weight: 1
+      - path: Mesh_Kappa
+        weight: 1
+      - path: prop_Bruja
+        weight: 1
+      - path: prop_Bruja_hat
+        weight: 1
+      - path: prop_cazabichos
+        weight: 1
+      - path: prop_cazabichos_hat
+        weight: 1
+      - path: prop_chef
+        weight: 1
+      - path: prop_chef_hat
+        weight: 1
+      - path: prop_fontanero
+        weight: 1
+      - path: prop_fontanero_hat
+        weight: 1
+      - path: prop_infermero
+        weight: 1
+      - path: prop_infermero_hat
+        weight: 1
+      - path: prop_palodedo
+        weight: 1
+      - path: prop_palodedo_hat
+        weight: 1
+      - path: prop_Pirata
+        weight: 1
+      - path: prop_Pirata_hat
+        weight: 1
+      - path: prop_surfboard
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: KAPPA_RIG|Andar
+      takeName: KAPPA_RIG|Andar
+      firstFrame: 0
+      lastFrame: 26
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: KAPPA_RIG
+        weight: 1
+      - path: KAPPA_RIG/ORG_surfboard
+        weight: 1
+      - path: KAPPA_RIG/Root
+        weight: 1
+      - path: KAPPA_RIG/Root/Anim_hips
+        weight: 1
+      - path: KAPPA_RIG/Root/Anim_hips/ORG_hips
+        weight: 1
+      - path: KAPPA_RIG/Root/Anim_hips/ORG_hips/ORG_TapaRabos_01
+        weight: 1
+      - path: KAPPA_RIG/Root/Anim_hips/ORG_hips/ORG_TapaRabos_01/ORG_TapaRabos_02
+        weight: 1
+      - path: KAPPA_RIG/Root/Anim_hips/ORG_hips/ORG_thigh.L
+        weight: 1
+      - path: KAPPA_RIG/Root/Anim_hips/ORG_hips/ORG_thigh.L/ORG_shin.L
+        weight: 1
+      - path: KAPPA_RIG/Root/Anim_hips/ORG_hips/ORG_thigh.L/ORG_shin.L/ORG_foot.L
+        weight: 1
+      - path: KAPPA_RIG/Root/Anim_hips/ORG_hips/ORG_thigh.R
+        weight: 1
+      - path: KAPPA_RIG/Root/Anim_hips/ORG_hips/ORG_thigh.R/ORG_shin.R
+        weight: 1
+      - path: KAPPA_RIG/Root/Anim_hips/ORG_hips/ORG_thigh.R/ORG_shin.R/ORG_foot.R
+        weight: 1
+      - path: KAPPA_RIG/Root/hinge_arma
+        weight: 1
+      - path: KAPPA_RIG/Root/hinge_arma/ORG_weapon
+        weight: 1
+      - path: KAPPA_RIG/Root/hinge_barret
+        weight: 1
+      - path: KAPPA_RIG/Root/hinge_barret/ORG_hats
+        weight: 1
+      - path: KAPPA_RIG/spine_hinge
+        weight: 1
+      - path: KAPPA_RIG/spine_hinge/ORG_chest
+        weight: 1
+      - path: KAPPA_RIG/spine_hinge/ORG_chest/ORG_head
+        weight: 1
+      - path: KAPPA_RIG/spine_hinge/ORG_chest/ORG_shoulder.L
+        weight: 1
+      - path: KAPPA_RIG/spine_hinge/ORG_chest/ORG_shoulder.L/ORG_upper_arm.L
+        weight: 1
+      - path: KAPPA_RIG/spine_hinge/ORG_chest/ORG_shoulder.L/ORG_upper_arm.L/ORG_forearm.L
+        weight: 1
+      - path: KAPPA_RIG/spine_hinge/ORG_chest/ORG_shoulder.L/ORG_upper_arm.L/ORG_forearm.L/ORG_hand.L
+        weight: 1
+      - path: KAPPA_RIG/spine_hinge/ORG_chest/ORG_shoulder.L/ORG_upper_arm.L/ORG_forearm.L/ORG_hand.L/ORG_fingers.L
+        weight: 1
+      - path: KAPPA_RIG/spine_hinge/ORG_chest/ORG_shoulder.L/ORG_upper_arm.L/ORG_forearm.L/ORG_hand.L/ORG_thumb.L
+        weight: 1
+      - path: KAPPA_RIG/spine_hinge/ORG_chest/ORG_shoulder.R
+        weight: 1
+      - path: KAPPA_RIG/spine_hinge/ORG_chest/ORG_shoulder.R/ORG_upper_arm.R
+        weight: 1
+      - path: KAPPA_RIG/spine_hinge/ORG_chest/ORG_shoulder.R/ORG_upper_arm.R/ORG_forearm.R
+        weight: 1
+      - path: KAPPA_RIG/spine_hinge/ORG_chest/ORG_shoulder.R/ORG_upper_arm.R/ORG_forearm.R/ORG_hand.R
+        weight: 1
+      - path: KAPPA_RIG/spine_hinge/ORG_chest/ORG_shoulder.R/ORG_upper_arm.R/ORG_forearm.R/ORG_hand.R/ORG_fingers.R
+        weight: 1
+      - path: KAPPA_RIG/spine_hinge/ORG_chest/ORG_shoulder.R/ORG_upper_arm.R/ORG_forearm.R/ORG_hand.R/ORG_thumb.R
+        weight: 1
+      - path: Mesh_Kappa
+        weight: 1
+      - path: prop_Bruja
+        weight: 1
+      - path: prop_Bruja_hat
+        weight: 1
+      - path: prop_cazabichos
+        weight: 1
+      - path: prop_cazabichos_hat
+        weight: 1
+      - path: prop_chef
+        weight: 1
+      - path: prop_chef_hat
+        weight: 1
+      - path: prop_fontanero
+        weight: 1
+      - path: prop_fontanero_hat
+        weight: 1
+      - path: prop_infermero
+        weight: 1
+      - path: prop_infermero_hat
+        weight: 1
+      - path: prop_palodedo
+        weight: 1
+      - path: prop_palodedo_hat
+        weight: 1
+      - path: prop_Pirata
+        weight: 1
+      - path: prop_Pirata_hat
+        weight: 1
+      - path: prop_surfboard
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: KAPPA_RIG|Idle_surf
+      takeName: KAPPA_RIG|Idle_surf
+      firstFrame: 0
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: KAPPA_RIG
+        weight: 1
+      - path: KAPPA_RIG/ORG_surfboard
+        weight: 1
+      - path: KAPPA_RIG/Root
+        weight: 1
+      - path: KAPPA_RIG/Root/Anim_hips
+        weight: 1
+      - path: KAPPA_RIG/Root/Anim_hips/ORG_hips
+        weight: 1
+      - path: KAPPA_RIG/Root/Anim_hips/ORG_hips/ORG_TapaRabos_01
+        weight: 1
+      - path: KAPPA_RIG/Root/Anim_hips/ORG_hips/ORG_TapaRabos_01/ORG_TapaRabos_02
+        weight: 1
+      - path: KAPPA_RIG/Root/Anim_hips/ORG_hips/ORG_thigh.L
+        weight: 1
+      - path: KAPPA_RIG/Root/Anim_hips/ORG_hips/ORG_thigh.L/ORG_shin.L
+        weight: 1
+      - path: KAPPA_RIG/Root/Anim_hips/ORG_hips/ORG_thigh.L/ORG_shin.L/ORG_foot.L
+        weight: 1
+      - path: KAPPA_RIG/Root/Anim_hips/ORG_hips/ORG_thigh.R
+        weight: 1
+      - path: KAPPA_RIG/Root/Anim_hips/ORG_hips/ORG_thigh.R/ORG_shin.R
+        weight: 1
+      - path: KAPPA_RIG/Root/Anim_hips/ORG_hips/ORG_thigh.R/ORG_shin.R/ORG_foot.R
+        weight: 1
+      - path: KAPPA_RIG/Root/hinge_arma
+        weight: 1
+      - path: KAPPA_RIG/Root/hinge_arma/ORG_weapon
+        weight: 1
+      - path: KAPPA_RIG/Root/hinge_barret
+        weight: 1
+      - path: KAPPA_RIG/Root/hinge_barret/ORG_hats
+        weight: 1
+      - path: KAPPA_RIG/spine_hinge
+        weight: 1
+      - path: KAPPA_RIG/spine_hinge/ORG_chest
+        weight: 1
+      - path: KAPPA_RIG/spine_hinge/ORG_chest/ORG_head
+        weight: 1
+      - path: KAPPA_RIG/spine_hinge/ORG_chest/ORG_shoulder.L
+        weight: 1
+      - path: KAPPA_RIG/spine_hinge/ORG_chest/ORG_shoulder.L/ORG_upper_arm.L
+        weight: 1
+      - path: KAPPA_RIG/spine_hinge/ORG_chest/ORG_shoulder.L/ORG_upper_arm.L/ORG_forearm.L
+        weight: 1
+      - path: KAPPA_RIG/spine_hinge/ORG_chest/ORG_shoulder.L/ORG_upper_arm.L/ORG_forearm.L/ORG_hand.L
+        weight: 1
+      - path: KAPPA_RIG/spine_hinge/ORG_chest/ORG_shoulder.L/ORG_upper_arm.L/ORG_forearm.L/ORG_hand.L/ORG_fingers.L
+        weight: 1
+      - path: KAPPA_RIG/spine_hinge/ORG_chest/ORG_shoulder.L/ORG_upper_arm.L/ORG_forearm.L/ORG_hand.L/ORG_thumb.L
+        weight: 1
+      - path: KAPPA_RIG/spine_hinge/ORG_chest/ORG_shoulder.R
+        weight: 1
+      - path: KAPPA_RIG/spine_hinge/ORG_chest/ORG_shoulder.R/ORG_upper_arm.R
+        weight: 1
+      - path: KAPPA_RIG/spine_hinge/ORG_chest/ORG_shoulder.R/ORG_upper_arm.R/ORG_forearm.R
+        weight: 1
+      - path: KAPPA_RIG/spine_hinge/ORG_chest/ORG_shoulder.R/ORG_upper_arm.R/ORG_forearm.R/ORG_hand.R
+        weight: 1
+      - path: KAPPA_RIG/spine_hinge/ORG_chest/ORG_shoulder.R/ORG_upper_arm.R/ORG_forearm.R/ORG_hand.R/ORG_fingers.R
+        weight: 1
+      - path: KAPPA_RIG/spine_hinge/ORG_chest/ORG_shoulder.R/ORG_upper_arm.R/ORG_forearm.R/ORG_hand.R/ORG_thumb.R
+        weight: 1
+      - path: Mesh_Kappa
+        weight: 1
+      - path: prop_Bruja
+        weight: 1
+      - path: prop_Bruja_hat
+        weight: 1
+      - path: prop_cazabichos
+        weight: 1
+      - path: prop_cazabichos_hat
+        weight: 1
+      - path: prop_chef
+        weight: 1
+      - path: prop_chef_hat
+        weight: 1
+      - path: prop_fontanero
+        weight: 1
+      - path: prop_fontanero_hat
+        weight: 1
+      - path: prop_infermero
+        weight: 1
+      - path: prop_infermero_hat
+        weight: 1
+      - path: prop_palodedo
+        weight: 1
+      - path: prop_palodedo_hat
+        weight: 1
+      - path: prop_Pirata
+        weight: 1
+      - path: prop_Pirata_hat
+        weight: 1
+      - path: prop_surfboard
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

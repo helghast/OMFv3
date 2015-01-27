@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d29e1b455ef4b394bb7925e3f4396d3f, type: 3}
+  m_Name: Shop
+  m_EditorClassIdentifier: 
+  Surfboards:
+  - name: prop_surfboard
+  ItemSets:
+  - name: prop_Pirata_hat
+  UI_Items:
+  - name: Red_material
+    desc: Testing - red material
+    type: 1
+    item_ID: red_material_item_id
+    product_ID: red_material_product_id
+    cost: .5
+    sprite: {fileID: 21300000, guid: b37bd5b93770050409e9cf60ca46db03, type: 3}
+  - name: Green_material
+    desc: Testing - green material
+    type: 1
+    item_ID: green_material_item_id
+    product_ID: green_material_product_id
+    cost: .649999976
+    sprite: {fileID: 21300002, guid: b37bd5b93770050409e9cf60ca46db03, type: 3}
+  - name: Blue_material
+    desc: Testing - blue material
+    type: 1
+    item_ID: blue_material_item_id
+    product_ID: blue_material_product_id
+    cost: .699999988
+    sprite: {fileID: 21300004, guid: b37bd5b93770050409e9cf60ca46db03, type: 3}
+  Currencies:
+  - name: Mango
+    desc: A tasty fruit!
+    item_ID: 
+    sprite: {fileID: 0}
+  CurrencyPacks:
+  - name: MangoX100
+    desc: 100 mangos
+    item_ID: 100_mango_item_id
+    product_ID: 100_mango_item_id
+    amount: 100
+    cost: .5
+    sprite: {fileID: 0}
+  - name: MangoX500
+    desc: 500 mango
+    item_ID: 500_mango_item_id
+    product_ID: 500_mango_product_id
+    amount: 100
+    cost: .99000001
+    sprite: {fileID: 0}

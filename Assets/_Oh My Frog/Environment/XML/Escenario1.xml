@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Escenaris>
+  <Escenari nom="platja">
+    <Dificultat id ="0" timer ="40">
+      <Obstacles>
+        <Obstacle nom ="boya" quantitat="1"></Obstacle>
+      </Obstacles>
+      <Enemics>
+        <Enemic nom ="pinguino"></Enemic>
+      </Enemics>
+      <Plataformes>
+        <Plataforma tipus ="c" quantitat = "2"></Plataforma>
+      </Plataformes>
+      <Granotes>
+        <Granota color="verd" percent ="100"></Granota>
+      </Granotes>
+    </Dificultat>
+    <Dificultat id ="1" timer ="40">
+      <Obstacles>
+        <Obstacle nom ="boya" quantitat="1"></Obstacle>
+        <Obstacle nom ="boya campana" quantitat="1"></Obstacle>
+      </Obstacles>
+      <Enemics>
+        <Enemic nom ="pinguino"></Enemic>
+        <Enemic nom ="vaixell pirata"></Enemic>
+      </Enemics>
+      <Plataformes>
+        <Plataforma tipus ="c" quantitat = "3"></Plataforma>
+      </Plataformes>
+      <Granotes>
+        <Granota color="verd" percent ="100"></Granota>
+      </Granotes>
+    </Dificultat>
+    <Dificultat id ="2" timer="40">
+      <Obstacles>
+        <Obstacle nom ="boya" quantitat="1"></Obstacle>
+        <Obstacle nom ="boya campana" quantitat="1"></Obstacle>
+      </Obstacles>
+      <Enemics>
+        <Enemic nom ="pinguino"></Enemic>
+        <Enemic nom ="pinguino volador"></Enemic>
+      </Enemics>
+      <Plataformes>
+        <Plataforma tipus ="c" quantitat = "3"></Plataforma>
+      </Plataformes>
+      <Granotes>
+        <Granota color="verd" percent ="100"></Granota>
+      </Granotes>
+    </Dificultat>
+    <Dificultat id ="3" timer="40">
+      <Obstacles>
+        <Obstacle nom ="boya" quantitat="1"></Obstacle>
+        <Obstacle nom ="casa" quantitat="1"></Obstacle>
+      </Obstacles>
+      <Enemics>
+        <Enemic nom ="pinguino"></Enemic>
+        <Enemic nom ="pinguino volador"></Enemic>
+        <Enemic nom ="vaixell pirata"></Enemic>
+      </Enemics>
+      <Plataformes>
+        <Plataforma tipus ="c" quantitat = "2"></Plataforma>
+        <Plataforma tipus ="b" quantitat = "1"></Plataforma>
+      </Plataformes>
+      <Granotes>
+        <Granota color="verd" percent ="100"></Granota>
+      </Granotes>
+    </Dificultat>
+    <Dificultat id ="4" timer="40">
+      <Obstacles>
+        <Obstacle nom ="boya" quantitat="1"></Obstacle>
+        <Obstacle nom ="boya campana" quantitat="1"></Obstacle>
+        <Obstacle nom ="casa" quantitat="1"></Obstacle>
+      </Obstacles>
+      <Enemics>
+        <Enemic nom ="pinguino"/>
+        <Enemic nom ="pinguino volador"/>
+        <Enemic nom ="vaixell pirata"/>
+      </Enemics>
+      <Plataformes>
+        <Plataforma tipus ="c" quantitat = "2"/>
+        <Plataforma tipus ="b" quantitat = "1"/>
+      </Plataformes>
+      <Granotes>
+        <Granota color="verd" percent ="100"/>
+      </Granotes>
+    </Dificultat>
+    <Dificultat id ="5" timer="500" boss = "true">
+    </Dificultat>
+    <Dificultat id ="6" timer="40">
+      <Obstacles>
+        <Obstacle nom ="boya" quantitat="1"/>
+        <Obstacle nom ="boya campana" quantitat="1"/>
+        <Obstacle nom ="tortugaoveja" quantitat="1"/>
+      </Obstacles>
+      <Enemics>
+        <Enemic nom ="pinguino"/>
+        <Enemic nom ="pinguino volador"/>
+        <Enemic nom ="hovercraft"/>
+      </Enemics>
+      <Plataformes>
+        <Plataforma tipus ="c" quantitat = "1"/>
+        <Plataforma tipus ="b" quantitat = "2"/>
+      </Plataformes>
+      <Granotes>
+        <Granota color="verd" percent ="98"/>
+        <Granota color="vermell" percent ="1"/>
+        <Granota color="blau" percent ="1"/>
+      </Granotes>
+    </Dificultat>
+    <Dificultat id ="7" timer="40">
+      <Obstacles>
+        <Obstacle nom ="boya" quantitat="1"/>
+        <Obstacle nom ="tortugaoveja" quantitat="1"/>
+        <Obstacle nom ="casa" quantitat="2"/>
+      </Obstacles>
+      <Enemics>
+        <Enemic nom ="pinguino"/>
+        <Enemic nom ="pinguino volador"/>
+        <Enemic nom ="hovercraft"/>
+      </Enemics>
+      <Plataformes>
+        <Plataforma tipus ="b" quantitat = "3"/>
+      </Plataformes>
+      <Granotes>
+        <Granota color="verd" percent ="97"/>
+        <Granota color="vermell" percent ="1.5"/>
+        <Granota color="blau" percent ="1.5"/>
+      </Granotes>
+    </Dificultat>
+    <Dificultat id ="8" timer ="40">
+      <Obstacles>
+        <Obstacle nom ="boya" quantitat="1"/>
+        <Obstacle nom ="boya campana" quantitat="1"/>
+        <Obstacle nom ="casa c" quantitat="1"/>
+        <Obstacle nom ="casa b" quantitat="1"/>
+      </Obstacles>
+      <Enemics>
+        <Enemic nom ="pinguino"/>
+        <Enemic nom ="pinguino volador"/>
+        <Enemic nom ="hovercraft"/>
+        <Enemic nom ="vaixell pirata"/>
+      </Enemics>
+      <Plataformes>
+        <Plataforma tipus ="b" quantitat = "3"/>
+      </Plataformes>
+      <Granotes>
+        <Granota color="verd" percent ="96"/>
+        <Granota color="vermell" percent ="2"/>
+        <Granota color="blau" percent ="2"/>
+      </Granotes>
+    </Dificultat>
+    <Dificultat id ="9" timer ="40">
+      <Obstacles>
+        <Obstacle nom ="boya" quantitat="1"/>
+        <Obstacle nom ="boya campana" quantitat="1"/>
+        <Obstacle nom ="tortugaoveja" quantitat="1"/>
+        <Obstacle nom ="casa c" quantitat="2"/>
+      </Obstacles>
+      <Enemics>
+        <Enemic nom ="pinguino"/>
+        <Enemic nom ="pinguino volador"/>
+        <Enemic nom ="ovni"/>
+      </Enemics>
+      <Plataformes>
+        <Plataforma tipus ="b" quantitat = "2"/>
+        <Plataforma tipus ="a" quantitat = "1"/>
+      </Plataformes>
+      <Granotes>
+        <Granota color="verd" percent ="95"/>
+        <Granota color="vermell" percent ="2.5"/>
+        <Granota color="blau" percent ="2.5"/>
+      </Granotes>
+    </Dificultat>
+    <Dificultat id ="10" timer ="40">
+      <Obstacles>
+        <Obstacle nom ="boya" quantitat="1"/>
+        <Obstacle nom ="boya campana" quantitat="1"/>
+        <Obstacle nom ="tortugaoveja" quantitat="1"/>
+        <Obstacle nom ="casa c" quantitat="2"/>
+        <Obstacle nom ="casa b" quantitat="1"/>
+      </Obstacles>
+      <Enemics>
+        <Enemic nom ="pinguino"/>
+        <Enemic nom ="pinguino volador"/>
+        <Enemic nom ="hovercraft"/>
+        <Enemic nom ="vaixell pirata"/>
+        <Enemic nom ="ovni"/>
+      </Enemics>
+      <Plataformes>
+        <Plataforma tipus ="b" quantitat = "2"/>
+        <Plataforma tipus ="a" quantitat = "1"/>
+      </Plataformes>
+      <Granotes>
+        <Granota color="verd" percent ="90"/>
+        <Granota color="vermell" percent ="4.9"/>
+        <Granota color="blau" percent ="4.9"/>
+        <Granota color="daurada" percent ="0.2"/>
+      </Granotes>
+    </Dificultat>
+    <Dificultat id ="11" timer="500" boss = "true">
+    </Dificultat>
+    <Lavels>
+      <Lavel id ="0" z ="1">
+        <Element nom ="nuves"         y ="0" quantitat ="5"/>
+        <Element nom ="avion con luces" y ="0" quantitat ="1"/>
+      </Lavel>
+      <Lavel id ="1" z ="4">
+        <Element nom ="islas lejanas" y ="0" quantitat ="4"/>
+        <Element nom ="nuves algodon" y ="0" quantitat ="1"/>
+        <Element nom ="islas faro"    y ="0" quantitat ="1"/>
+      </Lavel>
+      <Lavel id ="2" z ="7">
+        <Element nom ="islas detalladas" y ="0" quantitat ="6"/>
+      </Lavel>
+      <Lavel id ="3" z ="9">
+        <Element nom ="palmera"       y ="0" quantitat ="1"/>
+        <Element nom ="palmera doble" y ="0" quantitat ="1"/>
+        <Element nom ="ballena"       y ="0" quantitat ="1"/>
+        <Element nom ="barco hundido" y ="0" quantitat ="1"/>
+        <Element nom ="isla tortuga"  y ="0" quantitat ="1"/>
+        <Element nom ="avion"         y ="0" quantitat ="1"/>
+        <Element nom ="pajaro"        y ="0" quantitat ="1"/>
+        <Element nom ="sirena"        y ="0" quantitat ="1"/>
+        <Element nom ="caballitos"    y ="0" quantitat ="1"/>
+      </Lavel>
+    </Lavels>
+  </Escenari>
+</Escenaris>
