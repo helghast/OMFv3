@@ -50,6 +50,10 @@ public class cIAP_Parser : BaseXMLParser
         {
             processSingleUseVirtualGood(atts);
         }
+        else if (elem == "UpgradeVG")
+        {
+            processSingleUseVirtualGood(atts);
+        }
     }
 
     private void processCurrency(Dictionary<string, string> atts)
@@ -115,6 +119,22 @@ public class cIAP_Parser : BaseXMLParser
                                                      );
         equippableVG.imageIconPath = atts["spriteIcon"];
         ourIAPAssets.Map_VirtualGoods[name] = equippableVG;
+    }
+
+    private void processUpgradeVirtualGood(Dictionary<string, string> atts)
+    {
+        string name = atts["name"];
+        UpgradeVG upgradeVG = new UpgradeVG(atts["localID"],
+                                           atts["prevItem"],
+                                           atts["nextItem"],
+                                           name,
+                                           atts["desc"],
+                                           atts["localID"], 
+                                           new PurchaseWithVirtualItem(atts["localID"], Convert.ToInt32(atts["currencyCost"]))
+                                           );
+
+        upgradeVG.imageIconPath = atts["spriteIcon"];
+        ourIAPAssets.Map_VirtualGoods[name] = upgradeVG;
     }
 
     public override void onEndElement(string elem)

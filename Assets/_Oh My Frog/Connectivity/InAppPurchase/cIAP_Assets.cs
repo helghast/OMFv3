@@ -26,6 +26,10 @@ public class IAP_Assets : IStoreAssets //--> IStoreAssets es el plugin
     // Son eternos, solo se pueden comprar una vez y se pueden equipar.
     public Dictionary<string, VirtualGood> Map_EquippableVirtualGoods;
 
+    public Dictionary<string, VirtualGood> Map_UpgradeableVirtualGoods;
+
+    
+    // Global de todos los VirtualGoods
     public Dictionary<string, VirtualGood> Map_VirtualGoods;
 
     public IAP_Assets()
@@ -82,6 +86,14 @@ public class IAP_Assets : IStoreAssets //--> IStoreAssets es el plugin
     {
         EquippableVG[] goods = new EquippableVG[Map_EquippableVirtualGoods.Count];
         Map_EquippableVirtualGoods.Values.CopyTo(goods, 0);
+
+        return goods;
+    }
+
+    public VirtualGood[] GetUpgradeableVirtualGoods()
+    {
+        UpgradeVG[] goods = new UpgradeVG[Map_UpgradeableVirtualGoods.Count];
+        Map_UpgradeableVirtualGoods.Values.CopyTo(goods, 0);
 
         return goods;
     }
