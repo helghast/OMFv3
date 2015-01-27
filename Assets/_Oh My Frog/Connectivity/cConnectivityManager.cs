@@ -5,6 +5,8 @@ using UnityEngine;
 using UnityEngine.SocialPlatforms;
 using System.Collections;
 using System;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.IO;
 using GooglePlayGames;
 using GooglePlayGames.BasicApi;
 using GooglePlayGames.BasicApi.SavedGame;
@@ -166,6 +168,67 @@ public static class ConnectivityManager
     }
 
     // --------------------------------------------------------------------------------------------------------------------------------------------------
+    // Guarda las monedas del jugador
+    // --------------------------------------------------------------------------------------------------------------------------------------------------
+    public static void SaveStateToTheCloud(byte[] save_state, eANDROID_CLOUD_SLOTS cloud_slot)
+    {
+        #if ANDROID_DEVELOPMENT
+                //((PlayGamesPlatform)Social.Active).UpdateState(cloud_slot, save_state, this);
+
+        #endif
+
+        #if IOS_DEVELOPMENT
+
+        #endif
+    }
+
+    // --------------------------------------------------------------------------------------------------------------------------------------------------
+    // Convierte el objeto GameState en un array de Bytes para ser enviado a la nube (Serializa)(GoogleServices)
+    // --------------------------------------------------------------------------------------------------------------------------------------------------
+    public static byte[] SerializeGameState(cCloudGameState cloudGameState)
+    {
+        byte[] serializedData;
+        MemoryStream memoryStream = new MemoryStream();
+        BinaryFormatter serializer = new BinaryFormatter();
+
+        serializer.Serialize(memoryStream, cloudGameState);
+        serializedData = memoryStream.GetBuffer();
+
+        return serializedData;
+    }
+
+    // --------------------------------------------------------------------------------------------------------------------------------------------------
+    // Convierte el array de bytes de GameState a un objeto GameState (Deserializa)
+    // --------------------------------------------------------------------------------------------------------------------------------------------------
+    public static cCloudGameState DeserializeGameStateByteArray(byte[] cloudGameStateByteArray)
+    {
+        MemoryStream memoryStream = new MemoryStream(cloudGameStateByteArray);
+        BinaryFormatter deserializer = new BinaryFormatter();
+
+        cCloudGameState result = (cCloudGameState)deserializer.Deserialize(memoryStream);
+        return result;
+    }
+
+    public static void FillGameState()
+    {
+        ECloudGameState.total_cocktails = 0;
+        ECloudGameState.total_frogs = 1;
+        ECloudGameState.total_mangos = 65;
+        ECloudGameState.total_meters = 10000;
+
+        ECloudGameState.list_CloudItems.Add(new CloudItem());
+        ECloudGameState.list_CloudItems.Add(new CloudItem());
+    }
+
+    public static void ObtainGameStateFromCloud()
+    {
+
+    }
+
+
+#region ACHIEVEMENTS
+
+    // --------------------------------------------------------------------------------------------------------------------------------------------------
     // Reporta un logro conseguido por el jugador para que sea desbloqueado
     // --------------------------------------------------------------------------------------------------------------------------------------------------
     public static bool ReportAchievement(string achievement, double progress)
@@ -255,20 +318,7 @@ public static class ConnectivityManager
 
         #endif
     }
+#endregion ACHIEVEMENTS
 
-    // --------------------------------------------------------------------------------------------------------------------------------------------------
-    // Guarda las monedas del jugador
-    // --------------------------------------------------------------------------------------------------------------------------------------------------
-    public static void SaveStateToTheCloud(byte[] save_state, eANDROID_CLOUD_SLOTS cloud_slot)
-    {
-        #if ANDROID_DEVELOPMENT
-        //((PlayGamesPlatform)Social.Active).UpdateState(cloud_slot, save_state, this);
-       
-        #endif
-
-        #if IOS_DEVELOPMENT
-
-        #endif
-    }
-
+    
 }

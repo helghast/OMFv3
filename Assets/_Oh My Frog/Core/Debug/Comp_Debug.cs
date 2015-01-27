@@ -29,6 +29,7 @@ public class Comp_Debug : MonoBehaviour
 
     private Queue<string> debug_info_queue;
     private List<string> debug_info_list;
+    private byte[] aux_byteArray;
 
     void Start()
     {
@@ -150,13 +151,36 @@ public class Comp_Debug : MonoBehaviour
         GUILayout.EndArea();
 
     }
-
+    cCloudGameState gameState;
     public void drawKappaItemsTest()
     {
         GUILayout.BeginArea(new Rect(10, 200, 200, 250));
         GUILayout.BeginVertical("box");
         GUILayout.Label("Showing Items TESTING");
 
+        if (GUILayout.Button("Fill cloud Data"))
+        {
+            ConnectivityManager.FillGameState();
+            aux_byteArray = ConnectivityManager.SerializeGameState(ConnectivityManager.ECloudGameState);
+        }
+
+        if (GUILayout.Button("Deserialize cloud Data"))
+        {
+            gameState = ConnectivityManager.DeserializeGameStateByteArray(aux_byteArray);
+            addDebugMessage("total_mangos: " + gameState.total_mangos);
+            addDebugMessage("total_meters: " + gameState.total_meters);
+            addDebugMessage("total_frogs: " + gameState.total_frogs);
+            addDebugMessage("total_cocktails: " + gameState.total_cocktails);
+            addDebugMessage("object[1]: " + gameState.list_CloudItems[1].local_id);
+            /*
+            List<cUI_Item> aux = ShopManager.Instance.UI_List_All_Items;
+            for (int i = 0; i < aux.Count; ++i)
+            {
+                Debug.Log("Loaded item: " + aux[i].name);
+            }*/
+        }
+
+        /*
         if (GUILayout.Button("Show surfboard"))
         {
             InventoryManager.Instance.setKappaItemVisibleByName("prop_surfboard", true);
@@ -185,7 +209,7 @@ public class Comp_Debug : MonoBehaviour
             {
                 Debug.Log("Loaded item: " + aux[i].name);
             }
-        } 
+        } */
 
         GUILayout.Space(5);
         GUILayout.EndVertical();
