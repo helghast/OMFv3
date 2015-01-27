@@ -67,7 +67,7 @@ public class Comp_Environment_Manager : MonoBehaviour
         Escenari scene = EnvironmentManager.Instance.currentScene;
         if (scene == null)
             return;
-        
+        /*
         for (int i = 0; i < scene.layers.Count; ++i)
         {
             Layer layer = scene.layers[i];
@@ -83,6 +83,6 @@ public class Comp_Environment_Manager : MonoBehaviour
                 else
                     layer.Elements2D[j].setVisible(visible);
             }
-        }
+        }*/
     }
 }

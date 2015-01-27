@@ -1,0 +1,256 @@
+fileFormatVersion: 2
+guid: cc9ba5d205a2df54fa7cdc10e57aaa3e
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: far_mountain_0
+    21300002: far_mountain_1
+    21300004: far_mountain_2
+    21300006: far_mountain_3
+    21300008: mountain_0
+    21300010: mountain_1
+    21300012: mountain_2
+    21300014: mountain_3
+    21300016: mountain_4
+    21300018: mountain_5
+    21300020: ship_0
+    21300022: ship_1
+    21300024: ship_2
+    21300026: island_0
+    21300028: island_1
+    21300030: island_2
+    21300032: island_3
+    21300034: coral_16
+    21300036: planes_0
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: far_mountain_0
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 954
+        width: 403
+        height: 67
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: far_mountain_1
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 954
+        width: 472
+        height: 67
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: far_mountain_2
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 954
+        width: 353
+        height: 62
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: far_mountain_3
+      rect:
+        serializedVersion: 2
+        x: 1349
+        y: 915
+        width: 639
+        height: 105
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mountain_0
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 740
+        width: 605
+        height: 209
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mountain_1
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 740
+        width: 574
+        height: 131
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mountain_2
+      rect:
+        serializedVersion: 2
+        x: 1294
+        y: 747
+        width: 524
+        height: 165
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mountain_3
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 538
+        width: 598
+        height: 199
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mountain_4
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 517
+        width: 541
+        height: 219
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mountain_5
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 522
+        width: 669
+        height: 193
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ship_0
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 229
+        width: 328
+        height: 308
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ship_1
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 231
+        width: 309
+        height: 164
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ship_2
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 231
+        width: 833
+        height: 270
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: island_0
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 7
+        width: 388
+        height: 217
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: island_1
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 9
+        width: 269
+        height: 196
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: island_2
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 9
+        width: 276
+        height: 134
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: island_3
+      rect:
+        serializedVersion: 2
+        x: 1079
+        y: 8
+        width: 206
+        height: 191
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coral_16
+      rect:
+        serializedVersion: 2
+        x: 1661
+        y: 26
+        width: 377
+        height: 145
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: planes_0
+      rect:
+        serializedVersion: 2
+        x: 1621
+        y: 185
+        width: 225
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
