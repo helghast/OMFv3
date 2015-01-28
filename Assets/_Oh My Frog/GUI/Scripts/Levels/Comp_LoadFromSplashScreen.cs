@@ -15,8 +15,8 @@ public class Comp_LoadFromSplashScreen : MonoBehaviour {
     public Slider loadingProgressBar;
     //no se puede acceder/hacer un find de un objeto que esta SetActive(false).
     //para encontrarlo es mejor tenerlo inicialmente activado y en el awake buscarlo y desactivarlo
-    private GameObject panelLoading = null;
-    private GameObject panelTouch = null;
+    public GameObject panelLoading = null;
+    public GameObject panelTouch = null;
 
     public float timeLoading;
     private float ratio;
@@ -24,6 +24,14 @@ public class Comp_LoadFromSplashScreen : MonoBehaviour {
     void Awake()
     {
         //por si se nos olvida asignarlos manualmente
+        if(panelLoading == null)
+        {
+            panelLoading = GameObject.Find("PanelLoading");
+        }
+        if(panelTouch == null)
+        {
+            panelTouch = GameObject.Find("PanelTouchBG");
+        }
         if(panelSplashScreen == null)
         {
             panelSplashScreen = GameObject.Find("PanelLoading").GetComponent<CanvasGroup>();
@@ -44,8 +52,8 @@ public class Comp_LoadFromSplashScreen : MonoBehaviour {
         {
             loadingProgressBar = GameObject.Find("LoadingProgressBar").GetComponent<Slider>();
         }
-        panelLoading = GameObject.Find("PanelLoading");
-        panelTouch = GameObject.Find("PanelTouchBG");
+        
+        panelLoading.SetActive(false);
         panelTouch.SetActive(false);
         //a que velocidad se llena la progressbar depende del tiempo y del tamaño de esta
         ratio = loadingProgressBar.maxValue / timeLoading;
@@ -58,30 +66,27 @@ public class Comp_LoadFromSplashScreen : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if(timeLoading > 0)
+        //solo si el panelloading esta activo
+        if(panelLoading.activeSelf)
         {
-            timeRemainingTooltip();
-            fillLoadingProgressBar();
-        }
-        else
-        {
-            changeAlphaSplashScreen();            
-        }
+            if(timeLoading > 0)
+            {
+                timeRemainingTooltip();
+                fillLoadingProgressBar();
+            }
+            else
+            {
+                changeAlphaSplashScreen();
+            } 
+        }        
 	}
 
     /* para evitar usar dos escenas, se usa una sola y se cambia el alpha e interactividad de ambos paneles */
     private void changeAlphaSplashScreen()
     {
-        //mejor activar/desactivar ambos objetos panel
+        //mejor activar/desactivar ambos objetos panel, en vez de controlar interactable y alpha
         panelLoading.SetActive(false);
         panelTouch.SetActive(true);
-        /*panelSplashScreen.alpha = 0f;
-        panelSplashScreen.interactable = false;
-        panelSplashScreen.blocksRaycasts = false;
-        panelTouchScreen.alpha = 1f;
-        panelTouchScreen.interactable = true;
-        panelTouchScreen.blocksRaycasts = true;*/
-        //loadFromSplashScreen();
     }
 
     /* metodo llamado desde el Boton de la UI cuando es clickado/toucheado */
@@ -89,7 +94,8 @@ public class Comp_LoadFromSplashScreen : MonoBehaviour {
     {
         //esto peta el unity un rato
         //buttonTouchScreen.onClick.AddListener(() => { Application.LoadLevel("MainMenu"); });
-        //esto no peta
+
+        //esto no peta. Llamar desde el nuevo UI
         Application.LoadLevel("MainMenu");
     }
 
