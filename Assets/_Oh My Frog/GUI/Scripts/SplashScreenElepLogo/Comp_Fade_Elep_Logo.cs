@@ -18,6 +18,10 @@ public class Comp_Fade_Elep_Logo : MonoBehaviour {
         {
             elepLogo = GameObject.Find("ImageElepLogo").GetComponent<Image>();
         }
+        if(timeFade == 0f)
+        {
+            timeFade = 1f;
+        }
         //necesario ponerle en el awake a 0 si se quiere hacer un fadein inicial, sino no funciona.
         fadeLogo(0f, 0f);
         //elepLogo.CrossFadeAlpha(0f, 0f, false);

@@ -27,6 +27,9 @@ public class Comp_Map_Button : MonoBehaviour {
         textToShow.text = textbutton.text + "\nName stage\nBoss:X\nBestScore:1000";
         stageStartButton.interactable = true;
         stageStartButton.GetComponentInChildren<Text>().text = textbutton.text;
+
+        //activar el componente para animar el color del boton
+        stageStartButton.GetComponent<Animator>().enabled = true;
         switch(textbutton.text)
         {
             case "Stage1":
