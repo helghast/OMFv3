@@ -1,6 +1,10 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using System.Collections.Generic;
+using Facebook.MiniJSON;
+using Facebook;
+using System.Linq;
 
 public class Comp_LoadFromSplashScreen : MonoBehaviour {
 
@@ -113,5 +117,18 @@ public class Comp_LoadFromSplashScreen : MonoBehaviour {
     public void fillLoadingProgressBar()
     {
         loadingProgressBar.value = Mathf.MoveTowards(loadingProgressBar.value, loadingProgressBar.maxValue, Time.deltaTime * ratio);
+    }
+
+    public void openvideoURL()
+    {
+        Application.OpenURL("https://www.youtube.com/watch?x-yt-ts=1421914688&feature=player_detailpage&x-yt-cl=84503534&v=6-aelWFdJXw");
+        //proonly
+        //Handheld.PlayFullScreenMovie("Clara.mp4", Color.black, FullScreenMovieControlMode.CancelOnInput);
+    }
+
+    public void makePostToFacebook()
+    {
+
+        //FacebookManager.Instance().PostToFacebook();
     }
 }
