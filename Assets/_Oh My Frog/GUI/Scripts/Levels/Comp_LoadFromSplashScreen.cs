@@ -86,7 +86,10 @@ public class Comp_LoadFromSplashScreen : MonoBehaviour {
     {
         //mejor activar/desactivar ambos objetos panel, en vez de controlar interactable y alpha
         panelLoading.SetActive(false);
-        panelTouch.SetActive(true);
+        //panelTouch.SetActive(true);
+        //ir directamente al finalizar el relleno de la progressbar, al mainmenu
+        //ya no se pasa por el panelTouchScreen
+        loadFromSplashScreen();
     }
 
     /* metodo llamado desde el Boton de la UI cuando es clickado/toucheado */
@@ -134,7 +137,7 @@ public class Comp_LoadFromSplashScreen : MonoBehaviour {
 
     public void makePostToFacebook()
     {
-
+        Application.OpenURL("https://www.facebook.com/ohmyfrog.surfrescue");
         //FacebookManager.Instance().PostToFacebook();
     }
 }

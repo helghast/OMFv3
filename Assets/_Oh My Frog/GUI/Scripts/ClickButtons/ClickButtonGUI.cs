@@ -5,11 +5,15 @@ using System.Collections.Generic;
 
 public class ClickButtonGUI : MonoBehaviour {
 
-    public CanvasGroup[] listCanvasGroups = null;
+    //si se usa el SetActive ya no es necesario el CanvasGroups
+    //public CanvasGroup[] listCanvasGroups = null;
+    private string[] languagesArray = new string[] { "SPANISH", "ENGLISH", "FRENCH", "GERMAN", "ITALIAN" };
+    public GameObject panelTotem, panelRedesSociales, panelAudioOptions;
 
     void Awake()
     {
-        
+        //para poder usar un objeto inactivo, iniciarlo como inactivo desde el awake, mejor que manualmente desde el editor
+        panelAudioOptions.SetActive(false);
     }
 
 	// Use this for initialization
@@ -24,52 +28,46 @@ public class ClickButtonGUI : MonoBehaviour {
 
     public void clickButton(Text textButton)
     {
-        textButton = textButton.GetComponent<Text>();
         switch(textButton.text.ToLower())
         {
             case "options":
-                //cams_manager.GetComponent<Groups_Manager>().openOrClosePanel(true, 1f, 2); 
-                openOrClosePanel(true, 1f, 2);
+                openOrClosePanel(true, 0.5f);
                 break;
             case "accept":
-                //cams_manager.GetComponent<Groups_Manager>().openOrClosePanel(false, 0f, 2);
-                openOrClosePanel(false, 0f, 2);
-                break;
-            default:
-                Debug.Log(textButton.text.ToString());
+                openOrClosePanel(false, 1f);
                 break;
         }
+        Debug.Log(textButton.text);
     }
 
-    private void openOrClosePanel(bool status, float alphaPanel, int panelToShowOrNot)
+    private void openOrClosePanel(bool status, float alpha)
     {
-        //por cada elemento de la lista
-        for(int i = 0; i < listCanvasGroups.Length; i++)
-        {
-            //si i = a panel a mostrar
-            if(i == panelToShowOrNot)
+        panelAudioOptions.SetActive(status);
+        panelTotem.GetComponent<CanvasGroup>().alpha = alpha;
+        panelTotem.GetComponent<CanvasGroup>().interactable = !status;
+        panelRedesSociales.GetComponent<CanvasGroup>().alpha = alpha;
+        panelRedesSociales.GetComponent<CanvasGroup>().interactable = !status;
+    }
+
+    public void changeLanguage(Button langButton)
+    {
+        int positionInArray;
+
+        for (int i = 0; i < languagesArray.Length; i++)
+		{
+            if(languagesArray[i].Equals(langButton.GetComponentInChildren<Text>().text))
             {
-                //activar interacciones, alpah y bloquearraycasts
-                listCanvasGroups[i].interactable = status;
-                listCanvasGroups[i].alpha = alphaPanel;
-                listCanvasGroups[i].blocksRaycasts = status;
-            }
-            else
-            {
-                //si no, evitar interacciones y raycasts
-                listCanvasGroups[i].interactable = !status;
-                //listCanvasGroups[i].alpha = 0.5f;
-                listCanvasGroups[i].blocksRaycasts = !status;
-            }
-        }
-        //solo para info
-        if(status)
-        {
-            Debug.Log("abrir panel de audiosettings");
-        }
-        else
-        {
-            Debug.Log("cerrar panel de audiosettings");
-        }
+                if(i == languagesArray.Length - 1)
+                {
+                    positionInArray = 0;
+                }
+                else
+                {
+                    positionInArray = i + 1;
+                }
+                langButton.GetComponentInChildren<Text>().text = languagesArray[positionInArray];
+                break;
+            }	 
+	    }
     }
 }

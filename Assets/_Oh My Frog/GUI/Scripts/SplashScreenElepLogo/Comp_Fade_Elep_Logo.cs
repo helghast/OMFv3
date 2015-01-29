@@ -7,6 +7,7 @@ public class Comp_Fade_Elep_Logo : MonoBehaviour {
     public Image elepLogo;
     public float timeFade;
     public GameObject panelElepLogo;
+    public float countDown;
 
     void Awake()
     {
@@ -22,6 +23,10 @@ public class Comp_Fade_Elep_Logo : MonoBehaviour {
         {
             timeFade = 1f;
         }
+        if(countDown == 0f)
+        {
+            countDown = 2f;
+        }
         //necesario ponerle en el awake a 0 si se quiere hacer un fadein inicial, sino no funciona.
         fadeLogo(0f, 0f);
         //elepLogo.CrossFadeAlpha(0f, 0f, false);
@@ -34,9 +39,9 @@ public class Comp_Fade_Elep_Logo : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if(timeFade > 0)
+        if(countDown > 0)
         {
-            timeFade = timeFade - Time.deltaTime;
+            countDown = countDown - Time.deltaTime;
         }
         else
         {
