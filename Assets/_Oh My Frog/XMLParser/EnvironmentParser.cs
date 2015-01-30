@@ -4,21 +4,24 @@ using System.Linq;
 using System.Text;
 using UnityEngine;
 using OMF_Environment;
+using OMF_Errors;
+
 
 public class EnvironmentParser : BaseXMLParser
 {
     Escenari escenari;
     Dificultat dificultat;
     Obstacle obstacle;
-    Enemic enemic;
-    Plataforma plataforma;
+    Enemy enemic;
+    Platform plataforma;
     Granota granota;
     Layer layer;
     Element2D element2d;
+    float percent;
     
     public EnvironmentParser() : base() { }
 
-    public override void onStartElement(string elem, Dictionary<string, string> atts)
+    public override ErrorCode onStartElement(string elem, Dictionary<string, string> atts)
     {
         if (elem == "Escenari")
         {
@@ -29,23 +32,27 @@ public class EnvironmentParser : BaseXMLParser
             int id = Convert.ToInt32(atts["id"]);
             float timer = Convert.ToSingle(atts["timer"]);
             dificultat = new Dificultat(id, timer);
-            
+            percent = 0;
         }
         else if (elem == "Obstacle")
         {
-            int quantitat = Convert.ToInt32(atts["quantitat"]);
-            obstacle = new Obstacle(atts["nom"], quantitat);
+            float btimer = Convert.ToSingle(atts["timer"]);
+            float perc = Convert.ToSingle(atts["percent"]);
+            percent += perc;
+            obstacle = new Obstacle(atts["nom"], perc, btimer);
             dificultat.addObstacle(obstacle);
         }
         else if (elem == "Enemic")
         {
-            enemic = new Enemic(atts["nom"]);
+            float btimer = Convert.ToSingle(atts["timer"]);
+            float perc = Convert.ToSingle(atts["percent"]);
+            percent += perc;
+            enemic = new Enemy(atts["nom"], perc, btimer);
             dificultat.addEnemic(enemic);
         }
         else if (elem == "Plataforma")
         {
-            int quantitat = Convert.ToInt32(atts["quantitat"]);
-            plataforma = new Plataforma(atts["tipus"], quantitat);
+            plataforma = new Platform(atts["tipus"]);
             dificultat.addPlataforma(plataforma);
         }
         else if (elem == "Granota")
@@ -92,7 +99,7 @@ public class EnvironmentParser : BaseXMLParser
                     layer = new Layer(name, EnvironmentManager.Instance.ZLayer9, layerId);
                     break;
                 default:
-                    //ERROR
+                    return ErrorCode.LAYER_NOT_DEFINED;
                     break;
             }
         }
@@ -102,12 +109,15 @@ public class EnvironmentParser : BaseXMLParser
             element2d = new Element2D(atts["nom"], y, layer.layerID);
             string path = "Environment/" + escenari.name + "/" + layer.name + "/" + element2d.name;
             GameObject go =  EPrefabManager.LoadPrefab(path, EnvironmentManager.Instance.transform_pool_environment);
+            if (go == null)
+                return ErrorCode.GO_NOT_FOUND;
             element2d.setEnvironmentComponent(go.GetComponent<Comp_Environment_Element>());
             layer.addElement(element2d);
         }
+        return ErrorCode.IS_OK;
     }
 
-    public override void onEndElement(string elem)
+    public override ErrorCode onEndElement(string elem)
     {
         if (elem == "Dificultat")
         {
@@ -131,7 +141,8 @@ public class EnvironmentParser : BaseXMLParser
             plataforma = null;
             granota = null;
             element2d = null;
-        } 
+        }
+        return ErrorCode.IS_OK;
     }
 
 }

@@ -6,44 +6,32 @@ using System.Text;
 using System.Xml;
 using System.IO;
 using UnityEngine;
+using OMF_Errors;
 
 public abstract class BaseXMLParser
 {
-    private string filename;
     private XmlTextReader reader;
     Stack m_names;
 
     public BaseXMLParser()
     {
         reader = null;
-        filename = "";
         m_names = new Stack();
     }
 
-    public bool xmlParseFile(string name)
-    {
-        filename = name;
-        reader = new XmlTextReader(filename);
-
-        if (reader == null) 
-            return false; //failed
-        Parse();
-        return true;
-    }
-
-    public bool xmlParseFile(TextAsset textAsset)
+    public ErrorCode xmlParseFile(TextAsset textAsset)
     {
         MemoryStream assetStream = new MemoryStream(textAsset.bytes);
         reader = new XmlTextReader(assetStream);
 
         if (reader == null)
-            return false; //failed
-        Parse();
-        return true;
+            return ErrorCode.FILE_NOT_FOUND;
+        return Parse();
     }
 
-    public int Parse()
+    public ErrorCode Parse()
     {
+        ErrorCode error;
         string elementName;
         while (reader.Read())
         {
@@ -52,26 +40,39 @@ public abstract class BaseXMLParser
                 case XmlNodeType.Element:
                     elementName = reader.Name;
                     m_names.Push(elementName);
-                    onStartElement(elementName, getAttributes());
+                    error = onStartElement(elementName, getAttributes());
+                    if (error != ErrorCode.IS_OK)
+                    {
+                        return error;
+                    }
                     break;
                 case XmlNodeType.EndElement:
                     elementName = m_names.Pop().ToString();
-                    onEndElement(elementName);
+                    error = onEndElement(elementName);
+                    if (error != ErrorCode.IS_OK)
+                    {
+                        return error;
+                    }
+                    break;
+                case XmlNodeType.Comment:
+                case XmlNodeType.XmlDeclaration:
+                case XmlNodeType.Whitespace:
                     break;
                 default:
-                    Console.WriteLine(reader.NodeType);
+                    return ErrorCode.UNDEFINED_XML_NODE;
                     break;
             }
             //Console.WriteLine(reader[0]);
         }
+        if (m_names.Count > 0)
+            return ErrorCode.TAG_OPENED;
         reader.Close();
-        return 0;
+        return ErrorCode.IS_OK;
     }
 
 
     public Dictionary<string, string> getAttributes() {
         Dictionary<string, string> attrs = new Dictionary<string, string>();
-        //attr[] attrs = new attr[reader.AttributeCount];
         if (reader.HasAttributes) {
             for (int i = 0; i < reader.AttributeCount; i++) {
                 reader.MoveToAttribute(i);
@@ -80,8 +81,9 @@ public abstract class BaseXMLParser
         }
         return attrs;
     }
-    public abstract void onStartElement(string elementName, Dictionary<string, string> attrs);
-    public abstract void onEndElement(string elementName);
+    public abstract ErrorCode onStartElement(string elementName, Dictionary<string, string> attrs);
+    public abstract ErrorCode onEndElement(string elementName);
+
 
 }
 

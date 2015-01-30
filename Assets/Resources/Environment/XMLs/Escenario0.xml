@@ -2,13 +2,13 @@
   <Escenari nom="Beach">
     <Dificultat id ="0" timer ="40">
       <Obstacles>
-        <Obstacle nom ="boya" quantitat="1" length="2"></Obstacle>
+        <Obstacle nom ="boya" timer="1" percent ="75"></Obstacle>
       </Obstacles>
       <Enemics>
-        <Enemic nom ="pinguino"></Enemic>
+        <Enemic nom ="pinguino" timer ="1" percent ="25"></Enemic>
       </Enemics>
       <Plataformes>
-        <Plataforma tipus ="c" quantitat = "2" length="10"></Plataforma>
+        <Plataforma tipus ="c"></Plataforma>
       </Plataformes>
       <Granotes>
         <Granota color="verd" percent ="100"></Granota>
@@ -16,15 +16,15 @@
     </Dificultat>
     <Dificultat id ="1" timer ="40">
       <Obstacles>
-        <Obstacle nom ="boya" quantitat="1"></Obstacle>
-        <Obstacle nom ="boya campana" quantitat="1"></Obstacle>
+        <Obstacle nom ="boya" timer="1" percent ="75"></Obstacle>
+        <Obstacle nom ="boya campana" timer="1" percent ="75"></Obstacle>
       </Obstacles>
       <Enemics>
-        <Enemic nom ="pinguino"></Enemic>
-        <Enemic nom ="vaixell pirata"></Enemic>
+        <Enemic nom ="pinguino"  timer ="1" percent ="25"></Enemic>
+        <Enemic nom ="vaixell pirata" timer ="1" percent ="25"></Enemic>
       </Enemics>
       <Plataformes>
-        <Plataforma tipus ="c" quantitat = "3"></Plataforma>
+        <Plataforma tipus ="c"></Plataforma>
       </Plataformes>
       <Granotes>
         <Granota color="verd" percent ="100"></Granota>

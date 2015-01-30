@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using assets._Oh_My_Frog.XMLParser;
 using System.IO;
+using OMF_Errors;
 
 public partial class GameLogicManager
 {
@@ -39,7 +40,7 @@ public partial class GameLogicManager
     private Comp_Coin_Manager comp_Coin_Manager;
     private Comp_Frog_Manager comp_Frog_Manager;
     private Comp_Kappa_Controller comp_Kappa_Controller;
-
+    private Error error;
     //-----------------------------------------------
     //  CONSTRUCTOR
     //-----------------------------------------------
@@ -77,7 +78,8 @@ public partial class GameLogicManager
         comp_Kappa_Controller = GameObject.Find("Player").GetComponent<Comp_Kappa_Controller>();
 
         Debug.Log("Inicializado GameManager");
-        
+        error = new Error();
+
         // Load Local Data
         loadMangos();
     }
@@ -187,6 +189,11 @@ public partial class GameLogicManager
     public float getKappaSpeed()
     {
         return comp_Kappa_Controller.LAND_SPEED;
+    }
+
+    public void printErrorGame(ErrorCode errorCode)
+    {
+        Debug.LogError(GameLogicManager.Instance.error.getError(errorCode));
     }
 
     //-------------------------------------------------------------------------------

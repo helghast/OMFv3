@@ -4,14 +4,13 @@ using System.Linq;
 using System.Text;
 
 
-public class Plataforma {
+public class Platform
+{
     string type;
-    int amount;
 
-    public Plataforma(string type, int amount)
+    public Platform(string type)
     {
         this.type = type;
-        this.amount = amount;
     }
 
 }

@@ -3,15 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class Obstacle {
+public class Enemy {
     string nom;
     float percent;
-    float baseTimer;
+    float baseTimer;    //Timer for next platform, obstacle or enemy
 
-    public Obstacle(string nom, float percent, float baseTimer)
+    public Enemy(string nom, float percent, float baseTimer)
     {
         this.nom = nom;
         this.percent = percent;
         this.baseTimer = baseTimer;
     }
+
 }

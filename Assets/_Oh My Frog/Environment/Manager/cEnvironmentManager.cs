@@ -48,10 +48,12 @@ public class EnvironmentManager
         transform_pool_environment = GameObject.Find("Pool_Environment").GetComponent<Transform>();
         comp_debug = GameObject.Find("Debug").GetComponent<Comp_Debug>();
         
-        bool is_ok = loadXML("Escenario0");
-        if (is_ok)
+        Error error = new Error();
+        string nameFile ="Escenario0";
+        bool is_ok = loadXML(nameFile);
+        if (!is_ok)
         {
-           
+            Debug.LogError("El fichero " + nameFile + "falla!");
         }
     }
 
@@ -163,7 +165,14 @@ public class EnvironmentManager
         EnvironmentParser environmentParser = new EnvironmentParser();
         TextAsset textAsset = (TextAsset)Resources.Load("Environment/XMLs/"+ xmlName);
         //return environmentParser.xmlParseFile(Application.dataPath + "/_Oh My Frog/Environment/XML/" + xmlName + ".xml");
-        return environmentParser.xmlParseFile(textAsset);
+
+        OMF_Errors.ErrorCode errorCode = environmentParser.xmlParseFile(textAsset);
+        if (OMF_Errors.ErrorCode.IS_OK != errorCode)
+        {
+            GameLogicManager.Instance.printErrorGame(errorCode);
+            return false;
+        }
+        return true;
     }
 
     public void setScene(Escenari scene)

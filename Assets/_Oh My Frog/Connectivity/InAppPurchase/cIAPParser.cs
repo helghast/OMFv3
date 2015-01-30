@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Soomla.Store;
 using System;
-
+using OMF_Errors;
 public enum ePROCESSING_STATE
 {
     CURRENCIES = 0,
@@ -24,7 +24,7 @@ public class cIAP_Parser : BaseXMLParser
         this.ourIAPAssets = ourIAPAssets;
     }
 
-    public override void onStartElement(string elem, Dictionary<string, string> atts)
+    public override ErrorCode onStartElement(string elem, Dictionary<string, string> atts)
     {
         if (elem == "Currency")
         {
@@ -54,6 +54,7 @@ public class cIAP_Parser : BaseXMLParser
         {
             processSingleUseVirtualGood(atts);
         }
+        return ErrorCode.IS_OK;
     }
 
     private void processCurrency(Dictionary<string, string> atts)
@@ -137,9 +138,9 @@ public class cIAP_Parser : BaseXMLParser
         ourIAPAssets.Map_VirtualGoods[name] = upgradeVG;
     }
 
-    public override void onEndElement(string elem)
+    public override ErrorCode onEndElement(string elem)
     {
-       
+        return ErrorCode.IS_OK;
     }
 	
 }

@@ -7,24 +7,24 @@ public class Dificultat {
     int id;
     float timer;
     public List<Granota> granotes;
-    public List<Plataforma> plataformes;
+    public List<Platform> plataformes;
     public List<Obstacle> obstacles;
-    public List<Enemic> enemics;
+    public List<Enemy> enemics;
 
     public Dificultat(int aid, float atimer) {
         this.id = aid;
         this.timer = atimer;
         granotes = new List<Granota>();
-        plataformes = new List<Plataforma>();
+        plataformes = new List<Platform>();
         obstacles = new List<Obstacle>();
-        enemics = new List<Enemic>();
+        enemics = new List<Enemy>();
     }
 
     public void addGranota(Granota granota) {
         granotes.Add(granota);
     }
 
-    public void addPlataforma(Plataforma plataforma)
+    public void addPlataforma(Platform plataforma)
     {
         plataformes.Add(plataforma);
     }
@@ -34,7 +34,7 @@ public class Dificultat {
         obstacles.Add(obstacle);
     }
 
-    public void addEnemic(Enemic enemic)
+    public void addEnemic(Enemy enemic)
     {
         enemics.Add(enemic);
     }

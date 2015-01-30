@@ -33,9 +33,8 @@ public class Comp_Init_InGame : MonoBehaviour
         // 6)
 
 
-
-        EnvironmentManager.CreateManager();
         GameLogicManager.CreateManager();
+        EnvironmentManager.CreateManager();
 
         //inicializar pool de enemys_obstacles
         /*Obstacle_Enemys_Manager.Instance.Initialize();
