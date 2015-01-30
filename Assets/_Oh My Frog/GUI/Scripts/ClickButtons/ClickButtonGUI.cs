@@ -70,4 +70,35 @@ public class ClickButtonGUI : MonoBehaviour {
             }	 
 	    }
     }
+
+    public void shareOnFacebook()
+    {
+        string facebookshare = "https://www.facebook.com/sharer/sharer.php?u=" + WWW.EscapeURL("https://www.facebook.com/ohmyfrog.surfrescue");
+
+        Application.OpenURL(facebookshare);
+    }
+
+    public void shareTwitter()
+    {
+        /*string twittershare = "http://twitter.com/home?status=" + WWW.EscapeURL("direccion twitter");
+
+        Application.OpenURL(twittershare);*/
+    }
+
+    const string AppId = "1375252672785531";
+    const string ShareUrl = "http://www.facebook.com/dialog/feed";
+    const string PictureLink = "https://www.facebook.com/ohmyfrog.surfrescue";
+
+    public static void Share(string link, string pictureLink, string name,
+        string caption, string description, string redirectUri)
+    {
+        Application.OpenURL(ShareUrl +
+            "?app_id=" + AppId +
+            "&amp;link=" + WWW.EscapeURL(link) +
+            "&amp;picture=" + WWW.EscapeURL(pictureLink) +
+            "&amp;name=" + WWW.EscapeURL(name) +
+            "&amp;caption=" + WWW.EscapeURL(caption) +
+            "&amp;description=" + WWW.EscapeURL(description) +
+            "&amp;redirect_uri=" + WWW.EscapeURL(redirectUri));
+    }
 }
