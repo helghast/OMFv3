@@ -1,5 +1,5 @@
 ﻿<Escenaris>
-  <Escenari nom="cueva">
+  <Escenari nom="beach">
     <Dificultat id ="0" timer ="10">
       <Obstacles>
         <Obstacle nom ="boya" timer="1" percent ="75"></Obstacle>

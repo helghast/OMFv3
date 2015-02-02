@@ -30,7 +30,7 @@ public class Comp_Map_Button : MonoBehaviour {
 
         //activar el componente para animar el color del boton
         stageStartButton.GetComponent<Animator>().enabled = true;
-        switch(textbutton.text)
+        /*switch(textbutton.text)
         {
             case "Stage1":
                 enableStartStageButton("InGame");
@@ -41,7 +41,8 @@ public class Comp_Map_Button : MonoBehaviour {
             case "Stage5":
                 enableStartStageButton(textbutton.text);
                 break;
-        }
+        }*/
+        enableStartStageButton(textbutton.text);
     }
 
     public void enableStartStageButton(string gameplay)
