@@ -60,7 +60,7 @@ public class Comp_LoadLevel_From_Loading_Scene : MonoBehaviour {
     /*si se llama a este metodo dandole al play a la escena Loading dara error porque el playerprefs no se ha modificado desde la escena Loading.*/
     private void loadLevelFromPlayerPrefs()
     {
-        Application.LoadLevel(PlayerPrefs.GetString("level"));
+        Application.LoadLevel(PlayerPrefs.GetString("ingame"));
         
     }
 }

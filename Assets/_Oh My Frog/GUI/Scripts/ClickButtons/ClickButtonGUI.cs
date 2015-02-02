@@ -73,6 +73,7 @@ public class ClickButtonGUI : MonoBehaviour {
 
     public void shareOnFacebook()
     {
+        //forma facil
         string facebookshare = "https://www.facebook.com/sharer/sharer.php?u=" + WWW.EscapeURL("https://www.facebook.com/ohmyfrog.surfrescue");
 
         Application.OpenURL(facebookshare);
@@ -85,6 +86,7 @@ public class ClickButtonGUI : MonoBehaviour {
         Application.OpenURL(twittershare);*/
     }
 
+    //facebook vars
     const string AppId = "1375252672785531";
     const string ShareUrl = "http://www.facebook.com/dialog/feed";
     const string PictureLink = "https://www.facebook.com/ohmyfrog.surfrescue";
