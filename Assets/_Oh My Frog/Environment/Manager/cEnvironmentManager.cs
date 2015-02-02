@@ -29,7 +29,7 @@ public class EnvironmentManager
     //-----------------------------------------------
     private Comp_Environment_Manager comp_env_manager;
 
-    public Escenari currentScene;
+    private List<Level> levels;
 
 
     public Transform transform_pool_environment;
@@ -47,13 +47,24 @@ public class EnvironmentManager
         comp_env_manager = GameObject.Find("Environment_Manager").GetComponent<Comp_Environment_Manager>();
         transform_pool_environment = GameObject.Find("Pool_Environment").GetComponent<Transform>();
         comp_debug = GameObject.Find("Debug").GetComponent<Comp_Debug>();
-        
-        Error error = new Error();
-        string nameFile ="Escenario0";
-        bool is_ok = loadXML(nameFile);
-        if (!is_ok)
+        levels = new List<Level>();
+
+        loadXML("Escenario0");
+        //loadXML("Escenario1");
+        //loadXML("Escenario2");
+        //loadXML("Escenario3");
+
+
+    }
+
+    public void loadLevel(string nameLevel)
+    {
+        foreach (Level level in levels)
         {
-            Debug.LogError("El fichero " + nameFile + "falla!");
+            if (level.name == nameLevel)
+            {
+                comp_env_manager.resetCurrentScene(level);
+            }
         }
     }
 
@@ -170,13 +181,15 @@ public class EnvironmentManager
         if (OMF_Errors.ErrorCode.IS_OK != errorCode)
         {
             GameLogicManager.Instance.printErrorGame(errorCode);
+            Debug.LogError("El fichero Escenario0 falla!");
             return false;
         }
         return true;
     }
 
-    public void setScene(Escenari scene)
+    public void addScene(Level level)
     {
-        currentScene = scene;
+        levels.Add(level);
     }
+
 }

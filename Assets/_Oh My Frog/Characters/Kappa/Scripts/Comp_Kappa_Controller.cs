@@ -54,7 +54,7 @@ public class Comp_Kappa_Controller : MonoBehaviour
     private RigidbodyConstraints land_control_constraints;
 
     private Transform player_transform;
-    private Comp_ScrollBG clouds;
+   // private Comp_ScrollBG clouds;
 
     private GameObject spawner_Enemy_Objects = null;
 
@@ -85,7 +85,7 @@ public class Comp_Kappa_Controller : MonoBehaviour
         try
         {
             comp_debug = GameObject.Find("Debug").GetComponent<Comp_Debug>();
-            clouds = GameObject.Find("Sky").GetComponent<Comp_ScrollBG>();
+            //clouds = GameObject.Find("Sky").GetComponent<Comp_ScrollBG>();
             cc = GetComponent<CharacterController>();
 
             COMP_DASH_CONSTANTS = GetComponent<Comp_Dash_Constants>();
@@ -415,13 +415,13 @@ public class Comp_Kappa_Controller : MonoBehaviour
 
     private void dash()
     {
-        clouds.setScrollSpeed(EnvironmentManager.Instance.Clouds_Speed_Dash);
+        //clouds.setScrollSpeed(EnvironmentManager.Instance.Clouds_Speed_Dash);
         StartCoroutine(dashCoroutine());
     }
 
     private void stopDash()
     {
-        clouds.setScrollSpeed(EnvironmentManager.Instance.Clouds_Speed);
+        //clouds.setScrollSpeed(EnvironmentManager.Instance.Clouds_Speed);
     }
 
     private IEnumerator dashCoroutine()

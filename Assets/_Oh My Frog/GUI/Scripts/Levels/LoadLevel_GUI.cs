@@ -19,7 +19,8 @@ public class LoadLevel_GUI : MonoBehaviour {
         if(levelName.Equals("InGame"))
         {
             //guardar en playerprefs el nombre final de la scena
-            PlayerPrefs.SetString("level", levelName);
+            PlayerPrefs.SetString("ingame", levelName);
+            PlayerPrefs.SetString("stage", "beach");
             //por defecto se abre el loading scene
             Application.LoadLevel("Loading");
         }

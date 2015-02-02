@@ -5,7 +5,7 @@ using System.Text;
 
 public class Dificultat {
     int id;
-    float timer;
+    public float timer;
     public List<Granota> granotes;
     public List<Platform> plataformes;
     public List<Obstacle> obstacles;

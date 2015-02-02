@@ -33,32 +33,45 @@ public class Layer
 
     public void manageSpawner()
     {
-        //Provisional
-        //comp_Environment_manager.speed  i element.find<comp_environment_element>().length + timer random (1, 4)
-        if (timer <= 0.0f)
+        if (layerID != LAYER_ID.LAYER_0)
         {
-            bool trobat = false;
-            for (int i = 0; i < MAX_ITERATIONS && !trobat; i++)
+            if (timer <= 0.0f)
             {
-                int idx = UnityEngine.Random.Range(0, elements2D.Count);
-                if (!elements2D[idx].isActive)
+                bool trobat = false;
+                for (int i = 0; i < MAX_ITERATIONS && !trobat; i++)
                 {
-                    Vector3 v = new Vector3(transformInject.position.x, elements2D[idx].y, z);
-                    elements2D[idx].spawn(v);
-                    trobat = true;
-                    float dist = elements2D[idx].compElement.length + UnityEngine.Random.Range(elements2D[idx].compElement.minDist2NextElement, elements2D[idx].compElement.maxDist2NextElement);
-                    timer = dist  / -elements2D[idx].compElement.Speed;  //m / (m/s) = s;
+                    int idx = UnityEngine.Random.Range(0, elements2D.Count);
+                    if (!elements2D[idx].isActive)
+                    {
+                        Vector3 v = new Vector3(transformInject.position.x, elements2D[idx].y, z);
+                        elements2D[idx].spawn(v);
+                        trobat = true;
+                        float dist = elements2D[idx].compElement.length + UnityEngine.Random.Range(elements2D[idx].compElement.minDist2NextElement, elements2D[idx].compElement.maxDist2NextElement);
+                        timer = dist / -elements2D[idx].compElement.Speed;  //m / (m/s) = s;
+                    }
                 }
             }
-        }
-        else
-        {
-            timer -= Time.deltaTime;
+            else
+            {
+                timer -= Time.deltaTime;
+            }
         }
        
-        
     }
 
+
+    public void initSpawn()
+    {
+        float x;
+        if (this.layerID == LAYER_ID.LAYER_0)
+            x = 0;
+        else
+            x = UnityEngine.Random.Range(-5, 10);
+        int idx = UnityEngine.Random.Range(0, elements2D.Count);
+        elements2D[idx].spawn(new Vector3(x, elements2D[idx].y, z));
+        float dist = elements2D[idx].compElement.length + UnityEngine.Random.Range(elements2D[idx].compElement.minDist2NextElement, elements2D[idx].compElement.maxDist2NextElement) - x;
+        timer = 0;
+    }
 
 
 

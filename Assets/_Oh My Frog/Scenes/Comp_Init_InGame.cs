@@ -35,6 +35,8 @@ public class Comp_Init_InGame : MonoBehaviour
 
         GameLogicManager.CreateManager();
         EnvironmentManager.CreateManager();
+        //Provisional
+        EnvironmentManager.Instance.loadLevel("beach");
 
         //inicializar pool de enemys_obstacles
         /*Obstacle_Enemys_Manager.Instance.Initialize();

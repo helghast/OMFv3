@@ -9,7 +9,7 @@ using OMF_Errors;
 
 public class EnvironmentParser : BaseXMLParser
 {
-    Escenari escenari;
+    Level escenari;
     Dificultat dificultat;
     Obstacle obstacle;
     Enemy enemic;
@@ -25,7 +25,7 @@ public class EnvironmentParser : BaseXMLParser
     {
         if (elem == "Escenari")
         {
-            escenari = new Escenari(atts["nom"]);
+            escenari = new Level(atts["nom"]);
         }
         else if (elem == "Dificultat")
         {
@@ -131,7 +131,7 @@ public class EnvironmentParser : BaseXMLParser
         }
         else if (elem == "Escenari")
         {
-            EnvironmentManager.Instance.setScene(escenari);
+            EnvironmentManager.Instance.addScene(escenari);
         }
         else if (elem == "Escenaris")
         {

@@ -61,5 +61,6 @@ public class Comp_LoadLevel_From_Loading_Scene : MonoBehaviour {
     private void loadLevelFromPlayerPrefs()
     {
         Application.LoadLevel(PlayerPrefs.GetString("level"));
+        
     }
 }

@@ -46,6 +46,11 @@ public class Comp_Environment_Manager : MonoBehaviour
     public float Z_LAYER_8;
     public float Z_LAYER_9;
 
+    private float timerLevel;
+    private Level currentScene;
+    private int currentDificulty;
+
+
     void Awake()
     {
         Debug.Log("Awake Comp Environment Manager");
@@ -59,13 +64,15 @@ public class Comp_Environment_Manager : MonoBehaviour
     {
         // Aquí deberá ir el código que se encarga de spawnear los elementos de enviroment de manera aleatoria 
         // pero siguiendo algunas normas
-        EnvironmentManager.Instance.currentScene.manageSpawner();
+        timerLevel += Time.deltaTime;
+        checkChangeDificulty();
+        currentScene.manageSpawner();
+        
     }
 
     void LateUpdate()
     {
-        Escenari scene = EnvironmentManager.Instance.currentScene;
-        if (scene == null)
+        if (currentScene == null)
             return;
         /*
         for (int i = 0; i < scene.layers.Count; ++i)
@@ -84,5 +91,24 @@ public class Comp_Environment_Manager : MonoBehaviour
                     layer.Elements2D[j].setVisible(visible);
             }
         }*/
+    }
+    void checkChangeDificulty()
+    {
+        if (timerLevel > currentScene.dificultats[currentDificulty].timer)
+        {
+            if (currentDificulty < currentScene.dificultats.Count-1) {
+                ++currentDificulty;
+                Debug.Log("canvio de dificultat a: " + currentDificulty);
+            }
+            timerLevel = 0;
+        }
+    }
+
+    public void resetCurrentScene(Level scene)
+    {
+        currentScene = scene;
+        currentDificulty = 0;
+        timerLevel = 0;
+        currentScene.initSpawn();
     }
 }

@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class Escenari
+public class Level
 {
     public string name;
     public List<Dificultat> dificultats;
     public List<Layer> layers;
 
 
-    public Escenari(string name)
+    public Level(string name)
     {
         this.name = name;
         dificultats = new List<Dificultat>();
@@ -29,8 +29,18 @@ public class Escenari
 
     public void manageSpawner()
     {
-        foreach (Layer l in layers) {
+        foreach (Layer l in layers)
+        {
             l.manageSpawner();
+        }
+
+    }
+
+    public void initSpawn()
+    {
+        foreach (Layer l in layers)
+        {
+            l.initSpawn();
         }
 
     }

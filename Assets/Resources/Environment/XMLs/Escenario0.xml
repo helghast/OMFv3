@@ -1,6 +1,6 @@
 ﻿<Escenaris>
-  <Escenari nom="Beach">
-    <Dificultat id ="0" timer ="40">
+  <Escenari nom="beach">
+    <Dificultat id ="0" timer ="10">
       <Obstacles>
         <Obstacle nom ="boya" timer="1" percent ="75"></Obstacle>
       </Obstacles>
@@ -14,7 +14,7 @@
         <Granota color="verd" percent ="100"></Granota>
       </Granotes>
     </Dificultat>
-    <Dificultat id ="1" timer ="40">
+    <Dificultat id ="1" timer ="10">
       <Obstacles>
         <Obstacle nom ="boya" timer="1" percent ="75"></Obstacle>
         <Obstacle nom ="boya campana" timer="1" percent ="75"></Obstacle>
@@ -41,6 +41,9 @@
     9_player
     -->
     <Layers>
+      <Layer id ="0_sky_layer">
+        <Element2D nom ="sky"  y ="0" ></Element2D>
+      </Layer>
       <Layer id ="1_clouds_layer">
         <Element2D nom ="cloud_0"  y ="-2.5" ></Element2D>
         <Element2D nom ="cloud_1"  y ="-2.5" ></Element2D>
