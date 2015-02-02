@@ -69,7 +69,7 @@ public class Layer
             x = UnityEngine.Random.Range(-5, 10);
         int idx = UnityEngine.Random.Range(0, elements2D.Count);
         elements2D[idx].spawn(new Vector3(x, elements2D[idx].y, z));
-        float dist = elements2D[idx].compElement.length + UnityEngine.Random.Range(elements2D[idx].compElement.minDist2NextElement, elements2D[idx].compElement.maxDist2NextElement) - x;
+        float dist = elements2D[idx].compElement.length + UnityEngine.Random.Range(elements2D[idx].compElement.minDist2NextElement, elements2D[idx].compElement.maxDist2NextElement);
         timer = 0;
     }
 

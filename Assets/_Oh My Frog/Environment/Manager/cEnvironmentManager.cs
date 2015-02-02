@@ -29,8 +29,7 @@ public class EnvironmentManager
     //-----------------------------------------------
     private Comp_Environment_Manager comp_env_manager;
 
-    private List<Level> levels;
-
+    private Level currentLevel;
 
     public Transform transform_pool_environment;
     private Comp_Debug comp_debug;
@@ -47,25 +46,12 @@ public class EnvironmentManager
         comp_env_manager = GameObject.Find("Environment_Manager").GetComponent<Comp_Environment_Manager>();
         transform_pool_environment = GameObject.Find("Pool_Environment").GetComponent<Transform>();
         comp_debug = GameObject.Find("Debug").GetComponent<Comp_Debug>();
-        levels = new List<Level>();
-
-        loadXML("Escenario0");
-        //loadXML("Escenario1");
-        //loadXML("Escenario2");
-        //loadXML("Escenario3");
-
-
     }
 
     public void loadLevel(string nameLevel)
     {
-        foreach (Level level in levels)
-        {
-            if (level.name == nameLevel)
-            {
-                comp_env_manager.resetCurrentScene(level);
-            }
-        }
+        loadXML(nameLevel);
+        comp_env_manager.resetCurrentScene(currentLevel);
     }
 
     //-----------------------------------------------
@@ -187,9 +173,9 @@ public class EnvironmentManager
         return true;
     }
 
-    public void addScene(Level level)
+    public void setScene(Level level)
     {
-        levels.Add(level);
+        currentLevel = level;
     }
 
 }

@@ -1,0 +1,102 @@
+﻿<Escenaris>
+  <Escenari nom="cueva">
+    <Dificultat id ="0" timer ="10">
+      <Obstacles>
+        <Obstacle nom ="boya" timer="1" percent ="75"></Obstacle>
+      </Obstacles>
+      <Enemics>
+        <Enemic nom ="pinguino" timer ="1" percent ="25"></Enemic>
+      </Enemics>
+      <Plataformes>
+        <Plataforma tipus ="c"></Plataforma>
+      </Plataformes>
+      <Granotes>
+        <Granota color="verd" percent ="100"></Granota>
+      </Granotes>
+    </Dificultat>
+    <Dificultat id ="1" timer ="10">
+      <Obstacles>
+        <Obstacle nom ="boya" timer="1" percent ="75"></Obstacle>
+        <Obstacle nom ="boya campana" timer="1" percent ="75"></Obstacle>
+      </Obstacles>
+      <Enemics>
+        <Enemic nom ="pinguino"  timer ="1" percent ="25"></Enemic>
+        <Enemic nom ="vaixell pirata" timer ="1" percent ="25"></Enemic>
+      </Enemics>
+      <Plataformes>
+        <Plataforma tipus ="c"></Plataforma>
+      </Plataformes>
+      <Granotes>
+        <Granota color="verd" percent ="100"></Granota>
+      </Granotes>
+    </Dificultat>
+    <!--
+    0_sky
+    1_clouds
+    2_far_mountains
+    3_mountains
+    4_islands
+    5_ships
+    6_corals
+    9_player
+    -->
+    <Layers>
+      <Layer id ="0_sky_layer">
+        <Element2D nom ="sky"  y ="0" ></Element2D>
+      </Layer>
+      <Layer id ="1_clouds_layer">
+        <Element2D nom ="cloud_0"  y ="-2.5" ></Element2D>
+        <Element2D nom ="cloud_1"  y ="-2.5" ></Element2D>
+        <Element2D nom ="cloud_2"  y ="-2.5" ></Element2D>
+        <Element2D nom ="cloud_3"  y ="-2.5" ></Element2D>
+      </Layer>
+      <Layer id ="2_far_mountains_layer">
+        <Element2D nom ="far_mountain_0"  y ="-2.2" ></Element2D>
+        <Element2D nom ="far_mountain_1"  y ="-2.2" ></Element2D>
+        <Element2D nom ="far_mountain_2"  y ="-2.2" ></Element2D>
+        <Element2D nom ="far_mountain_3"  y ="-2.2" ></Element2D>
+      </Layer>
+      <Layer id ="3_mountains_layer">
+        <Element2D nom ="mountain_0"      y ="-2" ></Element2D>
+        <Element2D nom ="mountain_1"      y ="-2" ></Element2D>
+        <Element2D nom ="mountain_2"      y ="-2" ></Element2D>
+        <Element2D nom ="mountain_3"      y ="-2" ></Element2D>
+        <Element2D nom ="mountain_4"      y ="-2" ></Element2D>
+        <Element2D nom ="mountain_5"      y ="-2" ></Element2D>
+      </Layer>
+      <Layer id ="4_island_layer">
+        <Element2D nom ="island_0"        y ="-2" ></Element2D>
+        <Element2D nom ="island_1"        y ="-2" ></Element2D>
+        <Element2D nom ="island_2"        y ="-2" ></Element2D>
+        <Element2D nom ="island_3"        y ="-2" ></Element2D>
+      </Layer>
+      <Layer id ="5_ship_layer">
+        <Element2D nom ="ship_0"          y ="-1.9" ></Element2D>
+        <Element2D nom ="ship_1"          y ="-1.9" ></Element2D>
+        <Element2D nom ="ship_2"          y ="-1.9" ></Element2D>
+      </Layer>
+      <Layer id ="6_planes_layer">
+        <Element2D nom ="plane_0"          y ="2.8" ></Element2D>
+       </Layer>
+    </Layers>
+    <Layer id ="7_coral_layer">
+      <Element2D nom ="coral_0"        y ="-3.2" ></Element2D>
+      <Element2D nom ="coral_1"        y ="-3.2" ></Element2D>
+      <Element2D nom ="coral_2"        y ="-3.2" ></Element2D>
+      <Element2D nom ="coral_3"        y ="-3.2" ></Element2D>
+      <Element2D nom ="coral_4"        y ="-3.2" ></Element2D>
+      <Element2D nom ="coral_5"        y ="-3.2" ></Element2D>
+      <Element2D nom ="coral_6"        y ="-3.2" ></Element2D>
+      <Element2D nom ="coral_7"        y ="-3.2" ></Element2D>
+      <Element2D nom ="coral_8"        y ="-3.2" ></Element2D>
+      <Element2D nom ="coral_9"        y ="-3.2" ></Element2D>
+      <Element2D nom ="coral_10"       y ="-3.2" ></Element2D>
+      <Element2D nom ="coral_11"       y ="-3.2" ></Element2D>
+      <Element2D nom ="coral_12"       y ="-3.2" ></Element2D>
+      <Element2D nom ="coral_13"       y ="-3.2" ></Element2D>
+      <Element2D nom ="coral_14"       y ="-3.2" ></Element2D>
+      <Element2D nom ="coral_15"       y ="-3.2" ></Element2D>
+      <Element2D nom ="coral_16"       y ="-3.2" ></Element2D>
+    </Layer>
+  </Escenari>
+</Escenaris>

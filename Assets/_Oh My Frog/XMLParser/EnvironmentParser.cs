@@ -131,7 +131,7 @@ public class EnvironmentParser : BaseXMLParser
         }
         else if (elem == "Escenari")
         {
-            EnvironmentManager.Instance.addScene(escenari);
+            EnvironmentManager.Instance.setScene(escenari);
         }
         else if (elem == "Escenaris")
         {
