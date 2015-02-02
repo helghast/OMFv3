@@ -31,10 +31,11 @@ public class Level
     {
         foreach (Layer l in layers)
         {
-            l.manageSpawner();
+            l.manageElements2D();
         }
 
     }
+
 
     public void initSpawn()
     {

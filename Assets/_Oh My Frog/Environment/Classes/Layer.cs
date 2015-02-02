@@ -31,7 +31,7 @@ public class Layer
         elements2D.Add(element);
     }
 
-    public void manageSpawner()
+    public void manageElements2D()
     {
         if (layerID != LAYER_ID.LAYER_0)
         {
@@ -56,9 +56,7 @@ public class Layer
                 timer -= Time.deltaTime;
             }
         }
-       
     }
-
 
     public void initSpawn()
     {
