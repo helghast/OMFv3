@@ -42,10 +42,7 @@ public class Element2D
                 compElement.Speed = EnvironmentManager.Instance.SpeedLayer1;
                 break;
             case LAYER_ID.LAYER_2:
-                float f = EnvironmentManager.Instance.SpeedLayer2;
                 compElement.Speed = EnvironmentManager.Instance.SpeedLayer2;
-                float s = compElement.Speed;
-                int x = 0;
                 break;
             case LAYER_ID.LAYER_3:
                 compElement.Speed = EnvironmentManager.Instance.SpeedLayer3;

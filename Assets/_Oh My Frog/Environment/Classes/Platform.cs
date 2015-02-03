@@ -6,7 +6,7 @@ using System.Text;
 
 public class Platform
 {
-    string type;
+    public string type;
 
     public Platform(string type)
     {

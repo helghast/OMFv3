@@ -12,16 +12,6 @@ public class Comp_Environment_Manager : MonoBehaviour
     public float FRONT_WATER_MULT; // GAME LAYER?
     public float VERTICAL_WATER_MULT;
 
-    /*
-    public float BACK_BACKGROUND_MULT;
-    public float MID_BACKGROUND_MULT;
-    public float FRONT_BACKGROUND_MULT;
-    */
-    
-
-    //public float FOREGORUND_MULT;
-
-
     public float SPEED_DASH_MULTIPLIER;
 
     public float SPEED_LAYER_0;
@@ -49,6 +39,7 @@ public class Comp_Environment_Manager : MonoBehaviour
     private float timerLevel;
     private Level currentScene;
     private int currentDificulty;
+    private float timer2NextObject;
 
 
     void Awake()
@@ -65,9 +56,9 @@ public class Comp_Environment_Manager : MonoBehaviour
         // Aquí deberá ir el código que se encarga de spawnear los elementos de enviroment de manera aleatoria 
         // pero siguiendo algunas normas
         timerLevel += Time.deltaTime;
+        manageElements3D();
         checkChangeDificulty();
         currentScene.manageSpawner();
-        
     }
 
     void LateUpdate()
@@ -92,9 +83,10 @@ public class Comp_Environment_Manager : MonoBehaviour
             }
         }*/
     }
+
     void checkChangeDificulty()
     {
-        if (timerLevel > currentScene.dificultats[currentDificulty].timer)
+        if (timerLevel > currentScene.dificultats[currentDificulty].timeDificulty)
         {
             if (currentDificulty < currentScene.dificultats.Count-1) {
                 ++currentDificulty;
@@ -104,11 +96,38 @@ public class Comp_Environment_Manager : MonoBehaviour
         }
     }
 
+    void manageElements3D()
+    {
+        timer2NextObject -= Time.deltaTime;
+        if (timer2NextObject <= 0)
+        {
+            float timeDificulty = currentScene.dificultats[currentDificulty].timeDificulty;
+
+            if (timerLevel < timeDificulty - 2)
+            {
+                int random = UnityEngine.Random.Range(0, 100);
+                if (random < currentScene.dificultats[currentDificulty].percentObstacles)
+                {
+                    timer2NextObject = currentScene.dificultats[currentDificulty].injectObstacle(random);
+                }
+                else
+                {
+                    timer2NextObject = currentScene.dificultats[currentDificulty].injectEnemy(random);
+                }
+            }
+            else
+            {
+                timer2NextObject = currentScene.dificultats[currentDificulty].injectPlatform();
+            }
+        }
+    }
+
     public void resetCurrentScene(Level scene)
     {
         currentScene = scene;
         currentDificulty = 0;
         timerLevel = 0;
         currentScene.initSpawn();
+        timer2NextObject = 0;
     }
 }

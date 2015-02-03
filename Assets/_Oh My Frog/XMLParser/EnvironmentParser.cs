@@ -100,7 +100,6 @@ public class EnvironmentParser : BaseXMLParser
                     break;
                 default:
                     return ErrorCode.LAYER_NOT_DEFINED;
-                    break;
             }
         }
         else if (elem == "Element2D")

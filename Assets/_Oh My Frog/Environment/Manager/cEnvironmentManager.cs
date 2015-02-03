@@ -32,6 +32,7 @@ public class EnvironmentManager
     private Level currentLevel;
 
     public Transform transform_pool_environment;
+
     private Comp_Debug comp_debug;
     //-----------------------------------------------
     //  FUNCTIONS
@@ -167,7 +168,7 @@ public class EnvironmentManager
         if (OMF_Errors.ErrorCode.IS_OK != errorCode)
         {
             GameLogicManager.Instance.printErrorGame(errorCode);
-            Debug.LogError("El fichero Escenario0 falla!");
+            Debug.LogError("El fichero " + xmlName + " falla!");
             return false;
         }
         return true;

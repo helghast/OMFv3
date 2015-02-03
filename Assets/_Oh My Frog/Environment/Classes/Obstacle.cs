@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 
 public class Obstacle {
-    string nom;
-    float percent;
-    float baseTimer;
+    public string nom;
+    public float percent;
+    public float baseTimer;
 
     public Obstacle(string nom, float percent, float baseTimer)
     {
