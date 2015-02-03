@@ -1,5 +1,5 @@
 ﻿//#define IOS_DEVELOPMENT
-#define ANDROID_DEVELOPMENT
+#define ANDROID_DEVELOPMENT //https://github.com/playgameservices/play-games-plugin-for-unity
 
 using UnityEngine;
 using UnityEngine.SocialPlatforms;
@@ -12,15 +12,22 @@ using GooglePlayGames.BasicApi;
 using GooglePlayGames.BasicApi.SavedGame;
 using GooglePlayGames.BasicApi.Multiplayer;
 
-
 public delegate void InvitationCallback();
 public delegate void TurnBasedNotificationCallback();
+
+public enum GAME_STATE_OPERATION
+{
+    NONE,
+    SAVING,
+    WRITTING
+}
 
 public static class ConnectivityManager
 {
     public static cIAP EIAP;
     public static cCloudGameState ECloudGameState;
     public static cSocial ESocial;
+    public static GAME_STATE_OPERATION eOperation;
 
     public enum eANDROID_CLOUD_SLOTS
     {
@@ -33,6 +40,7 @@ public static class ConnectivityManager
     static ConnectivityManager()
     {
         Debug.Log("Constructor");
+        eOperation = GAME_STATE_OPERATION.NONE;
     }
 
     public static void InitializeConnectivity()
@@ -67,6 +75,8 @@ public static class ConnectivityManager
         // recommended for debugging:
         PlayGamesPlatform.DebugLogEnabled = true;
         PlayGamesPlatform.Activate();
+
+        Debug.Log("ELEP - CloudServices initialized");
     }
 
     private static void onInvitation()
@@ -78,7 +88,6 @@ public static class ConnectivityManager
     {
         // empty for now :p
     }
-
 
     // --------------------------------------------------------------------------------------------------------------------------------------------------
     // SIGN IN: Autentifica al jugador con el servicio al que pertenece (GooglePlay o iOS GameCenter)
@@ -122,6 +131,10 @@ public static class ConnectivityManager
         if (status == SavedGameRequestStatus.Success)
         {
             // handle reading or writing of saved game.
+            TimeSpan totalPlaytime = TimeSpan.MinValue;
+            byte[] savedData = SerializeGameState(ECloudGameState);
+            SaveGameState(game, savedData, totalPlaytime);
+
         }
         else
         {
@@ -133,7 +146,7 @@ public static class ConnectivityManager
     // SAVE GAME: Guarda el GameState en la nube.
     //        byte[] savedData: array de bytes que contiene mi GameState propio de OMF serializado
     // -------------------------------------------------------------------------------------------
-    public static void SaveGameState(ISavedGameMetadata game, byte[] savedData, TimeSpan totalPlaytime)
+    private static void SaveGameState(ISavedGameMetadata game, byte[] savedData, TimeSpan totalPlaytime)
     {
         ISavedGameClient savedGameClient = PlayGamesPlatform.Instance.SavedGame;
 
@@ -155,14 +168,31 @@ public static class ConnectivityManager
         savedGameClient.CommitUpdate(game, updatedMetadata, savedData, OnSavedGameWritten);
     }
 
+    // -------------------------------------------------------------------------------------------
+    // SAVE GAME: Guarda el GameState en la nube.
+    //        byte[] savedData: array de bytes que contiene mi GameState propio de OMF serializado
+    // -------------------------------------------------------------------------------------------
+    //public static void SaveCurrentGameState(ISavedGameMetadata game)
+    public static void SaveCurrentGameState()
+    {
+        TimeSpan totalPlaytime;
+
+        eOperation = GAME_STATE_OPERATION.WRITTING;
+
+        // Abre el juego guardado, si tiene exito se ejecuta el callback "OnSavedGameOpened"
+        OpenSavedGame("omg_saved_game");
+    }
+
     public static void OnSavedGameWritten(SavedGameRequestStatus status, ISavedGameMetadata game)
     {
         if (status == SavedGameRequestStatus.Success)
         {
             // handle reading or writing of saved game.
+            GameObject.Find("Debug").GetComponent<Comp_Debug>().addDebugMessage("Game was written!");
         }
         else
         {
+            GameObject.Find("Debug").GetComponent<Comp_Debug>().addDebugMessage("Error saving game!");
             // handle error
         }
     }
@@ -211,6 +241,7 @@ public static class ConnectivityManager
 
     public static void FillGameState()
     {
+        // Test
         ECloudGameState.total_cocktails = 0;
         ECloudGameState.total_frogs = 1;
         ECloudGameState.total_mangos = 65;

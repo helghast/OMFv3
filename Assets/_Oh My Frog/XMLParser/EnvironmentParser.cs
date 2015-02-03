@@ -6,7 +6,6 @@ using UnityEngine;
 using OMF_Environment;
 using OMF_Errors;
 
-
 public class EnvironmentParser : BaseXMLParser
 {
     Level escenari;

@@ -180,6 +180,11 @@ public class Comp_Debug : MonoBehaviour
             }*/
         }
 
+        if (GUILayout.Button("Save Game2Cloud"))
+        {
+            ConnectivityManager.SaveCurrentGameState();
+        }
+
         /*
         if (GUILayout.Button("Show surfboard"))
         {
