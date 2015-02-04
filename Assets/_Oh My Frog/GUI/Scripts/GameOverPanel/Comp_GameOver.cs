@@ -14,50 +14,19 @@ public class Comp_GameOver : MonoBehaviour
     public Text buttonClose = null;
 
     //temporales
-    private Text[] tempTextArray = null;
-    private GameObject go = null;
-    private GameObject total = null;
     private int sumValues = 0;
     private float timer = 5f;
 
+    //lista para guardar la cantidad de rows a generar
+    private List<GameObject> entrys = null;
+    //lista de ejemplo. En verdad se cogeran las puntuaciones de otro sitio (playerprefs?)
     public string[] scoreElements = new string[] { "Mangos", "Frogs", "Total Distance" };
     //los dictionarys no son serializables y por tanto no se ven en el editor, aunque sean publicos
-    //public Dictionary<string, int> mapScoreElements = new Dictionary<string, int>();
-
-    //las structs si se ven en el editor si se serializan.
-    [System.Serializable]
-    public struct NamedScore
-    {
-        //public para que se vean en el editor
-        public string skey;
-        public int svalue;
-        //constructor de la struct
-        public NamedScore(string k, int v)
-        {
-            skey = k;
-            svalue = v;
-        }
-
-        //getter
-        public string Key
-        {
-            get { return skey; }
-            set { skey = value; }
-        }
-        //setter
-        public int Value
-        {
-            get { return svalue; }
-            set { svalue = value; }
-        }
-    }
-    public NamedScore[] structScoreElements = null;
+    public Dictionary<string, int> mapScoreElements = null;
 
     void Awake()
     {
-        structScoreElements = new NamedScore[scoreElements.Length];
-        //llenar la struct de puntuaciones
-        //fillStruct();
+        entrys = new List<GameObject>();
 
         //si no se indican en el editor los Text y el Panel que los contiene, buscarlos a mano
         if(panelScores == null)
@@ -80,8 +49,7 @@ public class Comp_GameOver : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        fillStruct();
-        fillScorePanel();
+        
     }
 
     // Update is called once per frame
@@ -106,71 +74,81 @@ public class Comp_GameOver : MonoBehaviour
     //cuando se clicka en el boton de prueba para ver el gameover panel
     public void showStructContent()
     {
-        if(structScoreElements.Length == 0)
+        fillMap();
+        fillScorePanelMap();
+
+        if(mapScoreElements.Count == 0)
         {
-            Debug.Log("Vacio");
+            Debug.Log("Mapa de scores vacio. Quizas deba indicar una lista de elementos de score");
         }
-        else
-        {
-            foreach(NamedScore item in structScoreElements)
-            {
-                Debug.Log(item.Key + " " + item.Value);
-            }
-        }
+
         isGameOverButtonClicked = true;
     }
 
     //cuando se clicka sobre cualquiera de los botones de close/return del panel gameover
     public void closePanel()
     {
+        //destruir y/o poner a null objetos y listas y arrays. 
+        //poner a valores iniciales los floats e ints.
         isGameOverButtonClicked = false;
         timer = 5f;
+        sumValues = 0;
+        foreach(GameObject item in entrys)
+        {
+            Destroy(item);
+        }
+        entrys.Clear();
         panelWhatToDo.SetActive(false);
     }
 
-    public void fillScorePanel()
+    //metodo llamado cuando se ha de mostrar el panel de scores.
+    public void fillMap()
     {
-        //por la cantidad de elementos de la struct
-        for(int i = 0; i < structScoreElements.Length; i++)
+        mapScoreElements = new Dictionary<string, int>();
+        for(int i = 0; i < scoreElements.Length; i++)
         {
-            //instanciamos a partir del prefab
-            go = (GameObject) Instantiate(entryScorePrefab);
-            //colgarlos del panel padre a rellenar
-            go.transform.SetParent(panelScores.transform, false);
-
-            tempTextArray = go.GetComponentsInChildren<Text>();
-            //solo hay 2, el nombre(0) y el value(0)
-            tempTextArray[0].name = structScoreElements[i].Key;
-            tempTextArray[0].GetComponent<Text>().text = structScoreElements[i].Key;
-            tempTextArray[1].name = structScoreElements[i].Value.ToString();
-            tempTextArray[1].GetComponent<Text>().text = structScoreElements[i].Value.ToString();
-            sumValues = sumValues + structScoreElements[i].Value;
+            mapScoreElements.Add(scoreElements[i], 100 * (i + 1));
         }
+    }
+
+    //metodo llamado cuando se ha de mostrar la tabla de escores. Se rehace cada vez que se abre dicho panel
+    public void fillScorePanelMap()
+    {
+        Text[] tempTextArray = null;
+        GameObject go = null;
+        foreach(KeyValuePair<string, int> item in mapScoreElements)
+        {
+            go = (GameObject) Instantiate(entryScorePrefab);
+            go.transform.SetParent(panelScores.transform, false);
+            tempTextArray = go.GetComponentsInChildren<Text>();
+            tempTextArray[0].name = item.Key;
+            tempTextArray[0].GetComponent<Text>().text = item.Key;
+            tempTextArray[1].name = item.Value.ToString();
+            tempTextArray[1].GetComponent<Text>().text = item.Value.ToString();
+            sumValues = sumValues + item.Value;
+            entrys.Add(go);
+        }
+
         //para sumar el total
-        total = (GameObject) Instantiate(entryScorePrefab);
-        total.transform.SetParent(panelScores.transform, false);
-        tempTextArray = total.GetComponentsInChildren<Text>();
+        go = (GameObject) Instantiate(entryScorePrefab);
+        go.transform.SetParent(panelScores.transform, false);
+        tempTextArray = go.GetComponentsInChildren<Text>();
         tempTextArray[0].name = "Total";
         tempTextArray[0].GetComponent<Text>().text = "Total";
         tempTextArray[1].name = sumValues.ToString();
         tempTextArray[1].GetComponent<Text>().text = sumValues.ToString();
         tempTextArray[0].GetComponent<Text>().resizeTextForBestFit = true;
         tempTextArray[1].GetComponent<Text>().resizeTextForBestFit = true;
+        //guardar total en la list
+        entrys.Add(go);
     }
 
-    public void fillStruct()
-    {
-        for(int i = 0; i < structScoreElements.Length; i++)
-        {
-            structScoreElements[i] = new NamedScore(scoreElements[i], 100 * (i + 1));
-        }
-    }
-
+    //metodo para llenar el titulo del popup al cabo de xsegs
     public void fillPaneltitle_WTD()
     {
         //llenar tambien los text de la ventana que aparecera en xsegs
         //tambien tiene 2 texts
-        tempTextArray = panelWTDTitle.GetComponentsInChildren<Text>();
+        Text[] tempTextArray = panelWTDTitle.GetComponentsInChildren<Text>();
         tempTextArray[0].GetComponent<Text>().text = "New Score";
         tempTextArray[1].GetComponent<Text>().text = sumValues.ToString();
     }
