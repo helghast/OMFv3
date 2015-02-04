@@ -32,6 +32,9 @@ public class EnvironmentManager
     private Level currentLevel;
 
     public Transform transform_pool_environment;
+    public Transform transform_pool_obstacles;
+    public Dictionary<string, Comp_Environment_Obstacle> obstacles;
+
 
     private Comp_Debug comp_debug;
     //-----------------------------------------------
@@ -46,7 +49,10 @@ public class EnvironmentManager
     {
         comp_env_manager = GameObject.Find("Environment_Manager").GetComponent<Comp_Environment_Manager>();
         transform_pool_environment = GameObject.Find("Pool_Environment").GetComponent<Transform>();
+        transform_pool_obstacles = GameObject.Find("Pool_Obstacles").GetComponent<Transform>();
         comp_debug = GameObject.Find("Debug").GetComponent<Comp_Debug>();
+        obstacles = new Dictionary<string, Comp_Environment_Obstacle>();
+
     }
 
     public void loadLevel(string nameLevel)

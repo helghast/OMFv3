@@ -35,10 +35,19 @@ public class EnvironmentParser : BaseXMLParser
         }
         else if (elem == "Obstacle")
         {
+            string name = atts["nom"];
             float btimer = Convert.ToSingle(atts["timer"]);
             float perc = Convert.ToSingle(atts["percent"]);
             percent += perc;
-            obstacle = new Obstacle(atts["nom"], perc, btimer);
+            obstacle = new Obstacle(name, perc, btimer);
+            if (!EnvironmentManager.Instance.obstacles.ContainsKey(name))
+            {
+                string path = "Environment/" + escenari.name + "/Obstacles/" + name + "/Prefab/" + name;
+                GameObject go = EPrefabManager.LoadPrefab(path, EnvironmentManager.Instance.transform_pool_obstacles);
+                if (go == null)
+                    return ErrorCode.GO_NOT_FOUND;
+                EnvironmentManager.Instance.obstacles[name] = go.GetComponent<Comp_Environment_Obstacle>();
+            }
             dificultat.addObstacle(obstacle);
         }
         else if (elem == "Enemic")

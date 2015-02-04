@@ -8,7 +8,6 @@ public class Level
     public string name;
     public List<Dificultat> dificultats;
     public List<Layer> layers;
-    public Dictionary<string, Comp_Environment_Obstacle> obstacles;
 
 
     public Level(string name)

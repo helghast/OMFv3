@@ -58,7 +58,7 @@ public class Dificultat {
                 Debug.Log("inject enemy " + enemy.nom);
                 return enemy.baseTimer;
         }
-        return -1;
+        return 0;
     }
 
     public float injectObstacle(int random)
@@ -67,17 +67,23 @@ public class Dificultat {
         foreach (Obstacle obstacle in obstacles)
         {
             if (random < obstacle.percent)
-                Debug.Log("inject obstacle " + obstacle.nom);
+            {
+                Debug.Log("inject obstacle " + obstacle.name);
+                EnvironmentManager.Instance.obstacles[obstacle.name].spawn();
                 return obstacle.baseTimer;
+            }
         }
-        return -1;
+        return 0;
 
     }
 
     public float injectPlatform()
     {
-        int idxPlatform = UnityEngine.Random.Range(0, plataformes.Count-1);
-        Debug.Log("inject platform" + plataformes[idxPlatform].type + idxPlatform.ToString());
-        return 3;
+        if (plataformes.Count != 0) { 
+            int idxPlatform = UnityEngine.Random.Range(0, plataformes.Count-1);
+            Debug.Log("inject platform" + plataformes[idxPlatform].type + idxPlatform.ToString());
+            return 3;
+        }
+        return 0;
     }
 }
