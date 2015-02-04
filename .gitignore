@@ -22,3 +22,4 @@ Build/
 !Library/metadata/
 /Temp/
 /obj/
+*.userprefs

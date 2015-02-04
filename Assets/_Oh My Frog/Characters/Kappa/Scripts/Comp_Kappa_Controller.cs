@@ -254,6 +254,7 @@ public class Comp_Kappa_Controller : MonoBehaviour
         {
             if (comp_debug.EntradaTactil)
             {
+                Debug.Log("tactil");
                 // Touch control
                 UpdateTouchMotion();
                 UpdateTouchActions();

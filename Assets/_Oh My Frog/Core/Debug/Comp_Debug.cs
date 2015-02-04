@@ -95,7 +95,6 @@ public class Comp_Debug : MonoBehaviour
 
     void OnGUI()
     {
-
         drawTestHUD();
         if (!debug_on)
             return;
@@ -221,7 +220,6 @@ public class Comp_Debug : MonoBehaviour
         if (!in_app_testing)
             return;
 
-        EntradaTactil = false;
         achievement_testing = false;
 
         GUILayout.BeginArea(new Rect(Screen.width - 210, 10, 200, Screen.height));
@@ -310,7 +308,7 @@ public class Comp_Debug : MonoBehaviour
 
     public void drawDebugMenuOptions()
     {
-        GUILayout.BeginArea(new Rect(10, 110, 200, 100));
+        GUILayout.BeginArea(new Rect(10, 110, 200, 300));
         GUILayout.BeginVertical("box");
 
         if (GUILayout.Button("Add coinGroup"))
@@ -336,14 +334,12 @@ public class Comp_Debug : MonoBehaviour
         achievement_testing = GUILayout.Toggle(achievement_testing, "Achievements");
         if (achievement_testing)
         {
-            EntradaTactil = false;
             in_app_testing = false;
         }
 
         in_app_testing = GUILayout.Toggle(in_app_testing, "InAppPurchase");
         if (in_app_testing)
         {
-            EntradaTactil = false;
             achievement_testing = false;
         }
 
@@ -355,8 +351,6 @@ public class Comp_Debug : MonoBehaviour
     {
         if (!achievement_testing)
             return;
-
-        EntradaTactil = false;
 
         GUILayout.BeginArea(new Rect(Screen.width - 210, 10, 200, Screen.height));
         GUILayout.BeginVertical("box");

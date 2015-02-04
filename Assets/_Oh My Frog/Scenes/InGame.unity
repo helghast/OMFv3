@@ -306,7 +306,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &25336772
 Transform:
   m_ObjectHideFlags: 0
@@ -1445,14 +1445,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68f076e00ed2b9041b9be38d9e315ab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollType: 8
-  SMOOTH_TIME_SCROLL_SPEED: .100000001
-  scroll_direction: {x: 1, y: 0}
-  current_scroll_speed: 0
-  target_scroll_speed: 0
-  uv_offset: {x: 0, y: 0}
-  scroll_speed_velocity: 0
-  custom_repeat_value: 0
 --- !u!1 &208486583
 GameObject:
   m_ObjectHideFlags: 0
@@ -1752,6 +1744,22 @@ Prefab:
     - target: {fileID: 400000, guid: ef8dfec55e06eb04d8dd26e651b80521, type: 2}
       propertyPath: m_RootOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: ef8dfec55e06eb04d8dd26e651b80521, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: ef8dfec55e06eb04d8dd26e651b80521, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: ef8dfec55e06eb04d8dd26e651b80521, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: ef8dfec55e06eb04d8dd26e651b80521, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ef8dfec55e06eb04d8dd26e651b80521, type: 2}
@@ -3067,6 +3075,7 @@ CanvasGroup:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 426696036}
+  m_Enabled: 1
   m_Alpha: 1
   m_Interactable: 1
   m_BlocksRaycasts: 1
@@ -3192,6 +3201,10 @@ Prefab:
     - target: {fileID: 400000, guid: 24d989f2eb8009f4ab5943713cfdb3e9, type: 2}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 24d989f2eb8009f4ab5943713cfdb3e9, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 24d989f2eb8009f4ab5943713cfdb3e9, type: 2}
@@ -5211,14 +5224,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68f076e00ed2b9041b9be38d9e315ab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollType: 7
-  SMOOTH_TIME_SCROLL_SPEED: .100000001
-  scroll_direction: {x: 1, y: 0}
-  current_scroll_speed: 0
-  target_scroll_speed: 0
-  uv_offset: {x: 0, y: 0}
-  scroll_speed_velocity: 0
-  custom_repeat_value: 0
 --- !u!1 &749901433
 GameObject:
   m_ObjectHideFlags: 0
@@ -6703,7 +6708,6 @@ MonoBehaviour:
   m_Script: {fileID: 1301386320, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Priority: 3
   ignoreReversedGraphics: 1
   blockingObjects: 0
   m_BlockingMask:
@@ -7164,14 +7168,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68f076e00ed2b9041b9be38d9e315ab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollType: 6
-  SMOOTH_TIME_SCROLL_SPEED: .100000001
-  scroll_direction: {x: 1, y: 0}
-  current_scroll_speed: 0
-  target_scroll_speed: 0
-  uv_offset: {x: 0, y: 0}
-  scroll_speed_velocity: 0
-  custom_repeat_value: 0
 --- !u!1 &1012814046
 GameObject:
   m_ObjectHideFlags: 0
@@ -7797,14 +7793,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68f076e00ed2b9041b9be38d9e315ab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollType: 9
-  SMOOTH_TIME_SCROLL_SPEED: .100000001
-  scroll_direction: {x: 1, y: 0}
-  current_scroll_speed: 0
-  target_scroll_speed: 0
-  uv_offset: {x: 0, y: 0}
-  scroll_speed_velocity: 0
-  custom_repeat_value: 0
 --- !u!23 &1141870979
 Renderer:
   m_ObjectHideFlags: 0
@@ -9669,7 +9657,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1458658369
 Transform:
   m_ObjectHideFlags: 0
