@@ -140,7 +140,6 @@ CanvasGroup:
     type: 2}
   m_PrefabInternal: {fileID: 2079928264}
   m_GameObject: {fileID: 1022580}
-  m_Enabled: 1
   m_Alpha: 1
   m_Interactable: 1
   m_BlocksRaycasts: 1
@@ -1498,7 +1497,6 @@ CanvasGroup:
     type: 2}
   m_PrefabInternal: {fileID: 2079928264}
   m_GameObject: {fileID: 86650567}
-  m_Enabled: 1
   m_Alpha: 1
   m_Interactable: 1
   m_BlocksRaycasts: 1
@@ -2066,7 +2064,6 @@ CanvasGroup:
     type: 2}
   m_PrefabInternal: {fileID: 2079928264}
   m_GameObject: {fileID: 114054119}
-  m_Enabled: 1
   m_Alpha: 1
   m_Interactable: 1
   m_BlocksRaycasts: 1
@@ -4040,7 +4037,6 @@ CanvasGroup:
     type: 2}
   m_PrefabInternal: {fileID: 2079928264}
   m_GameObject: {fileID: 279235850}
-  m_Enabled: 1
   m_Alpha: 1
   m_Interactable: 1
   m_BlocksRaycasts: 1
@@ -5060,7 +5056,6 @@ CanvasGroup:
     type: 2}
   m_PrefabInternal: {fileID: 2079928264}
   m_GameObject: {fileID: 343131975}
-  m_Enabled: 1
   m_Alpha: 1
   m_Interactable: 1
   m_BlocksRaycasts: 1
@@ -6052,6 +6047,7 @@ MonoBehaviour:
   m_Script: {fileID: 1301386320, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Priority: 3
   ignoreReversedGraphics: 1
   blockingObjects: 0
   m_BlockingMask:
@@ -6101,7 +6097,6 @@ CanvasGroup:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 412008676}
-  m_Enabled: 1
   m_Alpha: 1
   m_Interactable: 1
   m_BlocksRaycasts: 1
@@ -7227,7 +7222,6 @@ CanvasGroup:
     type: 2}
   m_PrefabInternal: {fileID: 2079928264}
   m_GameObject: {fileID: 520528839}
-  m_Enabled: 1
   m_Alpha: 1
   m_Interactable: 1
   m_BlocksRaycasts: 1
@@ -8595,7 +8589,6 @@ CanvasGroup:
     type: 2}
   m_PrefabInternal: {fileID: 2079928264}
   m_GameObject: {fileID: 591386635}
-  m_Enabled: 1
   m_Alpha: 1
   m_Interactable: 1
   m_BlocksRaycasts: 1
@@ -11143,7 +11136,6 @@ CanvasGroup:
     type: 2}
   m_PrefabInternal: {fileID: 259856030}
   m_GameObject: {fileID: 839336096}
-  m_Enabled: 1
   m_Alpha: 1
   m_Interactable: 1
   m_BlocksRaycasts: 1
@@ -12192,7 +12184,6 @@ CanvasGroup:
     type: 2}
   m_PrefabInternal: {fileID: 2090645617}
   m_GameObject: {fileID: 908861650}
-  m_Enabled: 1
   m_Alpha: 1
   m_Interactable: 1
   m_BlocksRaycasts: 1
@@ -14065,6 +14056,7 @@ MonoBehaviour:
   m_Script: {fileID: 1301386320, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Priority: 3
   ignoreReversedGraphics: 1
   blockingObjects: 0
   m_BlockingMask:
@@ -15255,7 +15247,6 @@ CanvasGroup:
     type: 2}
   m_PrefabInternal: {fileID: 2079928264}
   m_GameObject: {fileID: 1130005404}
-  m_Enabled: 1
   m_Alpha: 1
   m_Interactable: 1
   m_BlocksRaycasts: 1
@@ -17302,7 +17293,6 @@ CanvasGroup:
     type: 2}
   m_PrefabInternal: {fileID: 2079928264}
   m_GameObject: {fileID: 1306225775}
-  m_Enabled: 1
   m_Alpha: 1
   m_Interactable: 1
   m_BlocksRaycasts: 1
@@ -18352,7 +18342,6 @@ CanvasGroup:
     type: 2}
   m_PrefabInternal: {fileID: 2090645617}
   m_GameObject: {fileID: 1403269207}
-  m_Enabled: 1
   m_Alpha: 1
   m_Interactable: 1
   m_BlocksRaycasts: 1
@@ -18504,7 +18493,6 @@ CanvasGroup:
     type: 2}
   m_PrefabInternal: {fileID: 2090645617}
   m_GameObject: {fileID: 1413153346}
-  m_Enabled: 1
   m_Alpha: 0
   m_Interactable: 1
   m_BlocksRaycasts: 1
@@ -21034,7 +21022,6 @@ CanvasGroup:
     type: 2}
   m_PrefabInternal: {fileID: 2079928264}
   m_GameObject: {fileID: 1626357795}
-  m_Enabled: 1
   m_Alpha: 1
   m_Interactable: 1
   m_BlocksRaycasts: 1
@@ -21117,7 +21104,6 @@ CanvasGroup:
     type: 2}
   m_PrefabInternal: {fileID: 2079928264}
   m_GameObject: {fileID: 1630417828}
-  m_Enabled: 1
   m_Alpha: 1
   m_Interactable: 1
   m_BlocksRaycasts: 1
@@ -27076,7 +27062,6 @@ CanvasGroup:
     type: 2}
   m_PrefabInternal: {fileID: 2079928264}
   m_GameObject: {fileID: 2089904527}
-  m_Enabled: 1
   m_Alpha: 1
   m_Interactable: 1
   m_BlocksRaycasts: 1
@@ -28113,7 +28098,6 @@ CanvasGroup:
     type: 2}
   m_PrefabInternal: {fileID: 2090645617}
   m_GameObject: {fileID: 2128256402}
-  m_Enabled: 1
   m_Alpha: 1
   m_Interactable: 1
   m_BlocksRaycasts: 1
