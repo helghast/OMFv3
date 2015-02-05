@@ -1,10 +1,10 @@
 ﻿<Escenaris>
   <Escenari nom="beach">
-    <Dificultat id ="0" timer ="10">
+    <Dificultat id ="0" timer ="15">
       <Obstacles>
-        <Obstacle nom ="boya" timer="1" percent ="75"></Obstacle>
+        <Obstacle nom ="globo" timer="2" percent ="75"></Obstacle>
       </Obstacles>
-      <Enemics>
+     <!-- <Enemics>
         <Enemic nom ="pinguino" timer ="1" percent ="25"></Enemic>
       </Enemics>
       <Plataformes>
@@ -12,14 +12,14 @@
       </Plataformes>
       <Granotes>
         <Granota color="verd" percent ="100"></Granota>
-      </Granotes>
+      </Granotes>-->
     </Dificultat>
-    <Dificultat id ="1" timer ="10">
+    <Dificultat id ="1" timer ="15">
       <Obstacles>
-        <Obstacle nom ="boya" timer="1" percent ="50"></Obstacle>
-        <Obstacle nom ="boya campana" timer="1" percent ="20"></Obstacle>
+        <Obstacle nom ="globo" timer="2" percent ="50"></Obstacle>
+        <!--<Obstacle nom ="boya campana" timer="1" percent ="20"></Obstacle> -->
       </Obstacles>
-      <Enemics>
+      <!--<Enemics>
         <Enemic nom ="pinguino"  timer ="1" percent ="20"></Enemic>
         <Enemic nom ="vaixell pirata" timer ="1" percent ="10"></Enemic>
       </Enemics>
@@ -28,7 +28,7 @@
       </Plataformes>
       <Granotes>
         <Granota color="verd" percent ="100"></Granota>
-      </Granotes>
+      </Granotes>-->
     </Dificultat>
     <!--
     0_sky
