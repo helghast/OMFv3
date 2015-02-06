@@ -28,17 +28,14 @@ public class cIAP_Parser : BaseXMLParser
     {
         if (elem == "Currency")
         {
-            //eProcessingState = ePROCESSING_STATE.CURRENCIES;
             processCurrency(atts);
         }
         else if (elem == "CurrencyPack")
         {
-            //eProcessingState = ePROCESSING_STATE.CURRENCY_PACKS;
             processCurrencyPack(atts);
         }
         else if (elem == "LifetimeVG")
         {
-            //eProcessingState = ePROCESSING_STATE.VIRTUAL_GOODS;
             processLifetimeVirtualGood(atts);
         }
         else if (elem == "EquippableVG")

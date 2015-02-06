@@ -34,6 +34,7 @@ public class Comp_Kappa_Controller : MonoBehaviour
 
     public Vector3 cc_velocity;
 
+    public bool FirstFall;
     public bool Grounded;
     public bool CanSplash;
 
@@ -110,6 +111,7 @@ public class Comp_Kappa_Controller : MonoBehaviour
 
         canDoubleJump = false;
         CanSplash = true;
+        FirstFall = true;
 
         //ChangeToWaterControlMode();
         ChangeToTerrainControlMode();
@@ -284,8 +286,10 @@ public class Comp_Kappa_Controller : MonoBehaviour
 
         Grounded = cc.isGrounded;
         if (Grounded)
-            cc_velocity.y = -1;
-
+        {
+            // Esto es para que el Kappa se mantenga pegado al suelo en las plataformas que hay bajadas y qu eno vaya dando botes
+            cc_velocity.y = -3.0f;
+        }
         CanSplash = !Grounded;
 
         // modifica la velocity.y si estamos saltando
@@ -390,7 +394,14 @@ public class Comp_Kappa_Controller : MonoBehaviour
         }
         if (Grounded)
         {
-            cc_velocity.y = COMP_JUMP_CONSTANTS.JUMP_SPEED;
+            if (cc.velocity.y < 0)
+            {
+                cc_velocity.y = COMP_JUMP_CONSTANTS.JUMP_SPEED;
+            }
+            else
+            {
+                cc_velocity.y = COMP_JUMP_CONSTANTS.JUMP_SPEED + cc.velocity.y;
+            }
             canDoubleJump = true;
         }
         else if (canDoubleJump)

@@ -2,13 +2,33 @@
 using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
+using System;
 
-public class ClickButtonGUI : MonoBehaviour {
+public class ClickButtonGUI : MonoBehaviour
+{
+    [System.Serializable]
+    public struct ButtonX2
+    {
+        public Transform Clicked;
+        public Transform Unclicked;
 
+        public void setClicked(bool state)
+        {
+            Clicked.gameObject.SetActive(state);
+            Unclicked.gameObject.SetActive(!state);
+        }
+    }
+
+    public LayerMask layerMask;
     //si se usa el SetActive ya no es necesario el CanvasGroups
     //public CanvasGroup[] listCanvasGroups = null;
     private string[] languagesArray = new string[] { "SPANISH", "ENGLISH", "FRENCH", "GERMAN", "ITALIAN" };
     public GameObject panelTotem, panelRedesSociales, panelAudioOptions;
+
+    public ButtonX2 playButton;
+    public ButtonX2 buyButton;
+    public ButtonX2 achievementsButton;
+    public ButtonX2 rankingButton; 
 
     void Awake()
     {
@@ -22,8 +42,32 @@ public class ClickButtonGUI : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-	
+	void Update ()
+    {
+        if (Input.touchCount > 0)
+        {
+            if (Input.GetTouch(0).phase == TouchPhase.Began)
+            {
+                Vector3 screen_pos = new Vector3(Input.GetTouch(0).position.x, Input.GetTouch(0).position.y, 0);
+                Vector3 world_pos = Camera.main.ScreenToWorldPoint(screen_pos);
+                //world_pos.z = -10;
+                RaycastHit hit;
+                if (Physics.Raycast(world_pos, Camera.main.transform.forward, out hit, 20, layerMask))
+                {
+                    Debug.Log("collision raycast <tag: " + hit.collider.tag + ">< name: " + hit.collider.name + "> <layer: " + hit.collider.gameObject.layer + ">");
+                    if (hit.collider.tag == "Frog")
+                    {
+                        hit.collider.GetComponent<Comp_IA_Frog>().SelfDestroy();
+                        GameLogicManager.Instance.AddFrogs(1);
+                    }
+                }
+                else
+                {
+                    
+                }
+            }
+        }
+
 	}
 
     public void clickButton(Text textButton)
