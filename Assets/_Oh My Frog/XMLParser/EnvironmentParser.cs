@@ -40,22 +40,31 @@ public class EnvironmentParser : BaseXMLParser
             float perc = Convert.ToSingle(atts["percent"]);
             percent += perc;
             obstacle = new Obstacle(name, perc, btimer);
-            if (!EnvironmentManager.Instance.obstacles.ContainsKey(name))
+            if (ErrorCode.IS_OK != loadPrefabObstacle(name))
+            {
+                return ErrorCode.GO_NOT_FOUND;
+            }
+            /*if (!EnvironmentManager.Instance.obstacles.ContainsKey(name))
             {
                 string path = "Environment/" + escenari.name + "/Obstacles/" + name + "/Prefab/" + name;
                 GameObject go = EPrefabManager.LoadPrefab(path, EnvironmentManager.Instance.transform_pool_obstacles);
                 if (go == null)
                     return ErrorCode.GO_NOT_FOUND;
                 EnvironmentManager.Instance.obstacles[name] = go.GetComponent<Comp_Environment_Obstacle>();
-            }
+            }*/
             dificultat.addObstacle(obstacle);
         }
         else if (elem == "Enemic")
         {
+            string name = atts["nom"];
             float btimer = Convert.ToSingle(atts["timer"]);
             float perc = Convert.ToSingle(atts["percent"]);
             percent += perc;
-            enemic = new Enemy(atts["nom"], perc, btimer);
+            enemic = new Enemy(name, perc, btimer);
+            /*if (ErrorCode.IS_OK != loadPrefabEnemy(name))
+            {
+                return ErrorCode.GO_NOT_FOUND;
+            }*/
             dificultat.addEnemic(enemic);
         }
         else if (elem == "Plataforma")
@@ -152,5 +161,31 @@ public class EnvironmentParser : BaseXMLParser
         return ErrorCode.IS_OK;
     }
 
-}
 
+
+    private ErrorCode loadPrefabObstacle(string name)
+    {
+        if (!EnvironmentManager.Instance.obstacles.ContainsKey(name))
+        {
+            string path = "Environment/" + escenari.name + "/Obstacles/" + name + "/Prefab/" + name;
+            GameObject go = EPrefabManager.LoadPrefab(path, EnvironmentManager.Instance.transform_pool_obstacles);
+            if (go == null)
+                return ErrorCode.GO_NOT_FOUND;
+            EnvironmentManager.Instance.obstacles[name] = go.GetComponent<Comp_Environment_Obstacle>();
+        }
+        return ErrorCode.IS_OK;
+    }
+
+    private ErrorCode loadPrefabEnemy(string name)
+    {
+        if (!EnvironmentManager.Instance.obstacles.ContainsKey(name))
+        {
+            string path = "Environment/" + escenari.name + "/Enemys/" + name + "/Prefab/" + name;
+            GameObject go = EPrefabManager.LoadPrefab(path, EnvironmentManager.Instance.transform_pool_enemys);
+            if (go == null)
+                return ErrorCode.GO_NOT_FOUND;
+            EnvironmentManager.Instance.obstacles[name] = go.GetComponent<Comp_Environment_Obstacle>();
+        }
+        return ErrorCode.IS_OK;
+    }
+}

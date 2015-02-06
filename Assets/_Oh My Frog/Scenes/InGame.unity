@@ -13065,6 +13065,33 @@ MeshFilter:
   m_PrefabInternal: {fileID: 246707974}
   m_GameObject: {fileID: 2077231227}
   m_Mesh: {fileID: 4300004, guid: f8257b5c368cef64297a8008ddf6ca75, type: 3}
+--- !u!1 &2088723750
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2088723751}
+  m_Layer: 0
+  m_Name: Pool_Enemys
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2088723751
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2088723750}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .388567328, y: 1.91509306, z: 1.94061708}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 18
 --- !u!1 &2089153271
 GameObject:
   m_ObjectHideFlags: 0
