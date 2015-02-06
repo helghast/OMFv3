@@ -1,0 +1,1217 @@
+fileFormatVersion: 2
+guid: 07ad4c0afdace7a49863e5b06f7c26ed
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: KickV03:Geo_L_Ceja1
+    100002: KickV03:geo_Mostacho1
+    100004: KickV03:Geo_R_Ceja1
+    100006: KickV03:Grp_Cracken
+    100008: KickV03:Grp_Geo01
+    100010: KickV03:Grp_Micro_V01
+    100012: KickV03:Jnt_L_Arm01
+    100014: KickV03:Jnt_L_Arm02
+    100016: KickV03:Jnt_L_Arm03
+    100018: KickV03:Jnt_L_Arm04
+    100020: KickV03:Jnt_L_Arm05
+    100022: KickV03:Jnt_L_Arm06
+    100024: KickV03:Jnt_L_Arm07
+    100026: KickV03:Jnt_L_BaseArm01
+    100028: KickV03:Jnt_L_Eye01
+    100030: KickV03:Jnt_L_MidCeja01
+    100032: KickV03:Jnt_L_PuntaFueraCeja01
+    100034: KickV03:Jnt_L_PuntaIntCeja01
+    100036: KickV03:Jnt_MainRoot
+    100038: KickV03:Jnt_R_Arm01
+    100040: KickV03:Jnt_R_Arm02
+    100042: KickV03:Jnt_R_Arm03
+    100044: KickV03:Jnt_R_Arm04
+    100046: KickV03:Jnt_R_Arm05
+    100048: KickV03:Jnt_R_Arm06
+    100050: KickV03:Jnt_R_Arm07
+    100052: KickV03:Jnt_R_BaseArm01
+    100054: KickV03:Jnt_R_Eye01
+    100056: KickV03:Jnt_R_MidCeja01
+    100058: KickV03:Jnt_R_PuntaFueraCeja01
+    100060: KickV03:Jnt_R_PuntaIntCeja01
+    100062: KickV03:joint1
+    100064: KickV03:joint10
+    100066: KickV03:joint11
+    100068: KickV03:joint12
+    100070: KickV03:joint13
+    100072: KickV03:joint14
+    100074: KickV03:joint15
+    100076: KickV03:joint16
+    100078: KickV03:joint17
+    100080: KickV03:joint18
+    100082: KickV03:joint19
+    100084: KickV03:joint2
+    100086: KickV03:joint20
+    100088: KickV03:joint21
+    100090: KickV03:joint22
+    100092: KickV03:joint23
+    100094: KickV03:joint24
+    100096: KickV03:joint25
+    100098: KickV03:joint26
+    100100: KickV03:joint27
+    100102: KickV03:joint28
+    100104: KickV03:joint29
+    100106: KickV03:joint3
+    100108: KickV03:joint30
+    100110: KickV03:joint31
+    100112: KickV03:joint4
+    100114: KickV03:joint5
+    100116: KickV03:joint6
+    100118: KickV03:joint7
+    100120: KickV03:joint8
+    100122: KickV03:joint9
+    100124: KickV03:Microphone
+    100126: KickV03:polySurface10
+    100128: KickV03:polySurface11
+    100130: KickV03:polySurface4
+    100132: KickV03:polySurface6
+    100134: KickV03:polySurface9
+    100136: KickV03:transform3
+    100138: //RootNode
+    400000: KickV03:Geo_L_Ceja1
+    400002: KickV03:geo_Mostacho1
+    400004: KickV03:Geo_R_Ceja1
+    400006: KickV03:Grp_Cracken
+    400008: KickV03:Grp_Geo01
+    400010: KickV03:Grp_Micro_V01
+    400012: KickV03:Jnt_L_Arm01
+    400014: KickV03:Jnt_L_Arm02
+    400016: KickV03:Jnt_L_Arm03
+    400018: KickV03:Jnt_L_Arm04
+    400020: KickV03:Jnt_L_Arm05
+    400022: KickV03:Jnt_L_Arm06
+    400024: KickV03:Jnt_L_Arm07
+    400026: KickV03:Jnt_L_BaseArm01
+    400028: KickV03:Jnt_L_Eye01
+    400030: KickV03:Jnt_L_MidCeja01
+    400032: KickV03:Jnt_L_PuntaFueraCeja01
+    400034: KickV03:Jnt_L_PuntaIntCeja01
+    400036: KickV03:Jnt_MainRoot
+    400038: KickV03:Jnt_R_Arm01
+    400040: KickV03:Jnt_R_Arm02
+    400042: KickV03:Jnt_R_Arm03
+    400044: KickV03:Jnt_R_Arm04
+    400046: KickV03:Jnt_R_Arm05
+    400048: KickV03:Jnt_R_Arm06
+    400050: KickV03:Jnt_R_Arm07
+    400052: KickV03:Jnt_R_BaseArm01
+    400054: KickV03:Jnt_R_Eye01
+    400056: KickV03:Jnt_R_MidCeja01
+    400058: KickV03:Jnt_R_PuntaFueraCeja01
+    400060: KickV03:Jnt_R_PuntaIntCeja01
+    400062: KickV03:joint1
+    400064: KickV03:joint10
+    400066: KickV03:joint11
+    400068: KickV03:joint12
+    400070: KickV03:joint13
+    400072: KickV03:joint14
+    400074: KickV03:joint15
+    400076: KickV03:joint16
+    400078: KickV03:joint17
+    400080: KickV03:joint18
+    400082: KickV03:joint19
+    400084: KickV03:joint2
+    400086: KickV03:joint20
+    400088: KickV03:joint21
+    400090: KickV03:joint22
+    400092: KickV03:joint23
+    400094: KickV03:joint24
+    400096: KickV03:joint25
+    400098: KickV03:joint26
+    400100: KickV03:joint27
+    400102: KickV03:joint28
+    400104: KickV03:joint29
+    400106: KickV03:joint3
+    400108: KickV03:joint30
+    400110: KickV03:joint31
+    400112: KickV03:joint4
+    400114: KickV03:joint5
+    400116: KickV03:joint6
+    400118: KickV03:joint7
+    400120: KickV03:joint8
+    400122: KickV03:joint9
+    400124: KickV03:Microphone
+    400126: KickV03:polySurface10
+    400128: KickV03:polySurface11
+    400130: KickV03:polySurface4
+    400132: KickV03:polySurface6
+    400134: KickV03:polySurface9
+    400136: KickV03:transform3
+    400138: //RootNode
+    2300000: KickV03:Microphone
+    3300000: KickV03:Microphone
+    4300000: KickV03:polySurface10
+    4300002: KickV03:polySurface11
+    4300004: KickV03:polySurface9
+    4300006: KickV03:Geo_R_Ceja1
+    4300008: KickV03:Geo_L_Ceja1
+    4300010: KickV03:geo_Mostacho1
+    4300012: KickV03:Microphone
+    7400000: Take 001
+    7400002: Iddle
+    7400004: Golpe Directo
+    7400006: Gancho Derecha
+    7400008: "Vozarr\xF3n"
+    7400010: "Da\xF1ado Huida"
+    9500000: //RootNode
+    13700000: KickV03:Geo_L_Ceja1
+    13700002: KickV03:geo_Mostacho1
+    13700004: KickV03:Geo_R_Ceja1
+    13700006: KickV03:polySurface10
+    13700008: KickV03:polySurface11
+    13700010: KickV03:polySurface9
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 300
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: KickV03:Grp_Cracken
+        weight: 1
+      - path: KickV03:Grp_Cracken/KickV03:Grp_Geo01
+        weight: 1
+      - path: KickV03:Grp_Cracken/KickV03:Grp_Geo01/KickV03:Geo_L_Ceja1
+        weight: 1
+      - path: KickV03:Grp_Cracken/KickV03:Grp_Geo01/KickV03:geo_Mostacho1
+        weight: 1
+      - path: KickV03:Grp_Cracken/KickV03:Grp_Geo01/KickV03:Geo_R_Ceja1
+        weight: 1
+      - path: KickV03:Grp_Cracken/KickV03:Grp_Geo01/KickV03:polySurface4
+        weight: 1
+      - path: KickV03:Grp_Cracken/KickV03:Grp_Geo01/KickV03:polySurface4/KickV03:polySurface6
+        weight: 1
+      - path: KickV03:Grp_Cracken/KickV03:Grp_Geo01/KickV03:polySurface4/KickV03:polySurface6/KickV03:polySurface10
+        weight: 1
+      - path: KickV03:Grp_Cracken/KickV03:Grp_Geo01/KickV03:polySurface4/KickV03:polySurface6/KickV03:polySurface11
+        weight: 1
+      - path: KickV03:Grp_Cracken/KickV03:Grp_Geo01/KickV03:polySurface4/KickV03:polySurface9
+        weight: 1
+      - path: KickV03:Grp_Micro_V01
+        weight: 1
+      - path: KickV03:Grp_Micro_V01/KickV03:Microphone
+        weight: 1
+      - path: KickV03:joint31
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_BaseArm01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_BaseArm01/KickV03:Jnt_L_Arm01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_BaseArm01/KickV03:Jnt_L_Arm01/KickV03:Jnt_L_Arm02
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_BaseArm01/KickV03:Jnt_L_Arm01/KickV03:Jnt_L_Arm02/KickV03:Jnt_L_Arm03
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_BaseArm01/KickV03:Jnt_L_Arm01/KickV03:Jnt_L_Arm02/KickV03:Jnt_L_Arm03/KickV03:Jnt_L_Arm04
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_BaseArm01/KickV03:Jnt_L_Arm01/KickV03:Jnt_L_Arm02/KickV03:Jnt_L_Arm03/KickV03:Jnt_L_Arm04/KickV03:Jnt_L_Arm05
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_BaseArm01/KickV03:Jnt_L_Arm01/KickV03:Jnt_L_Arm02/KickV03:Jnt_L_Arm03/KickV03:Jnt_L_Arm04/KickV03:Jnt_L_Arm05/KickV03:Jnt_L_Arm06
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_BaseArm01/KickV03:Jnt_L_Arm01/KickV03:Jnt_L_Arm02/KickV03:Jnt_L_Arm03/KickV03:Jnt_L_Arm04/KickV03:Jnt_L_Arm05/KickV03:Jnt_L_Arm06/KickV03:Jnt_L_Arm07
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_Eye01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_MidCeja01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_PuntaFueraCeja01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_PuntaIntCeja01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_BaseArm01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_BaseArm01/KickV03:Jnt_R_Arm01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_BaseArm01/KickV03:Jnt_R_Arm01/KickV03:Jnt_R_Arm02
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_BaseArm01/KickV03:Jnt_R_Arm01/KickV03:Jnt_R_Arm02/KickV03:Jnt_R_Arm03
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_BaseArm01/KickV03:Jnt_R_Arm01/KickV03:Jnt_R_Arm02/KickV03:Jnt_R_Arm03/KickV03:Jnt_R_Arm04
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_BaseArm01/KickV03:Jnt_R_Arm01/KickV03:Jnt_R_Arm02/KickV03:Jnt_R_Arm03/KickV03:Jnt_R_Arm04/KickV03:Jnt_R_Arm05
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_BaseArm01/KickV03:Jnt_R_Arm01/KickV03:Jnt_R_Arm02/KickV03:Jnt_R_Arm03/KickV03:Jnt_R_Arm04/KickV03:Jnt_R_Arm05/KickV03:Jnt_R_Arm06
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_BaseArm01/KickV03:Jnt_R_Arm01/KickV03:Jnt_R_Arm02/KickV03:Jnt_R_Arm03/KickV03:Jnt_R_Arm04/KickV03:Jnt_R_Arm05/KickV03:Jnt_R_Arm06/KickV03:Jnt_R_Arm07
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_Eye01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_MidCeja01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_PuntaFueraCeja01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_PuntaIntCeja01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint1
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint1/KickV03:joint3
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint1/KickV03:joint3/KickV03:joint5
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint1/KickV03:joint3/KickV03:joint5/KickV03:joint7
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint1/KickV03:joint3/KickV03:joint5/KickV03:joint7/KickV03:joint9
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint2
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint2/KickV03:joint4
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint2/KickV03:joint4/KickV03:joint6
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint2/KickV03:joint4/KickV03:joint6/KickV03:joint8
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint2/KickV03:joint4/KickV03:joint6/KickV03:joint8/KickV03:joint10
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint11
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint11/KickV03:joint13
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint11/KickV03:joint13/KickV03:joint15
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint11/KickV03:joint13/KickV03:joint15/KickV03:joint17
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint12
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint12/KickV03:joint14
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint12/KickV03:joint14/KickV03:joint16
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint12/KickV03:joint14/KickV03:joint16/KickV03:joint18
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint19
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint19/KickV03:joint21
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint19/KickV03:joint21/KickV03:joint23
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint19/KickV03:joint21/KickV03:joint23/KickV03:joint25
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint20
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint20/KickV03:joint22
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint20/KickV03:joint22/KickV03:joint24
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint20/KickV03:joint22/KickV03:joint24/KickV03:joint26
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint27
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint28
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint29
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint30
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Iddle
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 45
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: KickV03:Grp_Cracken
+        weight: 1
+      - path: KickV03:Grp_Cracken/KickV03:Grp_Geo01
+        weight: 1
+      - path: KickV03:Grp_Cracken/KickV03:Grp_Geo01/KickV03:Geo_L_Ceja1
+        weight: 1
+      - path: KickV03:Grp_Cracken/KickV03:Grp_Geo01/KickV03:geo_Mostacho1
+        weight: 1
+      - path: KickV03:Grp_Cracken/KickV03:Grp_Geo01/KickV03:Geo_R_Ceja1
+        weight: 1
+      - path: KickV03:Grp_Cracken/KickV03:Grp_Geo01/KickV03:polySurface4
+        weight: 1
+      - path: KickV03:Grp_Cracken/KickV03:Grp_Geo01/KickV03:polySurface4/KickV03:polySurface6
+        weight: 1
+      - path: KickV03:Grp_Cracken/KickV03:Grp_Geo01/KickV03:polySurface4/KickV03:polySurface6/KickV03:polySurface10
+        weight: 1
+      - path: KickV03:Grp_Cracken/KickV03:Grp_Geo01/KickV03:polySurface4/KickV03:polySurface6/KickV03:polySurface11
+        weight: 1
+      - path: KickV03:Grp_Cracken/KickV03:Grp_Geo01/KickV03:polySurface4/KickV03:polySurface9
+        weight: 1
+      - path: KickV03:Grp_Micro_V01
+        weight: 1
+      - path: KickV03:Grp_Micro_V01/KickV03:Microphone
+        weight: 1
+      - path: KickV03:joint31
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_BaseArm01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_BaseArm01/KickV03:Jnt_L_Arm01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_BaseArm01/KickV03:Jnt_L_Arm01/KickV03:Jnt_L_Arm02
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_BaseArm01/KickV03:Jnt_L_Arm01/KickV03:Jnt_L_Arm02/KickV03:Jnt_L_Arm03
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_BaseArm01/KickV03:Jnt_L_Arm01/KickV03:Jnt_L_Arm02/KickV03:Jnt_L_Arm03/KickV03:Jnt_L_Arm04
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_BaseArm01/KickV03:Jnt_L_Arm01/KickV03:Jnt_L_Arm02/KickV03:Jnt_L_Arm03/KickV03:Jnt_L_Arm04/KickV03:Jnt_L_Arm05
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_BaseArm01/KickV03:Jnt_L_Arm01/KickV03:Jnt_L_Arm02/KickV03:Jnt_L_Arm03/KickV03:Jnt_L_Arm04/KickV03:Jnt_L_Arm05/KickV03:Jnt_L_Arm06
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_BaseArm01/KickV03:Jnt_L_Arm01/KickV03:Jnt_L_Arm02/KickV03:Jnt_L_Arm03/KickV03:Jnt_L_Arm04/KickV03:Jnt_L_Arm05/KickV03:Jnt_L_Arm06/KickV03:Jnt_L_Arm07
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_Eye01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_MidCeja01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_PuntaFueraCeja01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_PuntaIntCeja01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_BaseArm01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_BaseArm01/KickV03:Jnt_R_Arm01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_BaseArm01/KickV03:Jnt_R_Arm01/KickV03:Jnt_R_Arm02
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_BaseArm01/KickV03:Jnt_R_Arm01/KickV03:Jnt_R_Arm02/KickV03:Jnt_R_Arm03
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_BaseArm01/KickV03:Jnt_R_Arm01/KickV03:Jnt_R_Arm02/KickV03:Jnt_R_Arm03/KickV03:Jnt_R_Arm04
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_BaseArm01/KickV03:Jnt_R_Arm01/KickV03:Jnt_R_Arm02/KickV03:Jnt_R_Arm03/KickV03:Jnt_R_Arm04/KickV03:Jnt_R_Arm05
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_BaseArm01/KickV03:Jnt_R_Arm01/KickV03:Jnt_R_Arm02/KickV03:Jnt_R_Arm03/KickV03:Jnt_R_Arm04/KickV03:Jnt_R_Arm05/KickV03:Jnt_R_Arm06
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_BaseArm01/KickV03:Jnt_R_Arm01/KickV03:Jnt_R_Arm02/KickV03:Jnt_R_Arm03/KickV03:Jnt_R_Arm04/KickV03:Jnt_R_Arm05/KickV03:Jnt_R_Arm06/KickV03:Jnt_R_Arm07
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_Eye01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_MidCeja01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_PuntaFueraCeja01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_PuntaIntCeja01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint1
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint1/KickV03:joint3
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint1/KickV03:joint3/KickV03:joint5
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint1/KickV03:joint3/KickV03:joint5/KickV03:joint7
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint1/KickV03:joint3/KickV03:joint5/KickV03:joint7/KickV03:joint9
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint2
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint2/KickV03:joint4
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint2/KickV03:joint4/KickV03:joint6
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint2/KickV03:joint4/KickV03:joint6/KickV03:joint8
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint2/KickV03:joint4/KickV03:joint6/KickV03:joint8/KickV03:joint10
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint11
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint11/KickV03:joint13
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint11/KickV03:joint13/KickV03:joint15
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint11/KickV03:joint13/KickV03:joint15/KickV03:joint17
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint12
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint12/KickV03:joint14
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint12/KickV03:joint14/KickV03:joint16
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint12/KickV03:joint14/KickV03:joint16/KickV03:joint18
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint19
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint19/KickV03:joint21
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint19/KickV03:joint21/KickV03:joint23
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint19/KickV03:joint21/KickV03:joint23/KickV03:joint25
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint20
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint20/KickV03:joint22
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint20/KickV03:joint22/KickV03:joint24
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint20/KickV03:joint22/KickV03:joint24/KickV03:joint26
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint27
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint28
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint29
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint30
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Golpe Directo
+      takeName: Take 001
+      firstFrame: 46
+      lastFrame: 74
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: KickV03:Grp_Cracken
+        weight: 1
+      - path: KickV03:Grp_Cracken/KickV03:Grp_Geo01
+        weight: 1
+      - path: KickV03:Grp_Cracken/KickV03:Grp_Geo01/KickV03:Geo_L_Ceja1
+        weight: 1
+      - path: KickV03:Grp_Cracken/KickV03:Grp_Geo01/KickV03:geo_Mostacho1
+        weight: 1
+      - path: KickV03:Grp_Cracken/KickV03:Grp_Geo01/KickV03:Geo_R_Ceja1
+        weight: 1
+      - path: KickV03:Grp_Cracken/KickV03:Grp_Geo01/KickV03:polySurface4
+        weight: 1
+      - path: KickV03:Grp_Cracken/KickV03:Grp_Geo01/KickV03:polySurface4/KickV03:polySurface6
+        weight: 1
+      - path: KickV03:Grp_Cracken/KickV03:Grp_Geo01/KickV03:polySurface4/KickV03:polySurface6/KickV03:polySurface10
+        weight: 1
+      - path: KickV03:Grp_Cracken/KickV03:Grp_Geo01/KickV03:polySurface4/KickV03:polySurface6/KickV03:polySurface11
+        weight: 1
+      - path: KickV03:Grp_Cracken/KickV03:Grp_Geo01/KickV03:polySurface4/KickV03:polySurface9
+        weight: 1
+      - path: KickV03:Grp_Micro_V01
+        weight: 1
+      - path: KickV03:Grp_Micro_V01/KickV03:Microphone
+        weight: 1
+      - path: KickV03:joint31
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_BaseArm01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_BaseArm01/KickV03:Jnt_L_Arm01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_BaseArm01/KickV03:Jnt_L_Arm01/KickV03:Jnt_L_Arm02
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_BaseArm01/KickV03:Jnt_L_Arm01/KickV03:Jnt_L_Arm02/KickV03:Jnt_L_Arm03
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_BaseArm01/KickV03:Jnt_L_Arm01/KickV03:Jnt_L_Arm02/KickV03:Jnt_L_Arm03/KickV03:Jnt_L_Arm04
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_BaseArm01/KickV03:Jnt_L_Arm01/KickV03:Jnt_L_Arm02/KickV03:Jnt_L_Arm03/KickV03:Jnt_L_Arm04/KickV03:Jnt_L_Arm05
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_BaseArm01/KickV03:Jnt_L_Arm01/KickV03:Jnt_L_Arm02/KickV03:Jnt_L_Arm03/KickV03:Jnt_L_Arm04/KickV03:Jnt_L_Arm05/KickV03:Jnt_L_Arm06
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_BaseArm01/KickV03:Jnt_L_Arm01/KickV03:Jnt_L_Arm02/KickV03:Jnt_L_Arm03/KickV03:Jnt_L_Arm04/KickV03:Jnt_L_Arm05/KickV03:Jnt_L_Arm06/KickV03:Jnt_L_Arm07
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_Eye01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_MidCeja01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_PuntaFueraCeja01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_PuntaIntCeja01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_BaseArm01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_BaseArm01/KickV03:Jnt_R_Arm01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_BaseArm01/KickV03:Jnt_R_Arm01/KickV03:Jnt_R_Arm02
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_BaseArm01/KickV03:Jnt_R_Arm01/KickV03:Jnt_R_Arm02/KickV03:Jnt_R_Arm03
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_BaseArm01/KickV03:Jnt_R_Arm01/KickV03:Jnt_R_Arm02/KickV03:Jnt_R_Arm03/KickV03:Jnt_R_Arm04
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_BaseArm01/KickV03:Jnt_R_Arm01/KickV03:Jnt_R_Arm02/KickV03:Jnt_R_Arm03/KickV03:Jnt_R_Arm04/KickV03:Jnt_R_Arm05
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_BaseArm01/KickV03:Jnt_R_Arm01/KickV03:Jnt_R_Arm02/KickV03:Jnt_R_Arm03/KickV03:Jnt_R_Arm04/KickV03:Jnt_R_Arm05/KickV03:Jnt_R_Arm06
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_BaseArm01/KickV03:Jnt_R_Arm01/KickV03:Jnt_R_Arm02/KickV03:Jnt_R_Arm03/KickV03:Jnt_R_Arm04/KickV03:Jnt_R_Arm05/KickV03:Jnt_R_Arm06/KickV03:Jnt_R_Arm07
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_Eye01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_MidCeja01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_PuntaFueraCeja01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_PuntaIntCeja01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint1
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint1/KickV03:joint3
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint1/KickV03:joint3/KickV03:joint5
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint1/KickV03:joint3/KickV03:joint5/KickV03:joint7
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint1/KickV03:joint3/KickV03:joint5/KickV03:joint7/KickV03:joint9
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint2
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint2/KickV03:joint4
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint2/KickV03:joint4/KickV03:joint6
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint2/KickV03:joint4/KickV03:joint6/KickV03:joint8
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint2/KickV03:joint4/KickV03:joint6/KickV03:joint8/KickV03:joint10
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint11
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint11/KickV03:joint13
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint11/KickV03:joint13/KickV03:joint15
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint11/KickV03:joint13/KickV03:joint15/KickV03:joint17
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint12
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint12/KickV03:joint14
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint12/KickV03:joint14/KickV03:joint16
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint12/KickV03:joint14/KickV03:joint16/KickV03:joint18
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint19
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint19/KickV03:joint21
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint19/KickV03:joint21/KickV03:joint23
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint19/KickV03:joint21/KickV03:joint23/KickV03:joint25
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint20
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint20/KickV03:joint22
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint20/KickV03:joint22/KickV03:joint24
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint20/KickV03:joint22/KickV03:joint24/KickV03:joint26
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint27
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint28
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint29
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint30
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Gancho Derecha
+      takeName: Take 001
+      firstFrame: 75
+      lastFrame: 110
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: KickV03:Grp_Cracken
+        weight: 1
+      - path: KickV03:Grp_Cracken/KickV03:Grp_Geo01
+        weight: 1
+      - path: KickV03:Grp_Cracken/KickV03:Grp_Geo01/KickV03:Geo_L_Ceja1
+        weight: 1
+      - path: KickV03:Grp_Cracken/KickV03:Grp_Geo01/KickV03:geo_Mostacho1
+        weight: 1
+      - path: KickV03:Grp_Cracken/KickV03:Grp_Geo01/KickV03:Geo_R_Ceja1
+        weight: 1
+      - path: KickV03:Grp_Cracken/KickV03:Grp_Geo01/KickV03:polySurface4
+        weight: 1
+      - path: KickV03:Grp_Cracken/KickV03:Grp_Geo01/KickV03:polySurface4/KickV03:polySurface6
+        weight: 1
+      - path: KickV03:Grp_Cracken/KickV03:Grp_Geo01/KickV03:polySurface4/KickV03:polySurface6/KickV03:polySurface10
+        weight: 1
+      - path: KickV03:Grp_Cracken/KickV03:Grp_Geo01/KickV03:polySurface4/KickV03:polySurface6/KickV03:polySurface11
+        weight: 1
+      - path: KickV03:Grp_Cracken/KickV03:Grp_Geo01/KickV03:polySurface4/KickV03:polySurface9
+        weight: 1
+      - path: KickV03:Grp_Micro_V01
+        weight: 1
+      - path: KickV03:Grp_Micro_V01/KickV03:Microphone
+        weight: 1
+      - path: KickV03:joint31
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_BaseArm01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_BaseArm01/KickV03:Jnt_L_Arm01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_BaseArm01/KickV03:Jnt_L_Arm01/KickV03:Jnt_L_Arm02
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_BaseArm01/KickV03:Jnt_L_Arm01/KickV03:Jnt_L_Arm02/KickV03:Jnt_L_Arm03
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_BaseArm01/KickV03:Jnt_L_Arm01/KickV03:Jnt_L_Arm02/KickV03:Jnt_L_Arm03/KickV03:Jnt_L_Arm04
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_BaseArm01/KickV03:Jnt_L_Arm01/KickV03:Jnt_L_Arm02/KickV03:Jnt_L_Arm03/KickV03:Jnt_L_Arm04/KickV03:Jnt_L_Arm05
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_BaseArm01/KickV03:Jnt_L_Arm01/KickV03:Jnt_L_Arm02/KickV03:Jnt_L_Arm03/KickV03:Jnt_L_Arm04/KickV03:Jnt_L_Arm05/KickV03:Jnt_L_Arm06
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_BaseArm01/KickV03:Jnt_L_Arm01/KickV03:Jnt_L_Arm02/KickV03:Jnt_L_Arm03/KickV03:Jnt_L_Arm04/KickV03:Jnt_L_Arm05/KickV03:Jnt_L_Arm06/KickV03:Jnt_L_Arm07
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_Eye01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_MidCeja01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_PuntaFueraCeja01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_PuntaIntCeja01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_BaseArm01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_BaseArm01/KickV03:Jnt_R_Arm01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_BaseArm01/KickV03:Jnt_R_Arm01/KickV03:Jnt_R_Arm02
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_BaseArm01/KickV03:Jnt_R_Arm01/KickV03:Jnt_R_Arm02/KickV03:Jnt_R_Arm03
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_BaseArm01/KickV03:Jnt_R_Arm01/KickV03:Jnt_R_Arm02/KickV03:Jnt_R_Arm03/KickV03:Jnt_R_Arm04
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_BaseArm01/KickV03:Jnt_R_Arm01/KickV03:Jnt_R_Arm02/KickV03:Jnt_R_Arm03/KickV03:Jnt_R_Arm04/KickV03:Jnt_R_Arm05
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_BaseArm01/KickV03:Jnt_R_Arm01/KickV03:Jnt_R_Arm02/KickV03:Jnt_R_Arm03/KickV03:Jnt_R_Arm04/KickV03:Jnt_R_Arm05/KickV03:Jnt_R_Arm06
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_BaseArm01/KickV03:Jnt_R_Arm01/KickV03:Jnt_R_Arm02/KickV03:Jnt_R_Arm03/KickV03:Jnt_R_Arm04/KickV03:Jnt_R_Arm05/KickV03:Jnt_R_Arm06/KickV03:Jnt_R_Arm07
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_Eye01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_MidCeja01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_PuntaFueraCeja01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_PuntaIntCeja01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint1
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint1/KickV03:joint3
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint1/KickV03:joint3/KickV03:joint5
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint1/KickV03:joint3/KickV03:joint5/KickV03:joint7
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint1/KickV03:joint3/KickV03:joint5/KickV03:joint7/KickV03:joint9
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint2
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint2/KickV03:joint4
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint2/KickV03:joint4/KickV03:joint6
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint2/KickV03:joint4/KickV03:joint6/KickV03:joint8
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint2/KickV03:joint4/KickV03:joint6/KickV03:joint8/KickV03:joint10
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint11
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint11/KickV03:joint13
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint11/KickV03:joint13/KickV03:joint15
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint11/KickV03:joint13/KickV03:joint15/KickV03:joint17
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint12
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint12/KickV03:joint14
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint12/KickV03:joint14/KickV03:joint16
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint12/KickV03:joint14/KickV03:joint16/KickV03:joint18
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint19
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint19/KickV03:joint21
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint19/KickV03:joint21/KickV03:joint23
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint19/KickV03:joint21/KickV03:joint23/KickV03:joint25
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint20
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint20/KickV03:joint22
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint20/KickV03:joint22/KickV03:joint24
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint20/KickV03:joint22/KickV03:joint24/KickV03:joint26
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint27
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint28
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint29
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint30
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: "Vozarr\xF3n"
+      takeName: Take 001
+      firstFrame: 111
+      lastFrame: 190
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: KickV03:Grp_Cracken
+        weight: 1
+      - path: KickV03:Grp_Cracken/KickV03:Grp_Geo01
+        weight: 1
+      - path: KickV03:Grp_Cracken/KickV03:Grp_Geo01/KickV03:Geo_L_Ceja1
+        weight: 1
+      - path: KickV03:Grp_Cracken/KickV03:Grp_Geo01/KickV03:geo_Mostacho1
+        weight: 1
+      - path: KickV03:Grp_Cracken/KickV03:Grp_Geo01/KickV03:Geo_R_Ceja1
+        weight: 1
+      - path: KickV03:Grp_Cracken/KickV03:Grp_Geo01/KickV03:polySurface4
+        weight: 1
+      - path: KickV03:Grp_Cracken/KickV03:Grp_Geo01/KickV03:polySurface4/KickV03:polySurface6
+        weight: 1
+      - path: KickV03:Grp_Cracken/KickV03:Grp_Geo01/KickV03:polySurface4/KickV03:polySurface6/KickV03:polySurface10
+        weight: 1
+      - path: KickV03:Grp_Cracken/KickV03:Grp_Geo01/KickV03:polySurface4/KickV03:polySurface6/KickV03:polySurface11
+        weight: 1
+      - path: KickV03:Grp_Cracken/KickV03:Grp_Geo01/KickV03:polySurface4/KickV03:polySurface9
+        weight: 1
+      - path: KickV03:Grp_Micro_V01
+        weight: 1
+      - path: KickV03:Grp_Micro_V01/KickV03:Microphone
+        weight: 1
+      - path: KickV03:joint31
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_BaseArm01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_BaseArm01/KickV03:Jnt_L_Arm01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_BaseArm01/KickV03:Jnt_L_Arm01/KickV03:Jnt_L_Arm02
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_BaseArm01/KickV03:Jnt_L_Arm01/KickV03:Jnt_L_Arm02/KickV03:Jnt_L_Arm03
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_BaseArm01/KickV03:Jnt_L_Arm01/KickV03:Jnt_L_Arm02/KickV03:Jnt_L_Arm03/KickV03:Jnt_L_Arm04
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_BaseArm01/KickV03:Jnt_L_Arm01/KickV03:Jnt_L_Arm02/KickV03:Jnt_L_Arm03/KickV03:Jnt_L_Arm04/KickV03:Jnt_L_Arm05
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_BaseArm01/KickV03:Jnt_L_Arm01/KickV03:Jnt_L_Arm02/KickV03:Jnt_L_Arm03/KickV03:Jnt_L_Arm04/KickV03:Jnt_L_Arm05/KickV03:Jnt_L_Arm06
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_BaseArm01/KickV03:Jnt_L_Arm01/KickV03:Jnt_L_Arm02/KickV03:Jnt_L_Arm03/KickV03:Jnt_L_Arm04/KickV03:Jnt_L_Arm05/KickV03:Jnt_L_Arm06/KickV03:Jnt_L_Arm07
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_Eye01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_MidCeja01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_PuntaFueraCeja01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_PuntaIntCeja01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_BaseArm01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_BaseArm01/KickV03:Jnt_R_Arm01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_BaseArm01/KickV03:Jnt_R_Arm01/KickV03:Jnt_R_Arm02
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_BaseArm01/KickV03:Jnt_R_Arm01/KickV03:Jnt_R_Arm02/KickV03:Jnt_R_Arm03
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_BaseArm01/KickV03:Jnt_R_Arm01/KickV03:Jnt_R_Arm02/KickV03:Jnt_R_Arm03/KickV03:Jnt_R_Arm04
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_BaseArm01/KickV03:Jnt_R_Arm01/KickV03:Jnt_R_Arm02/KickV03:Jnt_R_Arm03/KickV03:Jnt_R_Arm04/KickV03:Jnt_R_Arm05
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_BaseArm01/KickV03:Jnt_R_Arm01/KickV03:Jnt_R_Arm02/KickV03:Jnt_R_Arm03/KickV03:Jnt_R_Arm04/KickV03:Jnt_R_Arm05/KickV03:Jnt_R_Arm06
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_BaseArm01/KickV03:Jnt_R_Arm01/KickV03:Jnt_R_Arm02/KickV03:Jnt_R_Arm03/KickV03:Jnt_R_Arm04/KickV03:Jnt_R_Arm05/KickV03:Jnt_R_Arm06/KickV03:Jnt_R_Arm07
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_Eye01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_MidCeja01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_PuntaFueraCeja01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_PuntaIntCeja01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint1
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint1/KickV03:joint3
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint1/KickV03:joint3/KickV03:joint5
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint1/KickV03:joint3/KickV03:joint5/KickV03:joint7
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint1/KickV03:joint3/KickV03:joint5/KickV03:joint7/KickV03:joint9
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint2
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint2/KickV03:joint4
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint2/KickV03:joint4/KickV03:joint6
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint2/KickV03:joint4/KickV03:joint6/KickV03:joint8
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint2/KickV03:joint4/KickV03:joint6/KickV03:joint8/KickV03:joint10
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint11
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint11/KickV03:joint13
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint11/KickV03:joint13/KickV03:joint15
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint11/KickV03:joint13/KickV03:joint15/KickV03:joint17
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint12
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint12/KickV03:joint14
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint12/KickV03:joint14/KickV03:joint16
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint12/KickV03:joint14/KickV03:joint16/KickV03:joint18
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint19
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint19/KickV03:joint21
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint19/KickV03:joint21/KickV03:joint23
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint19/KickV03:joint21/KickV03:joint23/KickV03:joint25
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint20
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint20/KickV03:joint22
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint20/KickV03:joint22/KickV03:joint24
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint20/KickV03:joint22/KickV03:joint24/KickV03:joint26
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint27
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint28
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint29
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint30
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: "Da\xF1ado Huida"
+      takeName: Take 001
+      firstFrame: 191
+      lastFrame: 258
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: KickV03:Grp_Cracken
+        weight: 1
+      - path: KickV03:Grp_Cracken/KickV03:Grp_Geo01
+        weight: 1
+      - path: KickV03:Grp_Cracken/KickV03:Grp_Geo01/KickV03:Geo_L_Ceja1
+        weight: 1
+      - path: KickV03:Grp_Cracken/KickV03:Grp_Geo01/KickV03:geo_Mostacho1
+        weight: 1
+      - path: KickV03:Grp_Cracken/KickV03:Grp_Geo01/KickV03:Geo_R_Ceja1
+        weight: 1
+      - path: KickV03:Grp_Cracken/KickV03:Grp_Geo01/KickV03:polySurface4
+        weight: 1
+      - path: KickV03:Grp_Cracken/KickV03:Grp_Geo01/KickV03:polySurface4/KickV03:polySurface6
+        weight: 1
+      - path: KickV03:Grp_Cracken/KickV03:Grp_Geo01/KickV03:polySurface4/KickV03:polySurface6/KickV03:polySurface10
+        weight: 1
+      - path: KickV03:Grp_Cracken/KickV03:Grp_Geo01/KickV03:polySurface4/KickV03:polySurface6/KickV03:polySurface11
+        weight: 1
+      - path: KickV03:Grp_Cracken/KickV03:Grp_Geo01/KickV03:polySurface4/KickV03:polySurface9
+        weight: 1
+      - path: KickV03:Grp_Micro_V01
+        weight: 1
+      - path: KickV03:Grp_Micro_V01/KickV03:Microphone
+        weight: 1
+      - path: KickV03:joint31
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_BaseArm01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_BaseArm01/KickV03:Jnt_L_Arm01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_BaseArm01/KickV03:Jnt_L_Arm01/KickV03:Jnt_L_Arm02
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_BaseArm01/KickV03:Jnt_L_Arm01/KickV03:Jnt_L_Arm02/KickV03:Jnt_L_Arm03
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_BaseArm01/KickV03:Jnt_L_Arm01/KickV03:Jnt_L_Arm02/KickV03:Jnt_L_Arm03/KickV03:Jnt_L_Arm04
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_BaseArm01/KickV03:Jnt_L_Arm01/KickV03:Jnt_L_Arm02/KickV03:Jnt_L_Arm03/KickV03:Jnt_L_Arm04/KickV03:Jnt_L_Arm05
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_BaseArm01/KickV03:Jnt_L_Arm01/KickV03:Jnt_L_Arm02/KickV03:Jnt_L_Arm03/KickV03:Jnt_L_Arm04/KickV03:Jnt_L_Arm05/KickV03:Jnt_L_Arm06
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_BaseArm01/KickV03:Jnt_L_Arm01/KickV03:Jnt_L_Arm02/KickV03:Jnt_L_Arm03/KickV03:Jnt_L_Arm04/KickV03:Jnt_L_Arm05/KickV03:Jnt_L_Arm06/KickV03:Jnt_L_Arm07
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_Eye01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_MidCeja01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_PuntaFueraCeja01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_L_PuntaIntCeja01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_BaseArm01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_BaseArm01/KickV03:Jnt_R_Arm01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_BaseArm01/KickV03:Jnt_R_Arm01/KickV03:Jnt_R_Arm02
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_BaseArm01/KickV03:Jnt_R_Arm01/KickV03:Jnt_R_Arm02/KickV03:Jnt_R_Arm03
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_BaseArm01/KickV03:Jnt_R_Arm01/KickV03:Jnt_R_Arm02/KickV03:Jnt_R_Arm03/KickV03:Jnt_R_Arm04
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_BaseArm01/KickV03:Jnt_R_Arm01/KickV03:Jnt_R_Arm02/KickV03:Jnt_R_Arm03/KickV03:Jnt_R_Arm04/KickV03:Jnt_R_Arm05
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_BaseArm01/KickV03:Jnt_R_Arm01/KickV03:Jnt_R_Arm02/KickV03:Jnt_R_Arm03/KickV03:Jnt_R_Arm04/KickV03:Jnt_R_Arm05/KickV03:Jnt_R_Arm06
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_BaseArm01/KickV03:Jnt_R_Arm01/KickV03:Jnt_R_Arm02/KickV03:Jnt_R_Arm03/KickV03:Jnt_R_Arm04/KickV03:Jnt_R_Arm05/KickV03:Jnt_R_Arm06/KickV03:Jnt_R_Arm07
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_Eye01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_MidCeja01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_PuntaFueraCeja01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:Jnt_R_PuntaIntCeja01
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint1
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint1/KickV03:joint3
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint1/KickV03:joint3/KickV03:joint5
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint1/KickV03:joint3/KickV03:joint5/KickV03:joint7
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint1/KickV03:joint3/KickV03:joint5/KickV03:joint7/KickV03:joint9
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint2
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint2/KickV03:joint4
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint2/KickV03:joint4/KickV03:joint6
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint2/KickV03:joint4/KickV03:joint6/KickV03:joint8
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint2/KickV03:joint4/KickV03:joint6/KickV03:joint8/KickV03:joint10
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint11
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint11/KickV03:joint13
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint11/KickV03:joint13/KickV03:joint15
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint11/KickV03:joint13/KickV03:joint15/KickV03:joint17
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint12
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint12/KickV03:joint14
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint12/KickV03:joint14/KickV03:joint16
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint12/KickV03:joint14/KickV03:joint16/KickV03:joint18
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint19
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint19/KickV03:joint21
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint19/KickV03:joint21/KickV03:joint23
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint19/KickV03:joint21/KickV03:joint23/KickV03:joint25
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint20
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint20/KickV03:joint22
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint20/KickV03:joint22/KickV03:joint24
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint20/KickV03:joint22/KickV03:joint24/KickV03:joint26
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint27
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint28
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint29
+        weight: 1
+      - path: KickV03:joint31/KickV03:transform3/KickV03:Jnt_MainRoot/KickV03:joint30
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

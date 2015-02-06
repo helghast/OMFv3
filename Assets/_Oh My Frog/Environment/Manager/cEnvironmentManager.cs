@@ -37,7 +37,6 @@ public class EnvironmentManager
 
     public Dictionary<string, Comp_Environment_Obstacle> obstacles;
     public Dictionary<string, Comp_Base_Enemy> enemys;
-    public Dictionary<string, Comp_Environment_Obstacle> obstacles;
 
 
     private Comp_Debug comp_debug;

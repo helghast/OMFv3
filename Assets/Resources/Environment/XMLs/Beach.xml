@@ -42,7 +42,7 @@
     -->
     <Layers>
       <Layer id ="0_sky_layer">
-        <Element2D nom ="Cova"  y ="2" ></Element2D>
+        <Element2D nom ="sky"  y ="2" ></Element2D>
       </Layer>
       <Layer id ="1_clouds_layer">
         <Element2D nom ="cloud_0"  y ="-2.5" ></Element2D>

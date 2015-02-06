@@ -1,0 +1,824 @@
+fileFormatVersion: 2
+guid: 7835821517309c444b80682b240131bc
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Cranc
+    100004: group1
+    100006: group2
+    100008: Jnt__PataAtras_Base01
+    100010: Jnt__PataAtrasRodilla01
+    100012: Jnt__PataAtrasTip01
+    100014: Jnt__PataDelanteBase01
+    100016: Jnt__PataDelanteRodilla01
+    100018: Jnt__PataDelanteTip01
+    100020: Jnt__PataMedioBase01
+    100022: Jnt__PataMedioRodilla01
+    100024: Jnt__PataMedioTip01
+    100026: Jnt__PinzaBase01
+    100028: Jnt__PinzaRodilla01
+    100030: Jnt__PinzaTijera01
+    100032: Jnt__UpTijeras01
+    100034: Jnt_Head01
+    100036: Jnt_HeadTip
+    100038: Jnt_L_BasePinza01
+    100040: Jnt_NeckBase01
+    100042: Jnt_R_PataAtras_Base01
+    100044: Jnt_R_PataAtrasRodilla01
+    100046: Jnt_R_PataAtrasTip01
+    100048: Jnt_R_PataDelanteBase01
+    100050: Jnt_R_PataDelanteRodilla01
+    100052: Jnt_R_PataDelanteTip01
+    100054: Jnt_R_PataMedioBase01
+    100056: Jnt_R_PataMedioRodilla01
+    100058: Jnt_R_PataMedioTip01
+    100060: Jnt_R_PinzaBase01
+    100062: Jnt_R_PinzaRodilla01
+    100064: Jnt_R_PinzaTijera01
+    100066: Jnt_R_UpTijeras01
+    100068: Jnt_root
+    100070: joint1
+    100072: joint2
+    100074: joint2 1
+    100076: joint3
+    100078: joint3 1
+    100080: joint4
+    100082: Mesh1
+    400000: //RootNode
+    400002: Cranc
+    400004: group1
+    400006: group2
+    400008: Jnt__PataAtras_Base01
+    400010: Jnt__PataAtrasRodilla01
+    400012: Jnt__PataAtrasTip01
+    400014: Jnt__PataDelanteBase01
+    400016: Jnt__PataDelanteRodilla01
+    400018: Jnt__PataDelanteTip01
+    400020: Jnt__PataMedioBase01
+    400022: Jnt__PataMedioRodilla01
+    400024: Jnt__PataMedioTip01
+    400026: Jnt__PinzaBase01
+    400028: Jnt__PinzaRodilla01
+    400030: Jnt__PinzaTijera01
+    400032: Jnt__UpTijeras01
+    400034: Jnt_Head01
+    400036: Jnt_HeadTip
+    400038: Jnt_L_BasePinza01
+    400040: Jnt_NeckBase01
+    400042: Jnt_R_PataAtras_Base01
+    400044: Jnt_R_PataAtrasRodilla01
+    400046: Jnt_R_PataAtrasTip01
+    400048: Jnt_R_PataDelanteBase01
+    400050: Jnt_R_PataDelanteRodilla01
+    400052: Jnt_R_PataDelanteTip01
+    400054: Jnt_R_PataMedioBase01
+    400056: Jnt_R_PataMedioRodilla01
+    400058: Jnt_R_PataMedioTip01
+    400060: Jnt_R_PinzaBase01
+    400062: Jnt_R_PinzaRodilla01
+    400064: Jnt_R_PinzaTijera01
+    400066: Jnt_R_UpTijeras01
+    400068: Jnt_root
+    400070: joint1
+    400072: joint2
+    400074: joint2 1
+    400076: joint3
+    400078: joint3 1
+    400080: joint4
+    400082: Mesh1
+    4300000: Cranc
+    7400000: cranc_iddle_anim
+    7400002: cranc_pinzazo derecho_anim
+    7400004: cranc_doblepinzazo_anim
+    7400006: cranc_chorrodeagua_anim
+    7400008: "cranc_da\xF1ado_anim"
+    7400010: cranc_correr_anim
+    9500000: //RootNode
+    13700000: Cranc
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 1
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: cranc_iddle_anim
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: joint4
+        weight: 1
+      - path: joint4/Jnt_root
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PataAtras_Base01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PataAtras_Base01/Jnt__PataAtrasRodilla01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PataAtras_Base01/Jnt__PataAtrasRodilla01/Jnt__PataAtrasTip01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PataDelanteBase01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PataDelanteBase01/Jnt__PataDelanteRodilla01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PataDelanteBase01/Jnt__PataDelanteRodilla01/Jnt__PataDelanteTip01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PataMedioBase01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PataMedioBase01/Jnt__PataMedioRodilla01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PataMedioBase01/Jnt__PataMedioRodilla01/Jnt__PataMedioTip01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PinzaBase01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PinzaBase01/Jnt__PinzaRodilla01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PinzaBase01/Jnt__PinzaRodilla01/Jnt_L_BasePinza01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PinzaBase01/Jnt__PinzaRodilla01/Jnt_L_BasePinza01/Jnt__PinzaTijera01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PinzaBase01/Jnt__PinzaRodilla01/Jnt_L_BasePinza01/Jnt__PinzaTijera01/group2
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PinzaBase01/Jnt__PinzaRodilla01/Jnt_L_BasePinza01/Jnt__PinzaTijera01/Jnt__UpTijeras01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PinzaBase01/Jnt__PinzaRodilla01/Jnt_L_BasePinza01/Jnt__PinzaTijera01/joint2
+          1
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PinzaBase01/Jnt__PinzaRodilla01/Jnt_L_BasePinza01/Jnt__PinzaTijera01/joint2
+          1/joint3 1
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_NeckBase01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_NeckBase01/Jnt_Head01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_NeckBase01/Jnt_Head01/Jnt_HeadTip
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PataAtras_Base01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PataAtras_Base01/Jnt_R_PataAtrasRodilla01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PataAtras_Base01/Jnt_R_PataAtrasRodilla01/Jnt_R_PataAtrasTip01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PataDelanteBase01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PataDelanteBase01/Jnt_R_PataDelanteRodilla01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PataDelanteBase01/Jnt_R_PataDelanteRodilla01/Jnt_R_PataDelanteTip01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PataMedioBase01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PataMedioBase01/Jnt_R_PataMedioRodilla01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PataMedioBase01/Jnt_R_PataMedioRodilla01/Jnt_R_PataMedioTip01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PinzaBase01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PinzaBase01/Jnt_R_PinzaRodilla01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PinzaBase01/Jnt_R_PinzaRodilla01/joint1
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PinzaBase01/Jnt_R_PinzaRodilla01/joint1/Jnt_R_PinzaTijera01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PinzaBase01/Jnt_R_PinzaRodilla01/joint1/Jnt_R_PinzaTijera01/group1
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PinzaBase01/Jnt_R_PinzaRodilla01/joint1/Jnt_R_PinzaTijera01/Jnt_R_UpTijeras01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PinzaBase01/Jnt_R_PinzaRodilla01/joint1/Jnt_R_PinzaTijera01/joint2
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PinzaBase01/Jnt_R_PinzaRodilla01/joint1/Jnt_R_PinzaTijera01/joint2/joint3
+        weight: 1
+      - path: Mesh1
+        weight: 1
+      - path: Mesh1/Cranc
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: cranc_pinzazo derecho_anim
+      takeName: Take 001
+      firstFrame: 32
+      lastFrame: 49
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: joint4
+        weight: 1
+      - path: joint4/Jnt_root
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PataAtras_Base01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PataAtras_Base01/Jnt__PataAtrasRodilla01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PataAtras_Base01/Jnt__PataAtrasRodilla01/Jnt__PataAtrasTip01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PataDelanteBase01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PataDelanteBase01/Jnt__PataDelanteRodilla01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PataDelanteBase01/Jnt__PataDelanteRodilla01/Jnt__PataDelanteTip01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PataMedioBase01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PataMedioBase01/Jnt__PataMedioRodilla01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PataMedioBase01/Jnt__PataMedioRodilla01/Jnt__PataMedioTip01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PinzaBase01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PinzaBase01/Jnt__PinzaRodilla01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PinzaBase01/Jnt__PinzaRodilla01/Jnt_L_BasePinza01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PinzaBase01/Jnt__PinzaRodilla01/Jnt_L_BasePinza01/Jnt__PinzaTijera01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PinzaBase01/Jnt__PinzaRodilla01/Jnt_L_BasePinza01/Jnt__PinzaTijera01/group2
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PinzaBase01/Jnt__PinzaRodilla01/Jnt_L_BasePinza01/Jnt__PinzaTijera01/Jnt__UpTijeras01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PinzaBase01/Jnt__PinzaRodilla01/Jnt_L_BasePinza01/Jnt__PinzaTijera01/joint2
+          1
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PinzaBase01/Jnt__PinzaRodilla01/Jnt_L_BasePinza01/Jnt__PinzaTijera01/joint2
+          1/joint3 1
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_NeckBase01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_NeckBase01/Jnt_Head01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_NeckBase01/Jnt_Head01/Jnt_HeadTip
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PataAtras_Base01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PataAtras_Base01/Jnt_R_PataAtrasRodilla01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PataAtras_Base01/Jnt_R_PataAtrasRodilla01/Jnt_R_PataAtrasTip01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PataDelanteBase01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PataDelanteBase01/Jnt_R_PataDelanteRodilla01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PataDelanteBase01/Jnt_R_PataDelanteRodilla01/Jnt_R_PataDelanteTip01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PataMedioBase01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PataMedioBase01/Jnt_R_PataMedioRodilla01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PataMedioBase01/Jnt_R_PataMedioRodilla01/Jnt_R_PataMedioTip01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PinzaBase01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PinzaBase01/Jnt_R_PinzaRodilla01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PinzaBase01/Jnt_R_PinzaRodilla01/joint1
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PinzaBase01/Jnt_R_PinzaRodilla01/joint1/Jnt_R_PinzaTijera01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PinzaBase01/Jnt_R_PinzaRodilla01/joint1/Jnt_R_PinzaTijera01/group1
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PinzaBase01/Jnt_R_PinzaRodilla01/joint1/Jnt_R_PinzaTijera01/Jnt_R_UpTijeras01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PinzaBase01/Jnt_R_PinzaRodilla01/joint1/Jnt_R_PinzaTijera01/joint2
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PinzaBase01/Jnt_R_PinzaRodilla01/joint1/Jnt_R_PinzaTijera01/joint2/joint3
+        weight: 1
+      - path: Mesh1
+        weight: 1
+      - path: Mesh1/Cranc
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: cranc_doblepinzazo_anim
+      takeName: Take 001
+      firstFrame: 50
+      lastFrame: 74
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: joint4
+        weight: 1
+      - path: joint4/Jnt_root
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PataAtras_Base01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PataAtras_Base01/Jnt__PataAtrasRodilla01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PataAtras_Base01/Jnt__PataAtrasRodilla01/Jnt__PataAtrasTip01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PataDelanteBase01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PataDelanteBase01/Jnt__PataDelanteRodilla01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PataDelanteBase01/Jnt__PataDelanteRodilla01/Jnt__PataDelanteTip01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PataMedioBase01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PataMedioBase01/Jnt__PataMedioRodilla01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PataMedioBase01/Jnt__PataMedioRodilla01/Jnt__PataMedioTip01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PinzaBase01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PinzaBase01/Jnt__PinzaRodilla01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PinzaBase01/Jnt__PinzaRodilla01/Jnt_L_BasePinza01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PinzaBase01/Jnt__PinzaRodilla01/Jnt_L_BasePinza01/Jnt__PinzaTijera01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PinzaBase01/Jnt__PinzaRodilla01/Jnt_L_BasePinza01/Jnt__PinzaTijera01/group2
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PinzaBase01/Jnt__PinzaRodilla01/Jnt_L_BasePinza01/Jnt__PinzaTijera01/Jnt__UpTijeras01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PinzaBase01/Jnt__PinzaRodilla01/Jnt_L_BasePinza01/Jnt__PinzaTijera01/joint2
+          1
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PinzaBase01/Jnt__PinzaRodilla01/Jnt_L_BasePinza01/Jnt__PinzaTijera01/joint2
+          1/joint3 1
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_NeckBase01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_NeckBase01/Jnt_Head01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_NeckBase01/Jnt_Head01/Jnt_HeadTip
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PataAtras_Base01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PataAtras_Base01/Jnt_R_PataAtrasRodilla01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PataAtras_Base01/Jnt_R_PataAtrasRodilla01/Jnt_R_PataAtrasTip01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PataDelanteBase01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PataDelanteBase01/Jnt_R_PataDelanteRodilla01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PataDelanteBase01/Jnt_R_PataDelanteRodilla01/Jnt_R_PataDelanteTip01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PataMedioBase01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PataMedioBase01/Jnt_R_PataMedioRodilla01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PataMedioBase01/Jnt_R_PataMedioRodilla01/Jnt_R_PataMedioTip01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PinzaBase01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PinzaBase01/Jnt_R_PinzaRodilla01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PinzaBase01/Jnt_R_PinzaRodilla01/joint1
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PinzaBase01/Jnt_R_PinzaRodilla01/joint1/Jnt_R_PinzaTijera01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PinzaBase01/Jnt_R_PinzaRodilla01/joint1/Jnt_R_PinzaTijera01/group1
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PinzaBase01/Jnt_R_PinzaRodilla01/joint1/Jnt_R_PinzaTijera01/Jnt_R_UpTijeras01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PinzaBase01/Jnt_R_PinzaRodilla01/joint1/Jnt_R_PinzaTijera01/joint2
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PinzaBase01/Jnt_R_PinzaRodilla01/joint1/Jnt_R_PinzaTijera01/joint2/joint3
+        weight: 1
+      - path: Mesh1
+        weight: 1
+      - path: Mesh1/Cranc
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: cranc_chorrodeagua_anim
+      takeName: Take 001
+      firstFrame: 75
+      lastFrame: 120
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: joint4
+        weight: 1
+      - path: joint4/Jnt_root
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PataAtras_Base01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PataAtras_Base01/Jnt__PataAtrasRodilla01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PataAtras_Base01/Jnt__PataAtrasRodilla01/Jnt__PataAtrasTip01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PataDelanteBase01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PataDelanteBase01/Jnt__PataDelanteRodilla01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PataDelanteBase01/Jnt__PataDelanteRodilla01/Jnt__PataDelanteTip01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PataMedioBase01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PataMedioBase01/Jnt__PataMedioRodilla01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PataMedioBase01/Jnt__PataMedioRodilla01/Jnt__PataMedioTip01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PinzaBase01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PinzaBase01/Jnt__PinzaRodilla01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PinzaBase01/Jnt__PinzaRodilla01/Jnt_L_BasePinza01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PinzaBase01/Jnt__PinzaRodilla01/Jnt_L_BasePinza01/Jnt__PinzaTijera01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PinzaBase01/Jnt__PinzaRodilla01/Jnt_L_BasePinza01/Jnt__PinzaTijera01/group2
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PinzaBase01/Jnt__PinzaRodilla01/Jnt_L_BasePinza01/Jnt__PinzaTijera01/Jnt__UpTijeras01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PinzaBase01/Jnt__PinzaRodilla01/Jnt_L_BasePinza01/Jnt__PinzaTijera01/joint2
+          1
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PinzaBase01/Jnt__PinzaRodilla01/Jnt_L_BasePinza01/Jnt__PinzaTijera01/joint2
+          1/joint3 1
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_NeckBase01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_NeckBase01/Jnt_Head01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_NeckBase01/Jnt_Head01/Jnt_HeadTip
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PataAtras_Base01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PataAtras_Base01/Jnt_R_PataAtrasRodilla01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PataAtras_Base01/Jnt_R_PataAtrasRodilla01/Jnt_R_PataAtrasTip01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PataDelanteBase01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PataDelanteBase01/Jnt_R_PataDelanteRodilla01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PataDelanteBase01/Jnt_R_PataDelanteRodilla01/Jnt_R_PataDelanteTip01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PataMedioBase01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PataMedioBase01/Jnt_R_PataMedioRodilla01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PataMedioBase01/Jnt_R_PataMedioRodilla01/Jnt_R_PataMedioTip01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PinzaBase01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PinzaBase01/Jnt_R_PinzaRodilla01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PinzaBase01/Jnt_R_PinzaRodilla01/joint1
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PinzaBase01/Jnt_R_PinzaRodilla01/joint1/Jnt_R_PinzaTijera01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PinzaBase01/Jnt_R_PinzaRodilla01/joint1/Jnt_R_PinzaTijera01/group1
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PinzaBase01/Jnt_R_PinzaRodilla01/joint1/Jnt_R_PinzaTijera01/Jnt_R_UpTijeras01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PinzaBase01/Jnt_R_PinzaRodilla01/joint1/Jnt_R_PinzaTijera01/joint2
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PinzaBase01/Jnt_R_PinzaRodilla01/joint1/Jnt_R_PinzaTijera01/joint2/joint3
+        weight: 1
+      - path: Mesh1
+        weight: 1
+      - path: Mesh1/Cranc
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: "cranc_da\xF1ado_anim"
+      takeName: Take 001
+      firstFrame: 121
+      lastFrame: 143
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: joint4
+        weight: 1
+      - path: joint4/Jnt_root
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PataAtras_Base01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PataAtras_Base01/Jnt__PataAtrasRodilla01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PataAtras_Base01/Jnt__PataAtrasRodilla01/Jnt__PataAtrasTip01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PataDelanteBase01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PataDelanteBase01/Jnt__PataDelanteRodilla01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PataDelanteBase01/Jnt__PataDelanteRodilla01/Jnt__PataDelanteTip01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PataMedioBase01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PataMedioBase01/Jnt__PataMedioRodilla01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PataMedioBase01/Jnt__PataMedioRodilla01/Jnt__PataMedioTip01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PinzaBase01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PinzaBase01/Jnt__PinzaRodilla01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PinzaBase01/Jnt__PinzaRodilla01/Jnt_L_BasePinza01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PinzaBase01/Jnt__PinzaRodilla01/Jnt_L_BasePinza01/Jnt__PinzaTijera01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PinzaBase01/Jnt__PinzaRodilla01/Jnt_L_BasePinza01/Jnt__PinzaTijera01/group2
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PinzaBase01/Jnt__PinzaRodilla01/Jnt_L_BasePinza01/Jnt__PinzaTijera01/Jnt__UpTijeras01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PinzaBase01/Jnt__PinzaRodilla01/Jnt_L_BasePinza01/Jnt__PinzaTijera01/joint2
+          1
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PinzaBase01/Jnt__PinzaRodilla01/Jnt_L_BasePinza01/Jnt__PinzaTijera01/joint2
+          1/joint3 1
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_NeckBase01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_NeckBase01/Jnt_Head01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_NeckBase01/Jnt_Head01/Jnt_HeadTip
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PataAtras_Base01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PataAtras_Base01/Jnt_R_PataAtrasRodilla01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PataAtras_Base01/Jnt_R_PataAtrasRodilla01/Jnt_R_PataAtrasTip01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PataDelanteBase01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PataDelanteBase01/Jnt_R_PataDelanteRodilla01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PataDelanteBase01/Jnt_R_PataDelanteRodilla01/Jnt_R_PataDelanteTip01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PataMedioBase01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PataMedioBase01/Jnt_R_PataMedioRodilla01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PataMedioBase01/Jnt_R_PataMedioRodilla01/Jnt_R_PataMedioTip01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PinzaBase01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PinzaBase01/Jnt_R_PinzaRodilla01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PinzaBase01/Jnt_R_PinzaRodilla01/joint1
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PinzaBase01/Jnt_R_PinzaRodilla01/joint1/Jnt_R_PinzaTijera01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PinzaBase01/Jnt_R_PinzaRodilla01/joint1/Jnt_R_PinzaTijera01/group1
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PinzaBase01/Jnt_R_PinzaRodilla01/joint1/Jnt_R_PinzaTijera01/Jnt_R_UpTijeras01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PinzaBase01/Jnt_R_PinzaRodilla01/joint1/Jnt_R_PinzaTijera01/joint2
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PinzaBase01/Jnt_R_PinzaRodilla01/joint1/Jnt_R_PinzaTijera01/joint2/joint3
+        weight: 1
+      - path: Mesh1
+        weight: 1
+      - path: Mesh1/Cranc
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: cranc_correr_anim
+      takeName: Take 001
+      firstFrame: 145
+      lastFrame: 159
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: joint4
+        weight: 1
+      - path: joint4/Jnt_root
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PataAtras_Base01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PataAtras_Base01/Jnt__PataAtrasRodilla01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PataAtras_Base01/Jnt__PataAtrasRodilla01/Jnt__PataAtrasTip01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PataDelanteBase01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PataDelanteBase01/Jnt__PataDelanteRodilla01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PataDelanteBase01/Jnt__PataDelanteRodilla01/Jnt__PataDelanteTip01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PataMedioBase01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PataMedioBase01/Jnt__PataMedioRodilla01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PataMedioBase01/Jnt__PataMedioRodilla01/Jnt__PataMedioTip01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PinzaBase01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PinzaBase01/Jnt__PinzaRodilla01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PinzaBase01/Jnt__PinzaRodilla01/Jnt_L_BasePinza01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PinzaBase01/Jnt__PinzaRodilla01/Jnt_L_BasePinza01/Jnt__PinzaTijera01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PinzaBase01/Jnt__PinzaRodilla01/Jnt_L_BasePinza01/Jnt__PinzaTijera01/group2
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PinzaBase01/Jnt__PinzaRodilla01/Jnt_L_BasePinza01/Jnt__PinzaTijera01/Jnt__UpTijeras01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PinzaBase01/Jnt__PinzaRodilla01/Jnt_L_BasePinza01/Jnt__PinzaTijera01/joint2
+          1
+        weight: 1
+      - path: joint4/Jnt_root/Jnt__PinzaBase01/Jnt__PinzaRodilla01/Jnt_L_BasePinza01/Jnt__PinzaTijera01/joint2
+          1/joint3 1
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_NeckBase01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_NeckBase01/Jnt_Head01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_NeckBase01/Jnt_Head01/Jnt_HeadTip
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PataAtras_Base01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PataAtras_Base01/Jnt_R_PataAtrasRodilla01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PataAtras_Base01/Jnt_R_PataAtrasRodilla01/Jnt_R_PataAtrasTip01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PataDelanteBase01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PataDelanteBase01/Jnt_R_PataDelanteRodilla01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PataDelanteBase01/Jnt_R_PataDelanteRodilla01/Jnt_R_PataDelanteTip01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PataMedioBase01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PataMedioBase01/Jnt_R_PataMedioRodilla01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PataMedioBase01/Jnt_R_PataMedioRodilla01/Jnt_R_PataMedioTip01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PinzaBase01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PinzaBase01/Jnt_R_PinzaRodilla01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PinzaBase01/Jnt_R_PinzaRodilla01/joint1
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PinzaBase01/Jnt_R_PinzaRodilla01/joint1/Jnt_R_PinzaTijera01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PinzaBase01/Jnt_R_PinzaRodilla01/joint1/Jnt_R_PinzaTijera01/group1
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PinzaBase01/Jnt_R_PinzaRodilla01/joint1/Jnt_R_PinzaTijera01/Jnt_R_UpTijeras01
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PinzaBase01/Jnt_R_PinzaRodilla01/joint1/Jnt_R_PinzaTijera01/joint2
+        weight: 1
+      - path: joint4/Jnt_root/Jnt_R_PinzaBase01/Jnt_R_PinzaRodilla01/joint1/Jnt_R_PinzaTijera01/joint2/joint3
+        weight: 1
+      - path: Mesh1
+        weight: 1
+      - path: Mesh1/Cranc
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
