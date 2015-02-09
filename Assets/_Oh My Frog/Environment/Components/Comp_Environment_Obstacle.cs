@@ -12,7 +12,7 @@ public class Comp_Environment_Obstacle : MonoBehaviour
 
     void Awake()
     {
-        environmentTransform = GameObject.Find("EnvironmentScene").transform;
+        environmentTransform = GameObject.Find("ObstaclesInScene").transform;
         injectTransform = GameObject.Find("EnvironmentSpawnPoint").GetComponent<Transform>();
         poolTransform = GameObject.Find("Pool_Obstacles").transform;
     }
@@ -31,13 +31,19 @@ public class Comp_Environment_Obstacle : MonoBehaviour
 
     public void spawn()
     {
-        if (!this.gameObject.activeSelf)
+        if (!gameObject.activeSelf)
         {
-            //this.GetComponentInChildren<ParticleEmitter>().renderer.sortingLayerName = "Particulas";
-            this.gameObject.SetActive(true);
-            this.transform.position = new Vector3(injectTransform.position.x, y, EnvironmentManager.Instance.ZLayer9);
-            this.transform.parent = this.environmentTransform;
+            gameObject.SetActive(true);
+            transform.position = new Vector3(injectTransform.position.x, y, EnvironmentManager.Instance.ZLayer9);
+            transform.parent = this.environmentTransform;
         }
+    }
+
+    public void disable()
+    {
+        transform.parent = poolTransform;
+        gameObject.SetActive(false);
+
     }
 
 

@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 
 public class Enemy {
-    public string nom;
+    public string name;
     public float percent;
     public float baseTimer;    //Timer for next platform, obstacle or enemy
 
-    public Enemy(string nom, float percent, float baseTimer)
+    public Enemy(string name, float percent, float baseTimer)
     {
-        this.nom = nom;
+        this.name = name;
         this.percent = percent;
         this.baseTimer = baseTimer;
     }

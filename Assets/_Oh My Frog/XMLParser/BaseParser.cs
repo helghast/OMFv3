@@ -60,7 +60,6 @@ public abstract class BaseXMLParser
                     break;
                 default:
                     return ErrorCode.UNDEFINED_XML_NODE;
-                    break;
             }
             //Console.WriteLine(reader[0]);
         }

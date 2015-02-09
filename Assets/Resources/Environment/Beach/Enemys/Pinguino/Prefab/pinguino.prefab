@@ -9,8 +9,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 467374}
   - 95: {fileID: 9567484}
+  - 114: {fileID: 11456852}
   m_Layer: 0
-  m_Name: Pinguino_Anim_V02
+  m_Name: pinguino
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -854,7 +855,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 167374}
   m_LocalRotation: {x: 0, y: .707106829, z: 0, w: .707106829}
-  m_LocalPosition: {x: 11.8199997, y: 4.17999983, z: 10.7200003}
+  m_LocalPosition: {x: 11.8199997, y: -2, z: 10.7200003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 467376}
@@ -1643,6 +1644,22 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11456852
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 167374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90bca36baec69f6469b466577b8b0b62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
+  y: -2
+  environmentTransform: {fileID: 0}
+  injectTransform: {fileID: 0}
+  poolTransform: {fileID: 0}
 --- !u!137 &13767482
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

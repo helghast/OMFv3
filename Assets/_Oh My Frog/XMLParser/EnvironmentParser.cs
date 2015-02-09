@@ -44,14 +44,6 @@ public class EnvironmentParser : BaseXMLParser
             {
                 return ErrorCode.GO_NOT_FOUND;
             }
-            /*if (!EnvironmentManager.Instance.obstacles.ContainsKey(name))
-            {
-                string path = "Environment/" + escenari.name + "/Obstacles/" + name + "/Prefab/" + name;
-                GameObject go = EPrefabManager.LoadPrefab(path, EnvironmentManager.Instance.transform_pool_obstacles);
-                if (go == null)
-                    return ErrorCode.GO_NOT_FOUND;
-                EnvironmentManager.Instance.obstacles[name] = go.GetComponent<Comp_Environment_Obstacle>();
-            }*/
             dificultat.addObstacle(obstacle);
         }
         else if (elem == "Enemic")
@@ -61,10 +53,10 @@ public class EnvironmentParser : BaseXMLParser
             float perc = Convert.ToSingle(atts["percent"]);
             percent += perc;
             enemic = new Enemy(name, perc, btimer);
-            /*if (ErrorCode.IS_OK != loadPrefabEnemy(name))
+            if (ErrorCode.IS_OK != loadPrefabEnemy(name))
             {
                 return ErrorCode.GO_NOT_FOUND;
-            }*/
+            }
             dificultat.addEnemic(enemic);
         }
         else if (elem == "Plataforma")
@@ -178,13 +170,13 @@ public class EnvironmentParser : BaseXMLParser
 
     private ErrorCode loadPrefabEnemy(string name)
     {
-        if (!EnvironmentManager.Instance.obstacles.ContainsKey(name))
+        if (!EnvironmentManager.Instance.enemys.ContainsKey(name))
         {
             string path = "Environment/" + escenari.name + "/Enemys/" + name + "/Prefab/" + name;
             GameObject go = EPrefabManager.LoadPrefab(path, EnvironmentManager.Instance.transform_pool_enemys);
             if (go == null)
                 return ErrorCode.GO_NOT_FOUND;
-            EnvironmentManager.Instance.obstacles[name] = go.GetComponent<Comp_Environment_Obstacle>();
+            EnvironmentManager.Instance.enemys[name] = go.GetComponent<Comp_Base_Enemy>();
         }
         return ErrorCode.IS_OK;
     }

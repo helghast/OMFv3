@@ -41,7 +41,7 @@ public class Layer
                 for (int i = 0; i < MAX_ITERATIONS && !trobat; i++)
                 {
                     int idx = UnityEngine.Random.Range(0, elements2D.Count);
-                    if (!elements2D[idx].isActive)
+                    if (!elements2D[idx].isActive())
                     {
                         Vector3 v = new Vector3(transformInject.position.x, elements2D[idx].y, z);
                         elements2D[idx].spawn(v);

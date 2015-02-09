@@ -44,7 +44,6 @@ public class Comp_Environment_Manager : MonoBehaviour
 
     void Awake()
     {
-        Debug.Log("Awake Comp Environment Manager");
     }
 	void Start ()
     {
@@ -65,6 +64,24 @@ public class Comp_Environment_Manager : MonoBehaviour
     {
         if (currentScene == null)
             return;
+
+        
+        foreach (Layer layer in currentScene.layers)
+        {
+            foreach (Element2D element in layer.Elements2D)
+            {
+                if (element.isActive()) { 
+                    bool visible = element.isVisibleInCamera();
+                    if (element.wasVisible && !visible) {
+                        element.disable();
+                    }
+                    else
+                    {
+                        element.setVisible(visible);
+                    }
+                }
+            }
+        }
         /*
         for (int i = 0; i < scene.layers.Count; ++i)
         {

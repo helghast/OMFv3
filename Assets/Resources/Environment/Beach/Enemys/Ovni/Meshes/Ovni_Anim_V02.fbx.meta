@@ -1,0 +1,350 @@
+fileFormatVersion: 2
+guid: 1340b27fe29dd754d9b1bcae49b25513
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: geo_BaseArm01
+    100002: geo_BaseBody01
+    100004: geo_DownBody01
+    100006: geo_MidBody01
+    100008: geo_Radar01
+    100010: geo_TopBody01
+    100012: Grp_Ovni_Mesh01
+    100014: Jnt_Arm01
+    100016: Jnt_Base01
+    100018: Jnt_BaseArm01
+    100020: Jnt_MainRoot
+    100022: Jnt_Mid_Down01
+    100024: Jnt_PuntaRadar01
+    100026: Jnt_TopBody01
+    100028: JntBaseRadar01
+    100030: joint8
+    100032: //RootNode
+    400000: geo_BaseArm01
+    400002: geo_BaseBody01
+    400004: geo_DownBody01
+    400006: geo_MidBody01
+    400008: geo_Radar01
+    400010: geo_TopBody01
+    400012: Grp_Ovni_Mesh01
+    400014: Jnt_Arm01
+    400016: Jnt_Base01
+    400018: Jnt_BaseArm01
+    400020: Jnt_MainRoot
+    400022: Jnt_Mid_Down01
+    400024: Jnt_PuntaRadar01
+    400026: Jnt_TopBody01
+    400028: JntBaseRadar01
+    400030: joint8
+    400032: //RootNode
+    4300000: geo_MidBody01
+    4300002: geo_BaseArm01
+    4300004: geo_DownBody01
+    4300006: geo_BaseBody01
+    4300008: geo_Radar01
+    4300010: geo_TopBody01
+    7400000: ovni_take_anim
+    7400002: ovni_iddle_anim
+    7400004: ovni_preparacion_anim
+    7400006: ovni_disparo_anim
+    9500000: //RootNode
+    13700000: geo_BaseArm01
+    13700002: geo_BaseBody01
+    13700004: geo_DownBody01
+    13700006: geo_MidBody01
+    13700008: geo_Radar01
+    13700010: geo_TopBody01
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: ovni_take_anim
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 64
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Grp_Ovni_Mesh01
+        weight: 1
+      - path: Grp_Ovni_Mesh01/geo_BaseArm01
+        weight: 1
+      - path: Grp_Ovni_Mesh01/geo_BaseBody01
+        weight: 1
+      - path: Grp_Ovni_Mesh01/geo_DownBody01
+        weight: 1
+      - path: Grp_Ovni_Mesh01/geo_MidBody01
+        weight: 1
+      - path: Grp_Ovni_Mesh01/geo_Radar01
+        weight: 1
+      - path: Grp_Ovni_Mesh01/geo_TopBody01
+        weight: 1
+      - path: joint8
+        weight: 1
+      - path: joint8/Jnt_MainRoot
+        weight: 1
+      - path: joint8/Jnt_MainRoot/Jnt_Base01
+        weight: 1
+      - path: joint8/Jnt_MainRoot/Jnt_Base01/Jnt_BaseArm01
+        weight: 1
+      - path: joint8/Jnt_MainRoot/Jnt_Base01/Jnt_BaseArm01/Jnt_Arm01
+        weight: 1
+      - path: joint8/Jnt_MainRoot/Jnt_Base01/Jnt_BaseArm01/Jnt_Arm01/JntBaseRadar01
+        weight: 1
+      - path: joint8/Jnt_MainRoot/Jnt_Base01/Jnt_BaseArm01/Jnt_Arm01/JntBaseRadar01/Jnt_PuntaRadar01
+        weight: 1
+      - path: joint8/Jnt_MainRoot/Jnt_Mid_Down01
+        weight: 1
+      - path: joint8/Jnt_MainRoot/Jnt_TopBody01
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: ovni_iddle_anim
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 35
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Grp_Ovni_Mesh01
+        weight: 1
+      - path: Grp_Ovni_Mesh01/geo_BaseArm01
+        weight: 1
+      - path: Grp_Ovni_Mesh01/geo_BaseBody01
+        weight: 1
+      - path: Grp_Ovni_Mesh01/geo_DownBody01
+        weight: 1
+      - path: Grp_Ovni_Mesh01/geo_MidBody01
+        weight: 1
+      - path: Grp_Ovni_Mesh01/geo_Radar01
+        weight: 1
+      - path: Grp_Ovni_Mesh01/geo_TopBody01
+        weight: 1
+      - path: joint8
+        weight: 1
+      - path: joint8/Jnt_MainRoot
+        weight: 1
+      - path: joint8/Jnt_MainRoot/Jnt_Base01
+        weight: 1
+      - path: joint8/Jnt_MainRoot/Jnt_Base01/Jnt_BaseArm01
+        weight: 1
+      - path: joint8/Jnt_MainRoot/Jnt_Base01/Jnt_BaseArm01/Jnt_Arm01
+        weight: 1
+      - path: joint8/Jnt_MainRoot/Jnt_Base01/Jnt_BaseArm01/Jnt_Arm01/JntBaseRadar01
+        weight: 1
+      - path: joint8/Jnt_MainRoot/Jnt_Base01/Jnt_BaseArm01/Jnt_Arm01/JntBaseRadar01/Jnt_PuntaRadar01
+        weight: 1
+      - path: joint8/Jnt_MainRoot/Jnt_Mid_Down01
+        weight: 1
+      - path: joint8/Jnt_MainRoot/Jnt_TopBody01
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: ovni_preparacion_anim
+      takeName: Take 001
+      firstFrame: 36
+      lastFrame: 53
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Grp_Ovni_Mesh01
+        weight: 1
+      - path: Grp_Ovni_Mesh01/geo_BaseArm01
+        weight: 1
+      - path: Grp_Ovni_Mesh01/geo_BaseBody01
+        weight: 1
+      - path: Grp_Ovni_Mesh01/geo_DownBody01
+        weight: 1
+      - path: Grp_Ovni_Mesh01/geo_MidBody01
+        weight: 1
+      - path: Grp_Ovni_Mesh01/geo_Radar01
+        weight: 1
+      - path: Grp_Ovni_Mesh01/geo_TopBody01
+        weight: 1
+      - path: joint8
+        weight: 1
+      - path: joint8/Jnt_MainRoot
+        weight: 1
+      - path: joint8/Jnt_MainRoot/Jnt_Base01
+        weight: 1
+      - path: joint8/Jnt_MainRoot/Jnt_Base01/Jnt_BaseArm01
+        weight: 1
+      - path: joint8/Jnt_MainRoot/Jnt_Base01/Jnt_BaseArm01/Jnt_Arm01
+        weight: 1
+      - path: joint8/Jnt_MainRoot/Jnt_Base01/Jnt_BaseArm01/Jnt_Arm01/JntBaseRadar01
+        weight: 1
+      - path: joint8/Jnt_MainRoot/Jnt_Base01/Jnt_BaseArm01/Jnt_Arm01/JntBaseRadar01/Jnt_PuntaRadar01
+        weight: 1
+      - path: joint8/Jnt_MainRoot/Jnt_Mid_Down01
+        weight: 1
+      - path: joint8/Jnt_MainRoot/Jnt_TopBody01
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: ovni_disparo_anim
+      takeName: Take 001
+      firstFrame: 54
+      lastFrame: 64
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Grp_Ovni_Mesh01
+        weight: 1
+      - path: Grp_Ovni_Mesh01/geo_BaseArm01
+        weight: 1
+      - path: Grp_Ovni_Mesh01/geo_BaseBody01
+        weight: 1
+      - path: Grp_Ovni_Mesh01/geo_DownBody01
+        weight: 1
+      - path: Grp_Ovni_Mesh01/geo_MidBody01
+        weight: 1
+      - path: Grp_Ovni_Mesh01/geo_Radar01
+        weight: 1
+      - path: Grp_Ovni_Mesh01/geo_TopBody01
+        weight: 1
+      - path: joint8
+        weight: 1
+      - path: joint8/Jnt_MainRoot
+        weight: 1
+      - path: joint8/Jnt_MainRoot/Jnt_Base01
+        weight: 1
+      - path: joint8/Jnt_MainRoot/Jnt_Base01/Jnt_BaseArm01
+        weight: 1
+      - path: joint8/Jnt_MainRoot/Jnt_Base01/Jnt_BaseArm01/Jnt_Arm01
+        weight: 1
+      - path: joint8/Jnt_MainRoot/Jnt_Base01/Jnt_BaseArm01/Jnt_Arm01/JntBaseRadar01
+        weight: 1
+      - path: joint8/Jnt_MainRoot/Jnt_Base01/Jnt_BaseArm01/Jnt_Arm01/JntBaseRadar01/Jnt_PuntaRadar01
+        weight: 1
+      - path: joint8/Jnt_MainRoot/Jnt_Mid_Down01
+        weight: 1
+      - path: joint8/Jnt_MainRoot/Jnt_TopBody01
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

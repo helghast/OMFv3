@@ -1,0 +1,300 @@
+fileFormatVersion: 2
+guid: f94d3378eb1548d4aaa069ed555aa575
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Geo_Head01
+    100002: Grp_Blendshapes
+    100004: Grp_Geo01
+    100006: Grp_GlobalMove
+    100008: Grp_SheepTurtle
+    100010: Jnt_BaseHead01
+    100012: Jnt_HeadTip01
+    100014: Jnt_L_BaseBackFin01
+    100016: Jnt_L_BaseFrontFin01
+    100018: Jnt_L_LastBackFin01
+    100020: Jnt_L_LastFrontFin01
+    100022: Jnt_L_MidBackFin01
+    100024: Jnt_L_MidFrontFin01
+    100026: Jnt_L_TipBackFin01
+    100028: Jnt_L_TipFrontFin01
+    100030: Jnt_MainRoot01
+    100032: Jnt_R_BaseBackFin01
+    100034: Jnt_R_BaseFrontFin01
+    100036: Jnt_R_LastBackFin01
+    100038: Jnt_R_LastFrontFin01
+    100040: Jnt_R_MidBackFin01
+    100042: Jnt_R_MidFrontFin01
+    100044: Jnt_R_TipBackFin01
+    100046: Jnt_R_TipFrontFin01
+    100048: joint2
+    100050: polySurface1
+    100052: polySurface3
+    100054: //RootNode
+    100056: transform1
+    100058: Turtle_sheep
+    400000: Geo_Head01
+    400002: Grp_Blendshapes
+    400004: Grp_Geo01
+    400006: Grp_GlobalMove
+    400008: Grp_SheepTurtle
+    400010: Jnt_BaseHead01
+    400012: Jnt_HeadTip01
+    400014: Jnt_L_BaseBackFin01
+    400016: Jnt_L_BaseFrontFin01
+    400018: Jnt_L_LastBackFin01
+    400020: Jnt_L_LastFrontFin01
+    400022: Jnt_L_MidBackFin01
+    400024: Jnt_L_MidFrontFin01
+    400026: Jnt_L_TipBackFin01
+    400028: Jnt_L_TipFrontFin01
+    400030: Jnt_MainRoot01
+    400032: Jnt_R_BaseBackFin01
+    400034: Jnt_R_BaseFrontFin01
+    400036: Jnt_R_LastBackFin01
+    400038: Jnt_R_LastFrontFin01
+    400040: Jnt_R_MidBackFin01
+    400042: Jnt_R_MidFrontFin01
+    400044: Jnt_R_TipBackFin01
+    400046: Jnt_R_TipFrontFin01
+    400048: joint2
+    400050: polySurface1
+    400052: polySurface3
+    400054: //RootNode
+    400056: transform1
+    400058: Turtle_sheep
+    4300000: polySurface1
+    4300002: Geo_Head01
+    4300004: polySurface3
+    7400000: turtle_iddle_anim
+    7400002: turtle_hit_anim
+    9500000: //RootNode
+    13700000: Geo_Head01
+    13700002: polySurface1
+    13700004: polySurface3
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: turtle_iddle_anim
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 43
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Grp_SheepTurtle
+        weight: 1
+      - path: Grp_SheepTurtle/Grp_Geo01
+        weight: 1
+      - path: Grp_SheepTurtle/Grp_Geo01/Turtle_sheep
+        weight: 1
+      - path: Grp_SheepTurtle/Grp_Geo01/Turtle_sheep/Geo_Head01
+        weight: 1
+      - path: Grp_SheepTurtle/Grp_Geo01/Turtle_sheep/polySurface1
+        weight: 1
+      - path: Grp_SheepTurtle/Grp_Geo01/Turtle_sheep/polySurface3
+        weight: 1
+      - path: Grp_SheepTurtle/Grp_Geo01/Turtle_sheep/transform1
+        weight: 1
+      - path: Grp_SheepTurtle/Grp_GlobalMove
+        weight: 1
+      - path: Grp_SheepTurtle/Grp_GlobalMove/Grp_Blendshapes
+        weight: 1
+      - path: joint2
+        weight: 1
+      - path: joint2/Jnt_MainRoot01
+        weight: 1
+      - path: joint2/Jnt_MainRoot01/Jnt_BaseHead01
+        weight: 1
+      - path: joint2/Jnt_MainRoot01/Jnt_BaseHead01/Jnt_HeadTip01
+        weight: 1
+      - path: joint2/Jnt_MainRoot01/Jnt_L_BaseBackFin01
+        weight: 1
+      - path: joint2/Jnt_MainRoot01/Jnt_L_BaseBackFin01/Jnt_L_MidBackFin01
+        weight: 1
+      - path: joint2/Jnt_MainRoot01/Jnt_L_BaseBackFin01/Jnt_L_MidBackFin01/Jnt_L_LastBackFin01
+        weight: 1
+      - path: joint2/Jnt_MainRoot01/Jnt_L_BaseBackFin01/Jnt_L_MidBackFin01/Jnt_L_LastBackFin01/Jnt_L_TipBackFin01
+        weight: 1
+      - path: joint2/Jnt_MainRoot01/Jnt_L_BaseFrontFin01
+        weight: 1
+      - path: joint2/Jnt_MainRoot01/Jnt_L_BaseFrontFin01/Jnt_L_MidFrontFin01
+        weight: 1
+      - path: joint2/Jnt_MainRoot01/Jnt_L_BaseFrontFin01/Jnt_L_MidFrontFin01/Jnt_L_LastFrontFin01
+        weight: 1
+      - path: joint2/Jnt_MainRoot01/Jnt_L_BaseFrontFin01/Jnt_L_MidFrontFin01/Jnt_L_LastFrontFin01/Jnt_L_TipFrontFin01
+        weight: 1
+      - path: joint2/Jnt_MainRoot01/Jnt_R_BaseBackFin01
+        weight: 1
+      - path: joint2/Jnt_MainRoot01/Jnt_R_BaseBackFin01/Jnt_R_MidBackFin01
+        weight: 1
+      - path: joint2/Jnt_MainRoot01/Jnt_R_BaseBackFin01/Jnt_R_MidBackFin01/Jnt_R_LastBackFin01
+        weight: 1
+      - path: joint2/Jnt_MainRoot01/Jnt_R_BaseBackFin01/Jnt_R_MidBackFin01/Jnt_R_LastBackFin01/Jnt_R_TipBackFin01
+        weight: 1
+      - path: joint2/Jnt_MainRoot01/Jnt_R_BaseFrontFin01
+        weight: 1
+      - path: joint2/Jnt_MainRoot01/Jnt_R_BaseFrontFin01/Jnt_R_MidFrontFin01
+        weight: 1
+      - path: joint2/Jnt_MainRoot01/Jnt_R_BaseFrontFin01/Jnt_R_MidFrontFin01/Jnt_R_LastFrontFin01
+        weight: 1
+      - path: joint2/Jnt_MainRoot01/Jnt_R_BaseFrontFin01/Jnt_R_MidFrontFin01/Jnt_R_LastFrontFin01/Jnt_R_TipFrontFin01
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: turtle_hit_anim
+      takeName: Take 001
+      firstFrame: 44
+      lastFrame: 76
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Grp_SheepTurtle
+        weight: 1
+      - path: Grp_SheepTurtle/Grp_Geo01
+        weight: 1
+      - path: Grp_SheepTurtle/Grp_Geo01/Turtle_sheep
+        weight: 1
+      - path: Grp_SheepTurtle/Grp_Geo01/Turtle_sheep/Geo_Head01
+        weight: 1
+      - path: Grp_SheepTurtle/Grp_Geo01/Turtle_sheep/polySurface1
+        weight: 1
+      - path: Grp_SheepTurtle/Grp_Geo01/Turtle_sheep/polySurface3
+        weight: 1
+      - path: Grp_SheepTurtle/Grp_Geo01/Turtle_sheep/transform1
+        weight: 1
+      - path: Grp_SheepTurtle/Grp_GlobalMove
+        weight: 1
+      - path: Grp_SheepTurtle/Grp_GlobalMove/Grp_Blendshapes
+        weight: 1
+      - path: joint2
+        weight: 1
+      - path: joint2/Jnt_MainRoot01
+        weight: 1
+      - path: joint2/Jnt_MainRoot01/Jnt_BaseHead01
+        weight: 1
+      - path: joint2/Jnt_MainRoot01/Jnt_BaseHead01/Jnt_HeadTip01
+        weight: 1
+      - path: joint2/Jnt_MainRoot01/Jnt_L_BaseBackFin01
+        weight: 1
+      - path: joint2/Jnt_MainRoot01/Jnt_L_BaseBackFin01/Jnt_L_MidBackFin01
+        weight: 1
+      - path: joint2/Jnt_MainRoot01/Jnt_L_BaseBackFin01/Jnt_L_MidBackFin01/Jnt_L_LastBackFin01
+        weight: 1
+      - path: joint2/Jnt_MainRoot01/Jnt_L_BaseBackFin01/Jnt_L_MidBackFin01/Jnt_L_LastBackFin01/Jnt_L_TipBackFin01
+        weight: 1
+      - path: joint2/Jnt_MainRoot01/Jnt_L_BaseFrontFin01
+        weight: 1
+      - path: joint2/Jnt_MainRoot01/Jnt_L_BaseFrontFin01/Jnt_L_MidFrontFin01
+        weight: 1
+      - path: joint2/Jnt_MainRoot01/Jnt_L_BaseFrontFin01/Jnt_L_MidFrontFin01/Jnt_L_LastFrontFin01
+        weight: 1
+      - path: joint2/Jnt_MainRoot01/Jnt_L_BaseFrontFin01/Jnt_L_MidFrontFin01/Jnt_L_LastFrontFin01/Jnt_L_TipFrontFin01
+        weight: 1
+      - path: joint2/Jnt_MainRoot01/Jnt_R_BaseBackFin01
+        weight: 1
+      - path: joint2/Jnt_MainRoot01/Jnt_R_BaseBackFin01/Jnt_R_MidBackFin01
+        weight: 1
+      - path: joint2/Jnt_MainRoot01/Jnt_R_BaseBackFin01/Jnt_R_MidBackFin01/Jnt_R_LastBackFin01
+        weight: 1
+      - path: joint2/Jnt_MainRoot01/Jnt_R_BaseBackFin01/Jnt_R_MidBackFin01/Jnt_R_LastBackFin01/Jnt_R_TipBackFin01
+        weight: 1
+      - path: joint2/Jnt_MainRoot01/Jnt_R_BaseFrontFin01
+        weight: 1
+      - path: joint2/Jnt_MainRoot01/Jnt_R_BaseFrontFin01/Jnt_R_MidFrontFin01
+        weight: 1
+      - path: joint2/Jnt_MainRoot01/Jnt_R_BaseFrontFin01/Jnt_R_MidFrontFin01/Jnt_R_LastFrontFin01
+        weight: 1
+      - path: joint2/Jnt_MainRoot01/Jnt_R_BaseFrontFin01/Jnt_R_MidFrontFin01/Jnt_R_LastFrontFin01/Jnt_R_TipFrontFin01
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

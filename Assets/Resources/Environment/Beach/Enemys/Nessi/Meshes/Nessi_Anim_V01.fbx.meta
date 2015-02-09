@@ -1,0 +1,227 @@
+fileFormatVersion: 2
+guid: 0a1a8bad068852d40b16b0eeeb199002
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Grp_Mesh
+    100002: joint35
+    100004: joint36
+    100006: joint37
+    100008: joint38
+    100010: joint39
+    100012: joint40
+    100014: joint41
+    100016: joint42
+    100018: joint43
+    100020: joint44
+    100022: joint45
+    100024: joint46
+    100026: joint47
+    100028: joint48
+    100030: joint49
+    100032: joint50
+    100034: joint51
+    100036: joint52
+    100038: joint53
+    100040: joint54
+    100042: joint55
+    100044: //RootNode
+    100046: Nessi_Body
+    100048: Nessi_Crest
+    100050: Nessi_Hair
+    100052: Nessi_Horn
+    100054: Nessi_Wing_01
+    100056: Nessi_Wing_02
+    100058: Nessi_Wing_03
+    100060: Nessi_Wing_04
+    400000: Grp_Mesh
+    400002: joint35
+    400004: joint36
+    400006: joint37
+    400008: joint38
+    400010: joint39
+    400012: joint40
+    400014: joint41
+    400016: joint42
+    400018: joint43
+    400020: joint44
+    400022: joint45
+    400024: joint46
+    400026: joint47
+    400028: joint48
+    400030: joint49
+    400032: joint50
+    400034: joint51
+    400036: joint52
+    400038: joint53
+    400040: joint54
+    400042: joint55
+    400044: //RootNode
+    400046: Nessi_Body
+    400048: Nessi_Crest
+    400050: Nessi_Hair
+    400052: Nessi_Horn
+    400054: Nessi_Wing_01
+    400056: Nessi_Wing_02
+    400058: Nessi_Wing_03
+    400060: Nessi_Wing_04
+    4300000: Nessi_Wing_01
+    4300002: Nessi_Body
+    4300004: Nessi_Horn
+    4300006: Nessi_Crest
+    4300008: Nessi_Hair
+    4300010: Nessi_Wing_03
+    4300012: Nessi_Wing_02
+    4300014: Nessi_Wing_04
+    7400000: nessi_loop_anim
+    9500000: //RootNode
+    13700000: Nessi_Body
+    13700002: Nessi_Crest
+    13700004: Nessi_Hair
+    13700006: Nessi_Horn
+    13700008: Nessi_Wing_01
+    13700010: Nessi_Wing_02
+    13700012: Nessi_Wing_03
+    13700014: Nessi_Wing_04
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: nessi_loop_anim
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 44
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Grp_Mesh
+        weight: 1
+      - path: Grp_Mesh/Nessi_Body
+        weight: 1
+      - path: Grp_Mesh/Nessi_Crest
+        weight: 1
+      - path: Grp_Mesh/Nessi_Hair
+        weight: 1
+      - path: Grp_Mesh/Nessi_Horn
+        weight: 1
+      - path: Grp_Mesh/Nessi_Wing_01
+        weight: 1
+      - path: Grp_Mesh/Nessi_Wing_02
+        weight: 1
+      - path: Grp_Mesh/Nessi_Wing_03
+        weight: 1
+      - path: Grp_Mesh/Nessi_Wing_04
+        weight: 1
+      - path: joint35
+        weight: 1
+      - path: joint55
+        weight: 1
+      - path: joint55/joint36
+        weight: 1
+      - path: joint55/joint36/joint37
+        weight: 1
+      - path: joint55/joint36/joint37/joint38
+        weight: 1
+      - path: joint55/joint36/joint37/joint38/joint39
+        weight: 1
+      - path: joint55/joint36/joint37/joint38/joint39/joint40
+        weight: 1
+      - path: joint55/joint36/joint37/joint38/joint39/joint40/joint41
+        weight: 1
+      - path: joint55/joint36/joint37/joint38/joint39/joint40/joint41/joint42
+        weight: 1
+      - path: joint55/joint36/joint37/joint38/joint39/joint40/joint41/joint42/joint43
+        weight: 1
+      - path: joint55/joint36/joint37/joint38/joint39/joint40/joint41/joint42/joint43/joint44
+        weight: 1
+      - path: joint55/joint36/joint37/joint38/joint39/joint40/joint41/joint42/joint43/joint44/joint45
+        weight: 1
+      - path: joint55/joint36/joint37/joint38/joint39/joint40/joint41/joint42/joint43/joint44/joint45/joint46
+        weight: 1
+      - path: joint55/joint36/joint37/joint38/joint39/joint40/joint41/joint42/joint43/joint44/joint45/joint46/joint47
+        weight: 1
+      - path: joint55/joint36/joint37/joint38/joint39/joint40/joint41/joint42/joint43/joint44/joint45/joint46/joint47/joint48
+        weight: 1
+      - path: joint55/joint36/joint37/joint38/joint39/joint40/joint41/joint42/joint43/joint44/joint45/joint46/joint47/joint48/joint49
+        weight: 1
+      - path: joint55/joint36/joint37/joint38/joint39/joint40/joint41/joint42/joint43/joint44/joint45/joint46/joint47/joint48/joint49/joint50
+        weight: 1
+      - path: joint55/joint36/joint37/joint38/joint39/joint40/joint41/joint42/joint43/joint44/joint45/joint46/joint47/joint48/joint49/joint50/joint51
+        weight: 1
+      - path: joint55/joint36/joint37/joint38/joint39/joint40/joint41/joint42/joint43/joint44/joint45/joint46/joint47/joint48/joint49/joint50/joint51/joint52
+        weight: 1
+      - path: joint55/joint36/joint37/joint38/joint39/joint40/joint41/joint42/joint43/joint44/joint45/joint46/joint47/joint48/joint49/joint50/joint51/joint52/joint53
+        weight: 1
+      - path: joint55/joint36/joint54
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

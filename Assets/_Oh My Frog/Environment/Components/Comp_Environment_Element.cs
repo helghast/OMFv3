@@ -3,7 +3,6 @@ using System.Collections;
 
 public class Comp_Environment_Element : MonoBehaviour
 {
-    public bool isVisible;
     public float Speed;
     public float length;
     public float minDist2NextElement;
@@ -14,7 +13,7 @@ public class Comp_Environment_Element : MonoBehaviour
 
     void Awake()
     {
-        environmentTransform = GameObject.Find("EnvironmentScene").transform;
+        environmentTransform = GameObject.Find("Elements2DInScene").transform;
         poolTransform = GameObject.Find("Pool_Environment").transform;
     }
 
@@ -33,11 +32,6 @@ public class Comp_Environment_Element : MonoBehaviour
     public void wakeUp()
     {
 
-    }
-
-    public void setVisible(bool value)
-    {
-        isVisible = value;
     }
 
 }

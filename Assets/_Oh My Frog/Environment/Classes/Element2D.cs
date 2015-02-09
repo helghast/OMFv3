@@ -9,9 +9,8 @@ public class Element2D
 {
     public LAYER_ID layerID;
     public string name;
-    public bool isActive;
-    public bool isVisible;
-    public Renderer renderer;
+    public bool wasVisible;
+    private Renderer renderer;
 
     public Comp_Environment_Element compElement;
     public float y;
@@ -20,8 +19,8 @@ public class Element2D
     {
         this.name = name;
         this.y = y;
-        isActive = false;
         this.layerID = layerId;
+        wasVisible = false;
     }
 
     public void setEnvironmentComponent(Comp_Environment_Element compElement)
@@ -73,7 +72,6 @@ public class Element2D
     //Totes les funcions d'activació cap al component
     public void spawn(Vector3 position)
     {
-        isActive = true;
         compElement.gameObject.SetActive(true);
         compElement.transform.position = position;
         compElement.transform.parent = compElement.environmentTransform;
@@ -81,16 +79,23 @@ public class Element2D
 
     public void disable()
     {
-        isActive = false;
-        isVisible = false;
+        wasVisible = false;
         compElement.gameObject.SetActive(false);
         compElement.transform.parent = compElement.poolTransform;
     }
 
     public void setVisible(bool value)
     {
-        isVisible = value;
-        compElement.setVisible(isVisible);
+        wasVisible = value;
     }
 
+    public bool isVisibleInCamera()
+    {
+        return renderer.EP_IsVisibleFromCurrentCamera();
+    }
+
+    public bool isActive()
+    {
+        return compElement.gameObject.activeSelf;
+    }
 }

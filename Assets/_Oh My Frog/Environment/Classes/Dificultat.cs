@@ -55,8 +55,11 @@ public class Dificultat {
         foreach (Enemy enemy in enemics)
         {
             if (random < enemy.percent)
-                Debug.Log("inject enemy " + enemy.nom);
+            {
+                EnvironmentManager.Instance.enemys[enemy.name].spawn();
+                Debug.Log("inject enemy " + enemy.name);
                 return enemy.baseTimer;
+            }
         }
         return 0;
     }

@@ -123,11 +123,11 @@ ModelImporter:
     4300002: Hat
     4300004: Bag
     4300006: Jet
-    7400000: Iddle
-    7400002: Take 001
-    7400004: Jump
-    7400006: Volar
-    7400008: "Da\xF1ado"
+    7400000: penguin_iddle_anim
+    7400002: penguin_take_anim
+    7400004: penguin_jump_anim
+    7400006: penguin_fly_anim
+    7400008: penguin_hit_anim
     9500000: //RootNode
     13700000: Hat
     13700002: Penguin
@@ -148,7 +148,7 @@ ModelImporter:
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
-      name: Take 001
+      name: penguin_take_anim
       takeName: Take 001
       firstFrame: 0
       lastFrame: 150
@@ -286,7 +286,7 @@ ModelImporter:
       maskType: 0
       maskSource: {instanceID: 0}
     - serializedVersion: 16
-      name: Iddle
+      name: penguin_iddle_anim
       takeName: Take 001
       firstFrame: 1
       lastFrame: 25
@@ -424,7 +424,7 @@ ModelImporter:
       maskType: 0
       maskSource: {instanceID: 0}
     - serializedVersion: 16
-      name: Jump
+      name: penguin_jump_anim
       takeName: Take 001
       firstFrame: 26
       lastFrame: 64
@@ -562,7 +562,7 @@ ModelImporter:
       maskType: 0
       maskSource: {instanceID: 0}
     - serializedVersion: 16
-      name: Volar
+      name: penguin_fly_anim
       takeName: Take 001
       firstFrame: 65
       lastFrame: 100
@@ -700,7 +700,7 @@ ModelImporter:
       maskType: 0
       maskSource: {instanceID: 0}
     - serializedVersion: 16
-      name: "Da\xF1ado"
+      name: penguin_hit_anim
       takeName: Take 001
       firstFrame: 101
       lastFrame: 150

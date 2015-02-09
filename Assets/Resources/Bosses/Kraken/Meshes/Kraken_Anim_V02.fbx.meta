@@ -153,11 +153,11 @@ ModelImporter:
     4300010: KickV03:geo_Mostacho1
     4300012: KickV03:Microphone
     7400000: Take 001
-    7400002: Iddle
-    7400004: Golpe Directo
-    7400006: Gancho Derecha
-    7400008: "Vozarr\xF3n"
-    7400010: "Da\xF1ado Huida"
+    7400002: kraken_iddle_anim
+    7400004: kraken_golpedirecto_anim
+    7400006: kraken_ganchoderecho_anim
+    7400008: kraken_vozarron_anim
+    7400010: "kraken_da\xF1ohuida_anim"
     9500000: //RootNode
     13700000: KickV03:Geo_L_Ceja1
     13700002: KickV03:geo_Mostacho1
@@ -348,7 +348,7 @@ ModelImporter:
       maskType: 0
       maskSource: {instanceID: 0}
     - serializedVersion: 16
-      name: Iddle
+      name: kraken_iddle_anim
       takeName: Take 001
       firstFrame: 0
       lastFrame: 45
@@ -514,7 +514,7 @@ ModelImporter:
       maskType: 0
       maskSource: {instanceID: 0}
     - serializedVersion: 16
-      name: Golpe Directo
+      name: kraken_golpedirecto_anim
       takeName: Take 001
       firstFrame: 46
       lastFrame: 74
@@ -680,7 +680,7 @@ ModelImporter:
       maskType: 0
       maskSource: {instanceID: 0}
     - serializedVersion: 16
-      name: Gancho Derecha
+      name: kraken_ganchoderecho_anim
       takeName: Take 001
       firstFrame: 75
       lastFrame: 110
@@ -846,7 +846,7 @@ ModelImporter:
       maskType: 0
       maskSource: {instanceID: 0}
     - serializedVersion: 16
-      name: "Vozarr\xF3n"
+      name: kraken_vozarron_anim
       takeName: Take 001
       firstFrame: 111
       lastFrame: 190
@@ -1012,7 +1012,7 @@ ModelImporter:
       maskType: 0
       maskSource: {instanceID: 0}
     - serializedVersion: 16
-      name: "Da\xF1ado Huida"
+      name: "kraken_da\xF1ohuida_anim"
       takeName: Take 001
       firstFrame: 191
       lastFrame: 258

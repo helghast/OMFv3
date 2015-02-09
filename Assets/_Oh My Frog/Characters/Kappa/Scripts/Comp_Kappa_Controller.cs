@@ -57,8 +57,6 @@ public class Comp_Kappa_Controller : MonoBehaviour
     private Transform player_transform;
    // private Comp_ScrollBG clouds;
 
-    private GameObject spawner_Enemy_Objects = null;
-
     private Vector3 currentVel;
 
 
@@ -86,13 +84,10 @@ public class Comp_Kappa_Controller : MonoBehaviour
         try
         {
             comp_debug = GameObject.Find("Debug").GetComponent<Comp_Debug>();
-            //clouds = GameObject.Find("Sky").GetComponent<Comp_ScrollBG>();
             cc = GetComponent<CharacterController>();
 
             COMP_DASH_CONSTANTS = GetComponent<Comp_Dash_Constants>();
             COMP_JUMP_CONSTANTS = GetComponent<Comp_Jump_Constants>();
-
-            spawner_Enemy_Objects = GameObject.Find("Empty_Target_Enemys_Obstacles");
         }
         catch (Exception e)
         {
@@ -256,7 +251,7 @@ public class Comp_Kappa_Controller : MonoBehaviour
         {
             if (comp_debug.EntradaTactil)
             {
-                Debug.Log("tactil");
+                //Debug.Log("tactil");
                 // Touch control
                 UpdateTouchMotion();
                 UpdateTouchActions();
@@ -331,15 +326,6 @@ public class Comp_Kappa_Controller : MonoBehaviour
         {
             cc.transform.position = new Vector3(0, player_transform.position.y, player_transform.position.z);
             MatchAllToPlayerPosition();
-
-            //temp GameObject. Posible chapuza!
-            Comp_Obstacle_Enemys temp_OEManager_Script = GameObject.Find("Obstacle_Enemy_Manager").GetComponent<Comp_Obstacle_Enemys>();
-            //volver a poner enemy_obstacle de la escena en el pool
-            temp_OEManager_Script.return_To_Pool_Position();
-            //Comp_Obstacle_Enemys.return_To_Pool_Position();
-            //cambiar enemy_obstacle
-            //Comp_Obstacle_Enemys.position_Random_Enemy_Obstacle();
-            temp_OEManager_Script.position_Random_Enemy_Obstacle();
         }
     }
 
