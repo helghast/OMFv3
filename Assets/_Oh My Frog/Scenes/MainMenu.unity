@@ -8365,7 +8365,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 584851941}
   - 95: {fileID: 584851942}
-  - 114: {fileID: 584851943}
   m_Layer: 0
   m_Name: pf_main_menu_4_3
   m_TagString: Untagged
@@ -8421,17 +8420,6 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &584851943
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 584851940}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d679cf9f2d5cbb34ba183d0dfc1272e7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &586131532
 GameObject:
   m_ObjectHideFlags: 0
@@ -8790,9 +8778,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5a38226643314a43a5781625d735d47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 0
   panelTotem: {fileID: 908861650}
   panelRedesSociales: {fileID: 2128256402}
   panelAudioOptions: {fileID: 1413153346}
+  playButton:
+    Clicked: {fileID: 0}
+    Unclicked: {fileID: 0}
+  buyButton:
+    Clicked: {fileID: 0}
+    Unclicked: {fileID: 0}
+  achievementsButton:
+    Clicked: {fileID: 0}
+    Unclicked: {fileID: 0}
+  rankingButton:
+    Clicked: {fileID: 0}
+    Unclicked: {fileID: 0}
 --- !u!114 &595718175
 MonoBehaviour:
   m_ObjectHideFlags: 0

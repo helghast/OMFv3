@@ -2,7 +2,6 @@
 using System.Collections;
 using System;
 using System.Threading;
-
 using Utils.BBDD;
 
 public class Comp_PHPConnector : MonoBehaviour

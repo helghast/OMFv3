@@ -24,15 +24,18 @@ public class MainMenu3DGUI : MonoBehaviour
     //before start
     void Awake()
     {
-        //crear instancia para facebook
-        //Comp_Facebook_Feed.Initialize();
+        
     }
 
 	// Use this for initialization
 	void Start ()
     {
-        //iniciar el FB.init() de facebook
-        //Comp_Facebook_Feed.Initialize().CallFBInit();
+        //crear instancia para facebook
+        if(!FB.IsInitialized)
+        {
+            //iniciar el FB.init() de facebook
+            Comp_Facebook_Feed.Initialize().CallFBInit();
+        }
 
         levelLoader = GetComponent<LoadLevel_GUI>();
         playButton.setClickedButtonState(false);
@@ -64,6 +67,8 @@ public class MainMenu3DGUI : MonoBehaviour
                     else if(hit.collider.name == "FBCollider")
                     {
                         Debug.Log("FB!");
+                        //facebook methods
+                        clickOrTouchSocialFBButton();
                     }
                 }
             }
@@ -92,6 +97,7 @@ public class MainMenu3DGUI : MonoBehaviour
                     else if(hit.collider.name == "FBCollider")
                     {
                         Debug.Log("FB!");
+                        //facebook methods
                         clickOrTouchSocialFBButton();
                     }
                 }
@@ -101,28 +107,7 @@ public class MainMenu3DGUI : MonoBehaviour
 
     public void clickOrTouchSocialFBButton()
     {
-        //logear
+        //logear y crear feed
         Comp_Facebook_Feed.Initialize().CallFBLogin();
-        //si esta logeado crear feed
-       /* if(Comp_Facebook_Feed.Initialize().estaLogeado == false)
-        {
-            Debug.LogWarning("No esta logeado");
-        }*/
-        //Comp_Facebook_Feed.Initialize().makeFeed();
-    }
-
-    /*void OnGUI()
-    {
-        if(GUI.Button(new Rect(10, 10, 50, 50), "Click"))
-        {
-            Comp_Facebook_Feed.Initialize().CallFBLogin();
-        }
-        if(Comp_Facebook_Feed.Initialize().estaLogeado == true)
-        {
-            if(GUI.Button(new Rect(70, 70, 50, 50), "Feed"))
-            {
-                Comp_Facebook_Feed.Initialize().makeFeed();
-            }
-        }
-    }*/
+    }    
 }

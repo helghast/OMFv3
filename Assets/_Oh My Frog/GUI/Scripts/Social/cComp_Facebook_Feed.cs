@@ -46,37 +46,42 @@ public class Comp_Facebook_Feed
     //metodo que devuelve cuando el estado de logeo como print
     private void OnInitComplete()
     {
-        Debug.Log("FB.Init completado: esta el user logeado? " + FB.IsLoggedIn);
+        Debug.Log("FB.Init completed: Is user logged in? " + FB.IsLoggedIn);
     }
 
     //metodo para no ocultar unity
     private void OnHideUnity(bool isGameShown)
     {
-        Debug.Log("Se ve el juego? " + isGameShown);
+        Debug.Log("Is game showing? " + isGameShown);
     }
 
     //metodo que realiza el login a Facebook
     public void CallFBLogin()
     {
-        FB.Login("email", LoginCallBack);
+        if(FB.IsInitialized)
+        {
+            FB.Login("public_profile, email, user_friends", LoginCallBack);
+        }        
     }
 
     //metodo que realiza el callback.
     private void LoginCallBack(FBResult result)
     {
         if(result.Error != null)
+            Debug.Log("Error Response:\n" + result.Error);
+        else if(!FB.IsLoggedIn)
         {
-            Debug.Log("Logeado");
+            Debug.Log("Login cancelled by Player");
         }
         else
         {
-            Debug.Log("Fallo!");
+            Debug.Log("Login was successful!");
+            makeFeed();
         }
-        //estaLogeado = FB.IsLoggedIn;
     }
 
     //metodo que realiza un feed al facebook.
-    public void makeFeed()
+    private void makeFeed()
     {
         //FB.Init(FB.OnInitComplete, FB.OnHideUnity);  
         FB.Feed(
