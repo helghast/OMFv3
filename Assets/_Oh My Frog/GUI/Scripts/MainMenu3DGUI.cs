@@ -18,13 +18,18 @@ public class MainMenu3DGUI : MonoBehaviour
     }
 
     public ButtonStateX2 playButton;
+    public ButtonStateX2 shopButton;
+    public ButtonStateX2 logrosButton;
+    public ButtonStateX2 rankingButton;
+    //private ButtonStateX2[] arrayButtons = null;    
+
     public LayerMask layerMask;
     private LoadLevel_GUI levelLoader;
 
     //before start
     void Awake()
     {
-        
+        //arrayButtons = new ButtonStateX2[] { playButton, shopButton, logrosButton, rankingButton };
     }
 
 	// Use this for initialization
@@ -39,6 +44,9 @@ public class MainMenu3DGUI : MonoBehaviour
 
         levelLoader = GetComponent<LoadLevel_GUI>();
         playButton.setClickedButtonState(false);
+        shopButton.setClickedButtonState(false);
+        logrosButton.setClickedButtonState(false);
+        rankingButton.setClickedButtonState(false);
 	}
 	
 	// Update is called once per frame
@@ -53,25 +61,6 @@ public class MainMenu3DGUI : MonoBehaviour
 
                 RaycastHit hit;
                 commonRayCast(ray, out hit);
-                /*if (Physics.Raycast(ray, out hit, 100, layerMask))
-                {
-                    Debug.Log("HITTED!");
-                    if (hit.collider.name == "playCollider")
-                    {
-                        playButton.setClickedButtonState(true);
-                        levelLoader.loadLevel("InGame");
-                    }
-                    else if (hit.collider.name == "buyCollider")
-                    {
-                        Debug.Log("Shop!");
-                    }
-                    else if(hit.collider.name == "FBCollider")
-                    {
-                        Debug.Log("FB!");
-                        //facebook methods
-                        clickOrTouchSocialFBButton();
-                    }
-                }*/
             }
         }
         else
@@ -84,25 +73,6 @@ public class MainMenu3DGUI : MonoBehaviour
                 Debug.DrawRay(ray.origin, ray.direction * 10, Color.red, 2);
 
                 commonRayCast(ray, out hit);
-                /*if (Physics.Raycast(ray, out hit, 100, layerMask))
-                {
-                    if (hit.collider.name == "playCollider")
-                    {
-                        playButton.setClickedButtonState(true);
-                        levelLoader.loadLevel("InGame");
-
-                    }
-                    else if(hit.collider.name == "buyCollider")
-                    {
-                        Debug.Log("Shop!");
-                    }
-                    else if(hit.collider.name == "FBCollider")
-                    {
-                        Debug.Log("FB!");
-                        //facebook methods
-                        clickOrTouchSocialFBButton();
-                    }
-                }*/
             }
         }
 	}
@@ -117,15 +87,32 @@ public class MainMenu3DGUI : MonoBehaviour
                 levelLoader.loadLevel("InGame");
 
             }
-            else if(hit.collider.name == "buyCollider")
+            else if(hit.collider.name == "shopCollider")
             {
+                shopButton.setClickedButtonState(true);
                 Debug.Log("Shop!");
             }
             else if(hit.collider.name == "FBCollider")
             {
                 Debug.Log("FB!");
+
                 //facebook methods
                 clickOrTouchSocialFBButton();
+
+                //activar aniimacion Shake panel
+                Animator anim = hit.collider.transform.GetComponentInParent<Animator>();
+                anim.enabled = true;
+                anim.Rebind();
+            }
+            else if(hit.collider.name == "logrosCollider")
+            {
+                logrosButton.setClickedButtonState(true);
+                Debug.Log("logros button");
+            }
+            else if(hit.collider.name == "rankingCollider")
+            {
+                rankingButton.setClickedButtonState(true);
+                Debug.Log("ranking button");
             }
         }
     }
