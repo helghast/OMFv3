@@ -30,6 +30,7 @@ public class MainMenu3DGUI : MonoBehaviour
     private LoadLevel_GUI levelLoader;
     //objecto del canvas
     public GameObject canvasMain;
+    private float temptime = 0f;
 
     //before start
     void Awake()
@@ -87,6 +88,17 @@ public class MainMenu3DGUI : MonoBehaviour
                 commonRayCast(ray, out hit);
             }
         }
+        if(temptime > 0)
+        {
+            temptime = temptime - Time.deltaTime;
+        }
+        else
+        {
+            for(int i = 0; i < arrayButtons.Length; i++)
+            {
+                arrayButtons[i].setClickedButtonState(false);
+            }
+        }
 	}
 
     public void commonRayCast(Ray ray, out RaycastHit hit)
@@ -95,6 +107,7 @@ public class MainMenu3DGUI : MonoBehaviour
         GameObject go;
         if(Physics.Raycast(ray, out hit, 100, layerMask))
         {
+            temptime = 1f;
             string hcname = hit.collider.name.ToLower();
             if(hcname == "playcollider")
             {
