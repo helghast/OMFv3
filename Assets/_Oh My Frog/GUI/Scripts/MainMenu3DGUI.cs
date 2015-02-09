@@ -9,6 +9,13 @@ public class MainMenu3DGUI : MonoBehaviour
     {
         public Transform clicked;
         public Transform unclicked;
+        public string name;
+
+        //para usar el constructor con parametros hay que hacer una llamada al constructor por defecto con this
+        public ButtonStateX2(string name) : this()
+        {
+            this.name = name;
+        }
 
         public void setClickedButtonState(bool state)
         {
@@ -17,24 +24,27 @@ public class MainMenu3DGUI : MonoBehaviour
         }
     }
 
-    public ButtonStateX2 playButton;
-    public ButtonStateX2 shopButton;
-    public ButtonStateX2 logrosButton;
-    public ButtonStateX2 rankingButton;
-    //private ButtonStateX2[] arrayButtons = null;    
+    public ButtonStateX2[] arrayButtons = new ButtonStateX2[] { new ButtonStateX2("playButton"), new ButtonStateX2("shopButton"), new ButtonStateX2("logrosButton"), new ButtonStateX2("rankingButton") };
 
     public LayerMask layerMask;
     private LoadLevel_GUI levelLoader;
+    //objecto del canvas
+    public GameObject canvasMain;
 
     //before start
     void Awake()
     {
-        //arrayButtons = new ButtonStateX2[] { playButton, shopButton, logrosButton, rankingButton };
+
     }
 
 	// Use this for initialization
 	void Start ()
     {
+        //importante tener el canvas main. buscarlo si nos olvidamos indicarlo en el editor
+        if(canvasMain == null)
+        {
+            canvasMain = GameObject.Find("Canvas-MainMenu");
+        }
         //crear instancia para facebook
         if(!FB.IsInitialized)
         {
@@ -43,10 +53,12 @@ public class MainMenu3DGUI : MonoBehaviour
         }
 
         levelLoader = GetComponent<LoadLevel_GUI>();
-        playButton.setClickedButtonState(false);
-        shopButton.setClickedButtonState(false);
-        logrosButton.setClickedButtonState(false);
-        rankingButton.setClickedButtonState(false);
+
+        //poner botones clickados a false
+        for(int i = 0; i < arrayButtons.Length; i++)
+        {
+            arrayButtons[i].setClickedButtonState(false);
+        }
 	}
 	
 	// Update is called once per frame
@@ -79,40 +91,64 @@ public class MainMenu3DGUI : MonoBehaviour
 
     public void commonRayCast(Ray ray, out RaycastHit hit)
     {
+        Animator anim;
+        GameObject go;
         if(Physics.Raycast(ray, out hit, 100, layerMask))
         {
-            if(hit.collider.name == "playCollider")
+            string hcname = hit.collider.name.ToLower();
+            if(hcname == "playcollider")
             {
-                playButton.setClickedButtonState(true);
-                levelLoader.loadLevel("InGame");
+                arrayButtons[0].setClickedButtonState(true);
 
+                //animar entrada panel seleccion mapa
+                go = canvasMain.GetComponent<Comp_MM_Panels>().panels[2];
+                go.SetActive(true);
+                anim = go.GetComponent<Animator>();
+                anim.enabled = true;
+                anim.Rebind();
+                //levelLoader.loadLevel("InGame");
             }
-            else if(hit.collider.name == "shopCollider")
+            else if(hcname == "shopcollider")
             {
-                shopButton.setClickedButtonState(true);
-                Debug.Log("Shop!");
+                arrayButtons[1].setClickedButtonState(true);
+
+                //buscar, activar y animar shop panel
+                go = canvasMain.GetComponent<Comp_MM_Panels>().panels[1];
+                go.SetActive(true);
+                foreach(Transform item in go.GetComponentsInChildren<Transform>())
+                {
+                    if(item.name == "Panel_StoreMain")
+                    {
+                        anim = item.GetComponent<Animator>();
+                        anim.enabled = true;
+                        anim.Rebind();
+                    }
+                }
+                Debug.Log(hcname);
             }
-            else if(hit.collider.name == "FBCollider")
+            else if(hcname == "fbcollider")
             {
-                Debug.Log("FB!");
+                Debug.Log(hcname);
 
                 //facebook methods
                 clickOrTouchSocialFBButton();
 
                 //activar aniimacion Shake panel
-                Animator anim = hit.collider.transform.GetComponentInParent<Animator>();
+                anim = hit.collider.transform.GetComponentInParent<Animator>();
                 anim.enabled = true;
                 anim.Rebind();
             }
-            else if(hit.collider.name == "logrosCollider")
+            else if(hcname == "logroscollider")
             {
-                logrosButton.setClickedButtonState(true);
-                Debug.Log("logros button");
+                arrayButtons[2].setClickedButtonState(true);
+
+                Debug.Log(hcname);
             }
-            else if(hit.collider.name == "rankingCollider")
+            else if(hcname == "rankingcollider")
             {
-                rankingButton.setClickedButtonState(true);
-                Debug.Log("ranking button");
+                arrayButtons[3].setClickedButtonState(true);
+
+                Debug.Log(hcname);
             }
         }
     }

@@ -6,29 +6,10 @@ using System;
 
 public class ClickButtonGUI : MonoBehaviour
 {
-    [System.Serializable]
-    public struct ButtonX2
-    {
-        public Transform Clicked;
-        public Transform Unclicked;
-
-        public void setClicked(bool state)
-        {
-            Clicked.gameObject.SetActive(state);
-            Unclicked.gameObject.SetActive(!state);
-        }
-    }
-
-    public LayerMask layerMask;
     //si se usa el SetActive ya no es necesario el CanvasGroups
     //public CanvasGroup[] listCanvasGroups = null;
     private string[] languagesArray = new string[] { "SPANISH", "ENGLISH", "FRENCH", "GERMAN", "ITALIAN" };
-    public GameObject panelTotem, panelRedesSociales, panelAudioOptions;
-
-    public ButtonX2 playButton;
-    public ButtonX2 buyButton;
-    public ButtonX2 achievementsButton;
-    public ButtonX2 rankingButton; 
+    public GameObject panelTotem, panelRedesSociales, panelAudioOptions; 
 
     void Awake()
     {
@@ -44,7 +25,7 @@ public class ClickButtonGUI : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-        if (Input.touchCount > 0)
+        /*if (Input.touchCount > 0)
         {
             if (Input.GetTouch(0).phase == TouchPhase.Began)
             {
@@ -66,7 +47,7 @@ public class ClickButtonGUI : MonoBehaviour
                     
                 }
             }
-        }
+        }*/
 
 	}
 
@@ -115,7 +96,7 @@ public class ClickButtonGUI : MonoBehaviour
 	    }
     }
 
-    public void shareOnFacebook()
+   /* public void shareOnFacebook()
     {
         //forma facil
         string facebookshare = "https://www.facebook.com/sharer/sharer.php?u=" + WWW.EscapeURL("https://www.facebook.com/ohmyfrog.surfrescue");
@@ -125,9 +106,9 @@ public class ClickButtonGUI : MonoBehaviour
 
     public void shareTwitter()
     {
-        /*string twittershare = "http://twitter.com/home?status=" + WWW.EscapeURL("direccion twitter");
+        string twittershare = "http://twitter.com/home?status=" + WWW.EscapeURL("direccion twitter");
 
-        Application.OpenURL(twittershare);*/
+        Application.OpenURL(twittershare);
     }
 
     //facebook vars
@@ -146,5 +127,5 @@ public class ClickButtonGUI : MonoBehaviour
             "&amp;caption=" + WWW.EscapeURL(caption) +
             "&amp;description=" + WWW.EscapeURL(description) +
             "&amp;redirect_uri=" + WWW.EscapeURL(redirectUri));
-    }
+    }*/
 }

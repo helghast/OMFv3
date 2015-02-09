@@ -3611,6 +3611,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1035784568}
     m_Modifications:
+    - target: {fileID: 11400020, guid: 262e3909dcf0b7e4bbaa248850d72e02, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 22400014, guid: 262e3909dcf0b7e4bbaa248850d72e02, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -3775,6 +3779,38 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 1144951323}
+    - target: {fileID: 100014, guid: 262e3909dcf0b7e4bbaa248850d72e02, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400020, guid: 262e3909dcf0b7e4bbaa248850d72e02, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400020, guid: 262e3909dcf0b7e4bbaa248850d72e02, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400020, guid: 262e3909dcf0b7e4bbaa248850d72e02, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400020, guid: 262e3909dcf0b7e4bbaa248850d72e02, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400020, guid: 262e3909dcf0b7e4bbaa248850d72e02, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 839336096}
+    - target: {fileID: 11400020, guid: 262e3909dcf0b7e4bbaa248850d72e02, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400020, guid: 262e3909dcf0b7e4bbaa248850d72e02, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 262e3909dcf0b7e4bbaa248850d72e02, type: 2}
   m_RootGameObject: {fileID: 839336096}
@@ -3854,7 +3890,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &275487616
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8149,6 +8185,18 @@ MonoBehaviour:
           m_StringArgument: MainMenu_KappaMesh_FadeIn
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1040158024}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &576148910
@@ -8761,24 +8809,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5a38226643314a43a5781625d735d47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  layerMask:
-    serializedVersion: 2
-    m_Bits: 0
   panelTotem: {fileID: 908861650}
   panelRedesSociales: {fileID: 2128256402}
   panelAudioOptions: {fileID: 1413153346}
-  playButton:
-    Clicked: {fileID: 0}
-    Unclicked: {fileID: 0}
-  buyButton:
-    Clicked: {fileID: 0}
-    Unclicked: {fileID: 0}
-  achievementsButton:
-    Clicked: {fileID: 0}
-    Unclicked: {fileID: 0}
-  rankingButton:
-    Clicked: {fileID: 0}
-    Unclicked: {fileID: 0}
 --- !u!114 &595718175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9649,7 +9682,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: Panel_Contenedor_MainMenu_FadeIn
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 0
       - m_Target: {fileID: 1365220363}
         m_MethodName: Play
         m_Mode: 5
@@ -9661,7 +9694,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: MainMenu_KappaMesh_FadeIn
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 0
       - m_Target: {fileID: 1144951322}
         m_MethodName: soundClickButton
         m_Mode: 2
@@ -9669,6 +9702,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 1144951323}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioSource, UnityEngine,
             Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 839336096}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -11084,7 +11129,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &839336097
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13005,6 +13050,10 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_StringArgument
       value: GameOver_Panel_FadeOut
       objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: 83e1cc17de4f2de43b539ea906be50ae, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 83e1cc17de4f2de43b539ea906be50ae, type: 2}
   m_RootGameObject: {fileID: 1887980712}
@@ -14060,13 +14109,14 @@ GameObject:
   - 223: {fileID: 1035784571}
   - 114: {fileID: 1035784570}
   - 114: {fileID: 1035784569}
+  - 114: {fileID: 1035784572}
   m_Layer: 5
   m_Name: Canvas-MainMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1035784568
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14149,6 +14199,24 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
+--- !u!114 &1035784572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1035784567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1587c34706c242841ae8d1d7f17c999e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panels:
+  - {fileID: 1403269207}
+  - {fileID: 1040158024}
+  - {fileID: 839336096}
+  - {fileID: 1887980712}
+  - {fileID: 1987706608}
+  - {fileID: 275487615}
 --- !u!1 &1039583417
 GameObject:
   m_ObjectHideFlags: 0
@@ -14256,7 +14324,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1040158025
 RectTransform:
   m_ObjectHideFlags: 0
@@ -15408,21 +15476,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54cce59e269f33d40b2848234adb6c3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playButton:
-    clicked: {fileID: 838725481}
+  arrayButtons:
+  - clicked: {fileID: 838725481}
     unclicked: {fileID: 628926135}
-  shopButton:
-    clicked: {fileID: 1347042182}
+    name: playButton
+  - clicked: {fileID: 1347042182}
     unclicked: {fileID: 535106335}
-  logrosButton:
-    clicked: {fileID: 1738088153}
+    name: shopButton
+  - clicked: {fileID: 1738088153}
     unclicked: {fileID: 184135497}
-  rankingButton:
-    clicked: {fileID: 2085378938}
+    name: logrosButton
+  - clicked: {fileID: 2085378938}
     unclicked: {fileID: 407418740}
+    name: rankingButton
   layerMask:
     serializedVersion: 2
     m_Bits: 512
+  canvasMain: {fileID: 1035784567}
 --- !u!81 &1135086713
 AudioListener:
   m_ObjectHideFlags: 0
@@ -17893,7 +17963,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!23 &1365220359
 Renderer:
   m_ObjectHideFlags: 0
@@ -18344,7 +18414,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1403269208
 RectTransform:
   m_ObjectHideFlags: 0
@@ -24583,7 +24653,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1887980713
 RectTransform:
   m_ObjectHideFlags: 0
@@ -25764,7 +25834,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1987706609
 RectTransform:
   m_ObjectHideFlags: 0
@@ -26906,6 +26976,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1035784568}
     m_Modifications:
+    - target: {fileID: 11400110, guid: bbdf5791893cccd478630878fee6c824, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 22400000, guid: bbdf5791893cccd478630878fee6c824, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -27093,6 +27167,30 @@ Prefab:
     - target: {fileID: 22400196, guid: bbdf5791893cccd478630878fee6c824, type: 2}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: bbdf5791893cccd478630878fee6c824, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400110, guid: bbdf5791893cccd478630878fee6c824, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400110, guid: bbdf5791893cccd478630878fee6c824, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400110, guid: bbdf5791893cccd478630878fee6c824, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1040158024}
+    - target: {fileID: 11400110, guid: bbdf5791893cccd478630878fee6c824, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400110, guid: bbdf5791893cccd478630878fee6c824, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bbdf5791893cccd478630878fee6c824, type: 2}
@@ -27652,6 +27750,10 @@ Prefab:
     - target: {fileID: 11400000, guid: 24af30790b1128345acc4a6784d10fa0, type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 100034, guid: 24af30790b1128345acc4a6784d10fa0, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 24af30790b1128345acc4a6784d10fa0, type: 2}
