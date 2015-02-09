@@ -8364,7 +8364,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 584851941}
-  - 95: {fileID: 584851942}
   m_Layer: 0
   m_Name: pf_main_menu_4_3
   m_TagString: Untagged
@@ -8404,22 +8403,6 @@ Transform:
   - {fileID: 1135086711}
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!95 &584851942
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 9518174, guid: 898c3adf87cb4a8489df57803183ca75,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 584851940}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 1cba2fc8a1ba60048b283683ccbb2919, type: 3}
-  m_Controller: {fileID: 9100000, guid: b2ad80ada8df5fc45a85f54e39b67c63, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 1
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &586131532
 GameObject:
   m_ObjectHideFlags: 0
@@ -15875,6 +15858,7 @@ GameObject:
   - 4: {fileID: 1154112034}
   - 33: {fileID: 1154112036}
   - 23: {fileID: 1154112035}
+  - 95: {fileID: 1154112037}
   m_Layer: 0
   m_Name: cartel_social
   m_TagString: Untagged
@@ -15924,6 +15908,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1154112033}
   m_Mesh: {fileID: 4300002, guid: 1cba2fc8a1ba60048b283683ccbb2919, type: 3}
+--- !u!95 &1154112037
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1154112033}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 32024dd7fad52864781a3746441d345d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &1158988503
 GameObject:
   m_ObjectHideFlags: 0
