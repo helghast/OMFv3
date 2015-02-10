@@ -24,12 +24,13 @@ public class MainMenu3DGUI : MonoBehaviour
         }
     }
 
-    public ButtonStateX2[] arrayButtons = new ButtonStateX2[] { new ButtonStateX2("playButton"), new ButtonStateX2("shopButton"), new ButtonStateX2("logrosButton"), new ButtonStateX2("rankingButton") };
+    public ButtonStateX2[] arrayButtons = new ButtonStateX2[] { new ButtonStateX2("playButton"), new ButtonStateX2("shopButton"), new ButtonStateX2("logrosButton"), new ButtonStateX2("optionsButton") };
 
     public LayerMask layerMask;
     private LoadLevel_GUI levelLoader;
     //objecto del canvas
     public GameObject canvasMain;
+    public GameObject panelOptions;
     private float temptime = 0f;
 
     //before start
@@ -46,13 +47,18 @@ public class MainMenu3DGUI : MonoBehaviour
         {
             canvasMain = GameObject.Find("Canvas-MainMenu");
         }
+        //buscar el panel de opciones si no se ha indicado
+        if(panelOptions == null)
+        {
+            panelOptions = GameObject.Find("PanelAudioOptions");            
+        }
         //crear instancia para facebook
         if(!FB.IsInitialized)
         {
             //iniciar el FB.init() de facebook
             Comp_Facebook_Feed.Initialize().CallFBInit();
         }
-
+        panelOptions.SetActive(false);
         levelLoader = GetComponent<LoadLevel_GUI>();
 
         //poner botones clickados a false
@@ -157,10 +163,10 @@ public class MainMenu3DGUI : MonoBehaviour
 
                 Debug.Log(hcname);
             }
-            else if(hcname == "rankingcollider")
+            else if(hcname == "optionscollider")
             {
                 arrayButtons[3].setClickedButtonState(true);
-
+                panelOptions.SetActive(true);
                 Debug.Log(hcname);
             }
         }

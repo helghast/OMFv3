@@ -4,11 +4,14 @@ using System.Collections;
 
 public class ControlAudioVolume : MonoBehaviour {
 
-    public Slider volumeMusicSlider = null;
+    public Slider volumeSlider = null;
 
 	// Use this for initialization
 	void Start () {
-	    
+        if(volumeSlider == null)
+        {
+            Debug.LogWarning("Falta asignar el slider");
+        }
 	}
 	
 	// Update is called once per frame
@@ -16,9 +19,10 @@ public class ControlAudioVolume : MonoBehaviour {
 
 	}
 
-    public void changeVolumeBSO()
+    public void changeVolume()
     {
-       audio.volume = volumeMusicSlider.value / 100f;
+        gameObject.audio.volume = volumeSlider.value / 100f;
+        //Debug.Log(volumeSlider.value);
     }
 
     public void soundClickButton(AudioSource soundButton_GO)

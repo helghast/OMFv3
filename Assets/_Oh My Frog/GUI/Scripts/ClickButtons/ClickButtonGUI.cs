@@ -9,12 +9,13 @@ public class ClickButtonGUI : MonoBehaviour
     //si se usa el SetActive ya no es necesario el CanvasGroups
     //public CanvasGroup[] listCanvasGroups = null;
     private string[] languagesArray = new string[] { "SPANISH", "ENGLISH", "FRENCH", "GERMAN", "ITALIAN" };
-    public GameObject panelTotem, panelRedesSociales, panelAudioOptions; 
+    //public GameObject panelTotem, panelRedesSociales, panelAudioOptions; 
+    public GameObject panelAudioOptions; 
 
     void Awake()
     {
         //para poder usar un objeto inactivo, iniciarlo como inactivo desde el awake, mejor que manualmente desde el editor
-        panelAudioOptions.SetActive(false);
+        //panelAudioOptions.SetActive(false);
     }
 
 	// Use this for initialization
@@ -51,7 +52,7 @@ public class ClickButtonGUI : MonoBehaviour
 
 	}
 
-    public void clickButton(Text textButton)
+    /*public void clickButton(Text textButton)
     {
         switch(textButton.text.ToLower())
         {
@@ -72,6 +73,11 @@ public class ClickButtonGUI : MonoBehaviour
         panelTotem.GetComponent<CanvasGroup>().interactable = !status;
         panelRedesSociales.GetComponent<CanvasGroup>().alpha = alpha;
         panelRedesSociales.GetComponent<CanvasGroup>().interactable = !status;
+    }*/
+
+    public void closePanel()
+    {
+        panelAudioOptions.SetActive(false);
     }
 
     public void changeLanguage(Button langButton)
