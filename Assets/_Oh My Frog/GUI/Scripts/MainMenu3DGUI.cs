@@ -31,6 +31,7 @@ public class MainMenu3DGUI : MonoBehaviour
     //objecto del canvas
     public GameObject canvasMain;
     public GameObject panelOptions;
+    public GameObject newShopPanel;
     private float temptime = 0f;
 
     //before start
@@ -52,13 +53,21 @@ public class MainMenu3DGUI : MonoBehaviour
         {
             panelOptions = GameObject.Find("PanelAudioOptions");            
         }
+        //buscar el panel de la nueva shop si no se ha indicado
+        if(newShopPanel == null)
+        {
+            newShopPanel = GameObject.Find("New_Shop_Panel");
+        }
         //crear instancia para facebook
         if(!FB.IsInitialized)
         {
             //iniciar el FB.init() de facebook
             Comp_Facebook_Feed.Initialize().CallFBInit();
         }
+        //poner a inactivos los siguientes paneles para evitar que se vean dentro de la camara en diferentes resoluciones
         panelOptions.SetActive(false);
+        newShopPanel.SetActive(false);
+
         levelLoader = GetComponent<LoadLevel_GUI>();
 
         //poner botones clickados a false
@@ -94,6 +103,8 @@ public class MainMenu3DGUI : MonoBehaviour
                 commonRayCast(ray, out hit);
             }
         }
+        
+        //forma rapida de desactivar los botones despues de ser hitteados
         if(temptime > 0)
         {
             temptime = temptime - Time.deltaTime;
@@ -131,10 +142,13 @@ public class MainMenu3DGUI : MonoBehaviour
             {
                 arrayButtons[1].setClickedButtonState(true);
 
-                //buscar, activar y animar shop panel
-                go = canvasMain.GetComponent<Comp_MM_Panels>().panels[1];
-                go.SetActive(true);
-                foreach(Transform item in go.GetComponentsInChildren<Transform>())
+                //buscar, activar y animar shop panel                
+                newShopPanel.SetActive(true);
+                newShopPanel.GetComponent<Animator>().enabled = true;
+                newShopPanel.GetComponent<Animator>().Rebind();
+                //go = canvasMain.GetComponent<Comp_MM_Panels>().panels[1];
+                //go.SetActive(true);
+                /*foreach(Transform item in go.GetComponentsInChildren<Transform>())
                 {
                     if(item.name == "Panel_StoreMain")
                     {
@@ -142,7 +156,7 @@ public class MainMenu3DGUI : MonoBehaviour
                         anim.enabled = true;
                         anim.Rebind();
                     }
-                }
+                }*/
                 Debug.Log(hcname);
             }
             else if(hcname == "fbcollider")
