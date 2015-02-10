@@ -7,7 +7,6 @@ public class Comp_Environment_Element : MonoBehaviour
     public float length;
     public float minDist2NextElement;
     public float maxDist2NextElement;
-    public float threshold;
     public Transform environmentTransform;
     public Transform poolTransform;
 
@@ -17,7 +16,7 @@ public class Comp_Environment_Element : MonoBehaviour
         poolTransform = GameObject.Find("Pool_Environment").transform;
     }
 
-	// Use this for initialization
+	// Use this for Sialization
 	void Start ()
     {
 	}
@@ -29,9 +28,5 @@ public class Comp_Environment_Element : MonoBehaviour
         transform.Translate(mov, Space.World);
 	}
 
-    public void wakeUp()
-    {
-
-    }
 
 }

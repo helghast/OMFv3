@@ -4,6 +4,7 @@ using System.Collections.Generic;
 
 public class Comp_Environment_Obstacle : MonoBehaviour
 {
+    private string nameObstacle;
     public float speed;
     public float y;
     public Transform environmentTransform;
@@ -36,6 +37,7 @@ public class Comp_Environment_Obstacle : MonoBehaviour
             gameObject.SetActive(true);
             transform.position = new Vector3(injectTransform.position.x, y, EnvironmentManager.Instance.ZLayer9);
             transform.parent = this.environmentTransform;
+            EnvironmentManager.Instance.addActiveObstacle(nameObstacle);
         }
     }
 
@@ -44,6 +46,11 @@ public class Comp_Environment_Obstacle : MonoBehaviour
         transform.parent = poolTransform;
         gameObject.SetActive(false);
 
+    }
+
+    public void setName(string name)
+    {
+        this.nameObstacle = name;
     }
 
 

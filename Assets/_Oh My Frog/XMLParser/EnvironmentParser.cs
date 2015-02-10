@@ -164,6 +164,7 @@ public class EnvironmentParser : BaseXMLParser
             if (go == null)
                 return ErrorCode.GO_NOT_FOUND;
             EnvironmentManager.Instance.obstacles[name] = go.GetComponent<Comp_Environment_Obstacle>();
+            EnvironmentManager.Instance.obstacles[name].setName(name);
         }
         return ErrorCode.IS_OK;
     }
@@ -175,8 +176,12 @@ public class EnvironmentParser : BaseXMLParser
             string path = "Environment/" + escenari.name + "/Enemys/" + name + "/Prefab/" + name;
             GameObject go = EPrefabManager.LoadPrefab(path, EnvironmentManager.Instance.transform_pool_enemys);
             if (go == null)
+            {
                 return ErrorCode.GO_NOT_FOUND;
+            }
             EnvironmentManager.Instance.enemys[name] = go.GetComponent<Comp_Base_Enemy>();
+            EnvironmentManager.Instance.enemys[name].setName(name);
+
         }
         return ErrorCode.IS_OK;
     }

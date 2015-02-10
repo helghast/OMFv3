@@ -1,0 +1,157 @@
+fileFormatVersion: 2
+guid: 9b89a60d6d7e73049ba9ae01d5544eb8
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: far_rocks_3
+    21300002: far_rocks_0
+    21300004: far_rocks_1
+    21300006: far_rocks_2
+    21300008: mid_rocks_3
+    21300010: mid_rocks_4
+    21300012: mid_rocks_5
+    21300014: mid_rocks_0
+    21300016: mid_rocks_1
+    21300018: mid_rocks_2
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: far_rocks_3
+      rect:
+        serializedVersion: 2
+        x: 1339
+        y: 4
+        width: 705
+        height: 285
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: far_rocks_0
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 298
+        width: 705
+        height: 398
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: far_rocks_1
+      rect:
+        serializedVersion: 2
+        x: 1051
+        y: 297
+        width: 465
+        height: 260
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: far_rocks_2
+      rect:
+        serializedVersion: 2
+        x: 1526
+        y: 297
+        width: 518
+        height: 419
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mid_rocks_3
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 798
+        width: 579
+        height: 314
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mid_rocks_4
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 795
+        width: 545
+        height: 388
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mid_rocks_5
+      rect:
+        serializedVersion: 2
+        x: 1434
+        y: 797
+        width: 570
+        height: 323
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mid_rocks_0
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 1202
+        width: 581
+        height: 291
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mid_rocks_1
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 1202
+        width: 550
+        height: 337
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mid_rocks_2
+      rect:
+        serializedVersion: 2
+        x: 1434
+        y: 1200
+        width: 570
+        height: 303
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

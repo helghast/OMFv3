@@ -4,6 +4,7 @@ using System.Collections.Generic;
 
 public class Comp_Base_Enemy : MonoBehaviour
 {
+    public string enemyName;
     public float speed;
     public float y;
 
@@ -36,7 +37,20 @@ public class Comp_Base_Enemy : MonoBehaviour
             this.gameObject.SetActive(true);
             this.transform.position = new Vector3(injectTransform.position.x, y, EnvironmentManager.Instance.ZLayer9);
             this.transform.parent = this.environmentTransform;
+            EnvironmentManager.Instance.addActiveEnemy(enemyName);
+
         }
+    }
+
+    public void disable()
+    {
+        transform.parent = poolTransform;        
+        gameObject.SetActive(false);
+    }
+
+    public void setName(string name)
+    {
+        enemyName = name;
     }
 
 }

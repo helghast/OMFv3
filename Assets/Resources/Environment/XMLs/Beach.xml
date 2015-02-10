@@ -1,11 +1,11 @@
 ﻿<Escenaris>
   <Escenari nom="beach">
-    <Dificultat id ="0" timer ="30">
+    <Dificultat id ="0" timer ="15">
       <Obstacles>
-        <Obstacle nom ="globo" timer="2" percent ="10"></Obstacle>
+        <Obstacle nom ="globo" timer="2" percent ="40"></Obstacle>
       </Obstacles>
       <Enemics>
-        <Enemic nom ="pinguino" timer ="1" percent ="80"></Enemic>
+        <Enemic nom ="pinguino" timer ="1" percent ="60"></Enemic>
       </Enemics>
       <!--
       <Plataformes>
@@ -15,14 +15,16 @@
         <Granota color="verd" percent ="100"></Granota>
       </Granotes>-->
     </Dificultat>
-    <Dificultat id ="1" timer ="15">
+    <Dificultat id ="1" timer ="40">
       <Obstacles>
         <Obstacle nom ="globo" timer="2" percent ="50"></Obstacle>
         <!--<Obstacle nom ="boya campana" timer="1" percent ="20"></Obstacle> -->
       </Obstacles>
       <Enemics>
         <Enemic nom ="pinguino"  timer ="1" percent ="20"></Enemic>
-        <!--<Enemic nom ="vaixell pirata" timer ="1" percent ="10"></Enemic>-->
+        <Enemic nom ="nessi" timer ="1" percent ="10"></Enemic>
+        <Enemic nom ="ovni" timer ="1" percent ="10"></Enemic>
+        <Enemic nom ="tortugaoveja" timer ="1" percent ="10"></Enemic>
       </Enemics>
       <!--
       <Plataformes>
@@ -77,9 +79,9 @@
         <Element2D nom ="ship_1"          y ="-1.9" ></Element2D>
         <Element2D nom ="ship_2"          y ="-1.9" ></Element2D>
       </Layer>
-      <Layer id ="6_planes_layer">
+      <!--<Layer id ="6_planes_layer">
         <Element2D nom ="plane_0"          y ="2.8" ></Element2D>
-       </Layer>
+       </Layer>-->
     </Layers>
     <Layer id ="9_coral_layer">
       <Element2D nom ="coral_0"        y ="-3" ></Element2D>

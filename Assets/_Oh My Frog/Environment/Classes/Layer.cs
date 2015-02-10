@@ -14,7 +14,7 @@ public class Layer
     private Transform transformInject;
     private float timer;
 
-    public static int MAX_ITERATIONS = 5;
+    public static int MAX_ITERATIONS = 10;
 
     public Layer(string name, float z, LAYER_ID id)
     {
@@ -49,6 +49,10 @@ public class Layer
                         float dist = elements2D[idx].compElement.length + UnityEngine.Random.Range(elements2D[idx].compElement.minDist2NextElement, elements2D[idx].compElement.maxDist2NextElement);
                         timer = dist / -elements2D[idx].compElement.Speed;  //m / (m/s) = s;
                     }
+                    else
+                    {
+                        int x = 0;
+                    }
                 }
             }
             else
@@ -64,7 +68,7 @@ public class Layer
         if (this.layerID == LAYER_ID.LAYER_0)
             x = 0;
         else
-            x = UnityEngine.Random.Range(-5, 10);
+            x = UnityEngine.Random.Range(-2, 12);
         int idx = UnityEngine.Random.Range(0, elements2D.Count);
         elements2D[idx].spawn(new Vector3(x, elements2D[idx].y, z));
         float dist = elements2D[idx].compElement.length + UnityEngine.Random.Range(elements2D[idx].compElement.minDist2NextElement, elements2D[idx].compElement.maxDist2NextElement);

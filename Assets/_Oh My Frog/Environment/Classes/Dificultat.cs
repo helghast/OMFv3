@@ -56,8 +56,8 @@ public class Dificultat {
         {
             if (random < enemy.percent)
             {
-                EnvironmentManager.Instance.enemys[enemy.name].spawn();
                 Debug.Log("inject enemy " + enemy.name);
+                EnvironmentManager.Instance.enemys[enemy.name].spawn();
                 return enemy.baseTimer;
             }
         }
@@ -77,8 +77,8 @@ public class Dificultat {
             }
         }
         return 0;
-
     }
+
 
     public float injectPlatform()
     {

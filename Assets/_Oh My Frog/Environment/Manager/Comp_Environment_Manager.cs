@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class Comp_Environment_Manager : MonoBehaviour
 {
@@ -40,10 +41,18 @@ public class Comp_Environment_Manager : MonoBehaviour
     private Level currentScene;
     private int currentDificulty;
     private float timer2NextObject;
+    private float DIST_TO_DISAPEAR = -15;
+
+    public List<string> activeObstacles;
+    public List<string> activeEnemys;
+
 
 
     void Awake()
     {
+        activeObstacles = new List<string>();
+        activeEnemys = new List<string>();
+
     }
 	void Start ()
     {
@@ -70,18 +79,19 @@ public class Comp_Environment_Manager : MonoBehaviour
         {
             foreach (Element2D element in layer.Elements2D)
             {
-                if (element.isActive()) { 
-                    bool visible = element.isVisibleInCamera();
-                    if (element.wasVisible && !visible) {
+                if (element.isActive())
+                {
+                    if (element.compElement.transform.localPosition.x < DIST_TO_DISAPEAR)
+                    {
                         element.disable();
                     }
-                    else
-                    {
-                        element.setVisible(visible);
-                    }
+                   
                 }
             }
         }
+
+        managerDeleteObstacles();
+        managerDeleteEnemys();
         /*
         for (int i = 0; i < scene.layers.Count; ++i)
         {
@@ -99,6 +109,42 @@ public class Comp_Environment_Manager : MonoBehaviour
                     layer.Elements2D[j].setVisible(visible);
             }
         }*/
+    }
+
+    private void managerDeleteObstacles()
+    {
+        List<string> obstacles4Delete = new List<string>();
+        foreach (string nameObstacle in activeObstacles)
+        {
+            Comp_Environment_Obstacle co = EnvironmentManager.Instance.obstacles[nameObstacle];
+            if (co.transform.localPosition.x < DIST_TO_DISAPEAR)
+            {
+                obstacles4Delete.Add(nameObstacle);
+                co.disable();
+            }
+        }
+        foreach (string name in obstacles4Delete)
+        {
+            activeObstacles.Remove(name);
+        }
+    }
+
+    private void managerDeleteEnemys()
+    {
+        List<string> enemy4Delete = new List<string>();
+        foreach (string nameEnemy in activeEnemys)
+        {
+            Comp_Base_Enemy comp_enemy = EnvironmentManager.Instance.enemys[nameEnemy];
+            if (comp_enemy.transform.localPosition.x < DIST_TO_DISAPEAR)
+            {
+                enemy4Delete.Add(nameEnemy);
+                comp_enemy.disable();
+            }
+        }
+        foreach (string name in enemy4Delete)
+        {
+            activeEnemys.Remove(name);
+        }
     }
 
     void checkChangeDificulty()
@@ -146,5 +192,14 @@ public class Comp_Environment_Manager : MonoBehaviour
         timerLevel = 0;
         currentScene.initSpawn();
         timer2NextObject = 0;
+    }
+    public void addActiveObstacle(string name)
+    {
+        activeObstacles.Add(name);
+    }
+
+    public void addActiveEnemy(string name)
+    {
+        activeEnemys.Add(name);
     }
 }

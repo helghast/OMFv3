@@ -9,24 +9,19 @@ public class Element2D
 {
     public LAYER_ID layerID;
     public string name;
-    public bool wasVisible;
-    private Renderer renderer;
-
-    public Comp_Environment_Element compElement;
     public float y;
+    public Comp_Environment_Element compElement;
 
     public Element2D(string name, float y, LAYER_ID layerId)
     {
         this.name = name;
         this.y = y;
         this.layerID = layerId;
-        wasVisible = false;
     }
 
     public void setEnvironmentComponent(Comp_Environment_Element compElement)
     {
         this.compElement = compElement;
-        renderer = this.compElement.renderer;
         setSpeed();
     }
 
@@ -79,19 +74,8 @@ public class Element2D
 
     public void disable()
     {
-        wasVisible = false;
         compElement.gameObject.SetActive(false);
         compElement.transform.parent = compElement.poolTransform;
-    }
-
-    public void setVisible(bool value)
-    {
-        wasVisible = value;
-    }
-
-    public bool isVisibleInCamera()
-    {
-        return renderer.EP_IsVisibleFromCurrentCamera();
     }
 
     public bool isActive()

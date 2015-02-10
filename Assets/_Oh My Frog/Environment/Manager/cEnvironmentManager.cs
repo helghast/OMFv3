@@ -191,4 +191,12 @@ public class EnvironmentManager
         currentLevel = level;
     }
 
+    public void addActiveObstacle(string nameObstacle)
+    {
+        comp_env_manager.addActiveObstacle(nameObstacle);
+    }
+    public void addActiveEnemy(string nameEnemy)
+    {
+        comp_env_manager.addActiveEnemy(nameEnemy);
+    }
 }
