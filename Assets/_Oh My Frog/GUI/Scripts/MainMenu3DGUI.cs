@@ -157,6 +157,7 @@ public class MainMenu3DGUI : MonoBehaviour
                         anim.Rebind();
                     }
                 }*/
+                GameObject.Find("New_Shop_Panel").GetComponent<CreateScrollableList>().populateList();
                 Debug.Log(hcname);
             }
             else if(hcname == "fbcollider")

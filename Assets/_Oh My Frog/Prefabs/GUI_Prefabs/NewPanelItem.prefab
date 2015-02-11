@@ -131,6 +131,7 @@ GameObject:
   - 222: {fileID: 22200016}
   - 114: {fileID: 11400018}
   - 114: {fileID: 11400006}
+  - 114: {fileID: 11400020}
   m_Layer: 5
   m_Name: NewPanelItem
   m_TagString: Untagged
@@ -202,7 +203,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 11400004}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11400020}
+        m_MethodName: clickButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &11400004
@@ -316,7 +329,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 1
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
@@ -390,6 +403,24 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &11400020
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0ad3f7f4d5b2724788da0d95bd68e6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 100016}
+  itemTitle: {fileID: 11400016}
+  image: {fileID: 11400014}
+  description: {fileID: 11400012}
+  nameQuantity: {fileID: 11400010}
+  quantity: {fileID: 11400008}
+  statusButton: {fileID: 11400002}
 --- !u!222 &22200000
 CanvasRenderer:
   m_ObjectHideFlags: 1
@@ -485,10 +516,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 22400016}
   m_RootOrder: 4
-  m_AnchorMin: {x: 0, y: .184527114}
-  m_AnchorMax: {x: .45600003, y: .269000024}
-  m_AnchoredPosition: {x: 3.20000005, y: -2.5999999}
-  m_SizeDelta: {x: 4.4000001, y: 1}
+  m_AnchorMin: {x: .51000005, y: .175755188}
+  m_AnchorMax: {x: .953420222, y: .266000003}
+  m_AnchoredPosition: {x: .0508731902, y: -.300000012}
+  m_SizeDelta: {x: .10168004, y: -.300000012}
   m_Pivot: {x: .5, y: .5}
 --- !u!224 &22400008
 RectTransform:
@@ -502,10 +533,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 22400016}
   m_RootOrder: 3
-  m_AnchorMin: {x: .5, y: .176000014}
-  m_AnchorMax: {x: 1, y: .269000024}
-  m_AnchoredPosition: {x: -.900001526, y: -.699996948}
-  m_SizeDelta: {x: .413002014, y: -2}
+  m_AnchorMin: {x: .0340000018, y: .175755188}
+  m_AnchorMax: {x: .5, y: .266000003}
+  m_AnchoredPosition: {x: .351999283, y: -.199996948}
+  m_SizeDelta: {x: .0970001221, y: -.400001526}
   m_Pivot: {x: .5, y: .5}
 --- !u!224 &22400010
 RectTransform:
@@ -519,10 +550,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 22400016}
   m_RootOrder: 2
-  m_AnchorMin: {x: .0440000035, y: .269000024}
-  m_AnchorMax: {x: .943420231, y: .5}
-  m_AnchoredPosition: {x: .131299496, y: -.700007617}
-  m_SizeDelta: {x: 2.45610046, y: 1.39999998}
+  m_AnchorMin: {x: .0340000018, y: .266000003}
+  m_AnchorMax: {x: .953420222, y: .5}
+  m_AnchoredPosition: {x: .131299496, y: -.200007617}
+  m_SizeDelta: {x: .456100464, y: .399999976}
   m_Pivot: {x: .5, y: .5}
 --- !u!224 &22400012
 RectTransform:
