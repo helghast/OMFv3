@@ -46,7 +46,7 @@
     -->
     <Layers>
       <Layer id ="0_sky_layer">
-        <Element2D nom ="sky"  y ="2" ></Element2D>
+        <Element2D nom ="sky"  y ="-1" ></Element2D>
       </Layer>
       <Layer id ="1_clouds_layer">
         <Element2D nom ="cloud_0"  y ="-2.5" ></Element2D>
@@ -84,23 +84,23 @@
        </Layer>-->
     </Layers>
     <Layer id ="9_coral_layer">
-      <Element2D nom ="coral_0"        y ="-3" ></Element2D>
-      <Element2D nom ="coral_1"        y ="-3" ></Element2D>
-      <Element2D nom ="coral_2"        y ="-3" ></Element2D>
-      <Element2D nom ="coral_3"        y ="-3" ></Element2D>
-      <Element2D nom ="coral_4"        y ="-3" ></Element2D>
-      <Element2D nom ="coral_5"        y ="-3" ></Element2D>
-      <Element2D nom ="coral_6"        y ="-3" ></Element2D>
-      <Element2D nom ="coral_7"        y ="-3" ></Element2D>
-      <Element2D nom ="coral_8"        y ="-3" ></Element2D>
-      <Element2D nom ="coral_9"        y ="-3" ></Element2D>
-      <Element2D nom ="coral_10"       y ="-3" ></Element2D>
-      <Element2D nom ="coral_11"       y ="-3" ></Element2D>
-      <Element2D nom ="coral_12"       y ="-3" ></Element2D>
-      <Element2D nom ="coral_13"       y ="-3" ></Element2D>
-      <Element2D nom ="coral_14"       y ="-3" ></Element2D>
-      <Element2D nom ="coral_15"       y ="-3" ></Element2D>
-      <Element2D nom ="coral_16"       y ="-3" ></Element2D>
+      <Element2D nom ="coral_0"        y ="-3.5" ></Element2D>
+      <Element2D nom ="coral_1"        y ="-3.5" ></Element2D>
+      <Element2D nom ="coral_2"        y ="-3.5" ></Element2D>
+      <Element2D nom ="coral_3"        y ="-3.5" ></Element2D>
+      <Element2D nom ="coral_4"        y ="-3.5" ></Element2D>
+      <Element2D nom ="coral_5"        y ="-3.5" ></Element2D>
+      <Element2D nom ="coral_6"        y ="-3.5" ></Element2D>
+      <Element2D nom ="coral_7"        y ="-3.5" ></Element2D>
+      <Element2D nom ="coral_8"        y ="-3.5" ></Element2D>
+      <Element2D nom ="coral_9"        y ="-3.5" ></Element2D>
+      <Element2D nom ="coral_10"       y ="-3.5" ></Element2D>
+      <Element2D nom ="coral_11"       y ="-3.5" ></Element2D>
+      <Element2D nom ="coral_12"       y ="-3.5" ></Element2D>
+      <Element2D nom ="coral_13"       y ="-3.5" ></Element2D>
+      <Element2D nom ="coral_14"       y ="-3.5" ></Element2D>
+      <Element2D nom ="coral_15"       y ="-3.5" ></Element2D>
+      <Element2D nom ="coral_16"       y ="-3.5" ></Element2D>
     </Layer>
   </Escenari>
 </Escenaris>

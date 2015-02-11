@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 171390}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -40,12 +40,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39c9c7aac2911ff4bad17ba77f0daf8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isVisible: 0
   Speed: 0
-  length: 5
+  length: 7.5
   minDist2NextElement: 3
   maxDist2NextElement: 7
-  threshold: 0
   environmentTransform: {fileID: 0}
   poolTransform: {fileID: 0}
 --- !u!212 &21271390
