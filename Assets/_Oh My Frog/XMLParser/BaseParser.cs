@@ -8,19 +8,16 @@ using System.IO;
 using UnityEngine;
 using OMF_Errors;
 
-public abstract class BaseXMLParser
-{
+public abstract class BaseXMLParser {
     private XmlTextReader reader;
     Stack m_names;
 
-    public BaseXMLParser()
-    {
+    public BaseXMLParser() {
         reader = null;
         m_names = new Stack();
     }
 
-    public ErrorCode xmlParseFile(TextAsset textAsset)
-    {
+    public ErrorCode xmlParseFile(TextAsset textAsset) {
         MemoryStream assetStream = new MemoryStream(textAsset.bytes);
         reader = new XmlTextReader(assetStream);
 
@@ -29,28 +26,23 @@ public abstract class BaseXMLParser
         return Parse();
     }
 
-    public ErrorCode Parse()
-    {
+    public ErrorCode Parse() {
         ErrorCode error;
         string elementName;
-        while (reader.Read())
-        {
-            switch (reader.NodeType)
-            {
+        while (reader.Read()) {
+            switch (reader.NodeType) {
                 case XmlNodeType.Element:
                     elementName = reader.Name;
                     m_names.Push(elementName);
                     error = onStartElement(elementName, getAttributes());
-                    if (error != ErrorCode.IS_OK)
-                    {
+                    if (error != ErrorCode.IS_OK) {
                         return error;
                     }
                     break;
                 case XmlNodeType.EndElement:
                     elementName = m_names.Pop().ToString();
                     error = onEndElement(elementName);
-                    if (error != ErrorCode.IS_OK)
-                    {
+                    if (error != ErrorCode.IS_OK) {
                         return error;
                     }
                     break;

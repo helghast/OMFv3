@@ -49,10 +49,6 @@ public class Layer
                         float dist = elements2D[idx].compElement.length + UnityEngine.Random.Range(elements2D[idx].compElement.minDist2NextElement, elements2D[idx].compElement.maxDist2NextElement);
                         timer = dist / -elements2D[idx].compElement.Speed;  //m / (m/s) = s;
                     }
-                    else
-                    {
-                        int x = 0;
-                    }
                 }
             }
             else

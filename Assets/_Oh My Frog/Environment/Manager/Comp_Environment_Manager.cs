@@ -2,8 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class Comp_Environment_Manager : MonoBehaviour
-{
+public class Comp_Environment_Manager : MonoBehaviour {
     public float DISTANCE_TO_RESET_SYSTEM;
     public Transform environmentSpawnPoint_0_5;
     public float SKY_MULT;
@@ -48,19 +47,16 @@ public class Comp_Environment_Manager : MonoBehaviour
 
 
 
-    void Awake()
-    {
+    void Awake() {
         activeObstacles = new List<string>();
         activeEnemys = new List<string>();
 
     }
-	void Start ()
-    {
+    void Start() {
         EnvironmentManager.Instance.setEnvironment(this);
-	}
+    }
 
-    void Update()
-    {
+    void Update() {
         // Aquí deberá ir el código que se encarga de spawnear los elementos de enviroment de manera aleatoria 
         // pero siguiendo algunas normas
         timerLevel += Time.deltaTime;
@@ -69,89 +65,56 @@ public class Comp_Environment_Manager : MonoBehaviour
         currentScene.manageSpawner();
     }
 
-    void LateUpdate()
-    {
+    void LateUpdate() {
         if (currentScene == null)
             return;
 
-        
-        foreach (Layer layer in currentScene.layers)
-        {
-            foreach (Element2D element in layer.Elements2D)
-            {
-                if (element.isActive())
-                {
-                    if (element.compElement.transform.localPosition.x < DIST_TO_DISAPEAR)
-                    {
+        foreach (Layer layer in currentScene.layers) {
+            foreach (Element2D element in layer.Elements2D) {
+                if (element.isActive()) {
+                    if (element.compElement.transform.localPosition.x < DIST_TO_DISAPEAR) {
                         element.disable();
                     }
-                   
+
                 }
             }
         }
 
         managerDeleteObstacles();
         managerDeleteEnemys();
-        /*
-        for (int i = 0; i < scene.layers.Count; ++i)
-        {
-            Layer layer = scene.layers[i];
-            for (int j = 0; j < layer.Elements2D.Count; ++j)
-            {
-                bool visible = layer.Elements2D[j].renderer.EP_IsVisibleFromCurrentCamera();
-                // Si antes era visible y ahora ya no es visible según el nuevo view frustum, es que ha salido por la izquierda
-                if (!visible && layer.Elements2D[j].isVisible)
-                {
-                    //DeleteCoin(i);
-                    layer.Elements2D[j].disable();
-                }
-                else
-                    layer.Elements2D[j].setVisible(visible);
-            }
-        }*/
     }
 
-    private void managerDeleteObstacles()
-    {
+    private void managerDeleteObstacles() {
         List<string> obstacles4Delete = new List<string>();
-        foreach (string nameObstacle in activeObstacles)
-        {
+        foreach (string nameObstacle in activeObstacles) {
             Comp_Environment_Obstacle co = EnvironmentManager.Instance.obstacles[nameObstacle];
-            if (co.transform.localPosition.x < DIST_TO_DISAPEAR)
-            {
+            if (co.transform.localPosition.x < DIST_TO_DISAPEAR) {
                 obstacles4Delete.Add(nameObstacle);
                 co.disable();
             }
         }
-        foreach (string name in obstacles4Delete)
-        {
+        foreach (string name in obstacles4Delete) {
             activeObstacles.Remove(name);
         }
     }
 
-    private void managerDeleteEnemys()
-    {
+    private void managerDeleteEnemys() {
         List<string> enemy4Delete = new List<string>();
-        foreach (string nameEnemy in activeEnemys)
-        {
+        foreach (string nameEnemy in activeEnemys) {
             Comp_Base_Enemy comp_enemy = EnvironmentManager.Instance.enemys[nameEnemy];
-            if (comp_enemy.transform.localPosition.x < DIST_TO_DISAPEAR)
-            {
+            if (comp_enemy.transform.localPosition.x < DIST_TO_DISAPEAR) {
                 enemy4Delete.Add(nameEnemy);
                 comp_enemy.disable();
             }
         }
-        foreach (string name in enemy4Delete)
-        {
+        foreach (string name in enemy4Delete) {
             activeEnemys.Remove(name);
         }
     }
 
-    void checkChangeDificulty()
-    {
-        if (timerLevel > currentScene.dificultats[currentDificulty].timeDificulty)
-        {
-            if (currentDificulty < currentScene.dificultats.Count-1) {
+    void checkChangeDificulty() {
+        if (timerLevel > currentScene.dificultats[currentDificulty].timeDificulty) {
+            if (currentDificulty < currentScene.dificultats.Count - 1) {
                 ++currentDificulty;
                 Debug.Log("canvio de dificultat a: " + currentDificulty);
             }
@@ -159,47 +122,36 @@ public class Comp_Environment_Manager : MonoBehaviour
         }
     }
 
-    void manageElements3D()
-    {
+    void manageElements3D() {
         timer2NextObject -= Time.deltaTime;
-        if (timer2NextObject <= 0)
-        {
+        if (timer2NextObject <= 0) {
             float timeDificulty = currentScene.dificultats[currentDificulty].timeDificulty;
 
-            if (timerLevel < timeDificulty - 2)
-            {
+            if (timerLevel < timeDificulty - 2) {
                 int random = UnityEngine.Random.Range(0, 100);
-                if (random < currentScene.dificultats[currentDificulty].percentObstacles)
-                {
+                if (random < currentScene.dificultats[currentDificulty].percentObstacles) {
                     timer2NextObject = currentScene.dificultats[currentDificulty].injectObstacle(random);
-                }
-                else
-                {
+                } else {
                     timer2NextObject = currentScene.dificultats[currentDificulty].injectEnemy(random);
                 }
-            }
-            else
-            {
+            } else {
                 timer2NextObject = currentScene.dificultats[currentDificulty].injectPlatform();
             }
         }
     }
 
-    public void resetCurrentScene(Level scene)
-    {
+    public void resetCurrentScene(Level scene) {
         currentScene = scene;
         currentDificulty = 0;
         timerLevel = 0;
         currentScene.initSpawn();
         timer2NextObject = 0;
     }
-    public void addActiveObstacle(string name)
-    {
+    public void addActiveObstacle(string name) {
         activeObstacles.Add(name);
     }
 
-    public void addActiveEnemy(string name)
-    {
+    public void addActiveEnemy(string name) {
         activeEnemys.Add(name);
     }
 }
