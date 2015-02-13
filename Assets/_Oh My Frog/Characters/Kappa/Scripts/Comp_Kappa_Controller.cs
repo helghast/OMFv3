@@ -55,7 +55,6 @@ public class Comp_Kappa_Controller : MonoBehaviour
     private RigidbodyConstraints land_control_constraints;
 
     private Transform player_transform;
-   // private Comp_ScrollBG clouds;
 
     private Vector3 currentVel;
 
