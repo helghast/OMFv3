@@ -157,20 +157,21 @@ public class MainMenu3DGUI : MonoBehaviour
                         anim.Rebind();
                     }
                 }*/
-                GameObject.Find("New_Shop_Panel").GetComponent<CreateScrollableList>().populateList();
+                //la lista de items por defecto que se carga al abrir la shop es Items.
+                GameObject.Find("New_Shop_Panel").GetComponent<CreateScrollableList>().populateList("Items");
                 Debug.Log(hcname);
             }
             else if(hcname == "fbcollider")
             {
-                Debug.Log(hcname);
-
-                //facebook methods
-                clickOrTouchSocialFBButton();
+                Debug.Log(hcname);                
 
                 //activar aniimacion Shake panel
                 anim = hit.collider.transform.GetComponentInParent<Animator>();
                 anim.enabled = true;
-                anim.Rebind();
+                anim.Rebind();                
+
+                //esperar 1seg antes de abrir el panel de facebook
+                Invoke("clickOrTouchSocialFBButton", 1f);
             }
             else if(hcname == "logroscollider")
             {

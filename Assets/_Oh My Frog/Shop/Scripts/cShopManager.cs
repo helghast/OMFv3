@@ -2,6 +2,8 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Text;
+using UnityEngine.UI;
 
 using Soomla.Store;
 
@@ -21,7 +23,10 @@ public class ShopManager
     //-----------------------------------------------
     //  STATIC ATRIBUTES
     //-----------------------------------------------
-    private static ShopManager instance;
+    private static ShopManager instance = null;
+    private static Dictionary<string, List<Item>> _mapaListItems = new Dictionary<string, List<Item>>();
+    //private static Dictionary<string, List<GameObject>> _mapaListItemsGO = new Dictionary<string, List<GameObject>>();
+
     public static ShopManager Instance
     {
         get
@@ -44,13 +49,14 @@ public class ShopManager
 
     }
 
-    public static void CreateManager()
+    public static ShopManager CreateManager()
     {
         if (instance == null)
         {
             instance = new ShopManager();
             Instance.Initialize();
         }
+        return instance;
     }
 
     public void Initialize()
@@ -62,12 +68,61 @@ public class ShopManager
     //-----------------------------------------------
     //  ATRIBUTES
     //-----------------------------------------------
-    
+    public void SetToMap(string key, List<Item> values) {
+        _mapaListItems.Add(key, values);
+    }
+
+    public Dictionary<string, List<Item>> GetFromMap() {
+        return _mapaListItems;
+    }
+
+    public List<Item> GetListMap(string key) {
+        if(_mapaListItems.ContainsKey(key)) {
+            return _mapaListItems[key];
+        } else {
+            return null;
+        }
+    }    
 
     //-----------------------------------------------
     //  FUNCTIONS
     //-----------------------------------------------
-    
+    public void ImprimirMap() {        
+        foreach(KeyValuePair<string, List<Item>> item in _mapaListItems) {            
+            foreach(Item itemlist in item.Value) {
+                StringBuilder sb = new StringBuilder();
+                sb.Append(item.Key);
+                sb.Append(":");
+                sb.Append(itemlist.itemName);
+                sb.Append(" | ");
+                sb.Append(itemlist.itemDescription);
+                sb.Append(" | ");
+                sb.Append(itemlist.itemQuantity);
+                sb.Append(" | ");
+                sb.Append(itemlist.price);
+                sb.Append(" | ");
+                sb.Append(itemlist.status);
+                Debug.Log(sb);
+            }            
+        }        
+    }
 
-    
+    /*public List<GameObject> getListFromKey(string key) {
+        if(_mapaListItemsGO.ContainsKey(key)) {
+            return _mapaListItemsGO[key];
+        } else {
+            return null;
+        }
+    }*/
+
+   /* public void addToMapGameObjects(string key, GameObject go) {
+        if(!_mapaListItemsGO.ContainsKey(key)) {
+            _mapaListItemsGO.Add(key, new List<GameObject>());
+        }
+        _mapaListItemsGO[key].Add(go);     
+    }
+
+    public void clearListFromMap(string key) {
+        _mapaListItemsGO[key].Clear();
+    }*/
 }

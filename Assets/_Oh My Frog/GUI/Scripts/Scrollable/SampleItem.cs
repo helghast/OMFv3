@@ -12,17 +12,16 @@ public class SampleItem : MonoBehaviour
     public Text nameQuantity;
     public Text quantity;
     public Button statusButton;
+    public int positionInList;
+    public string listName;
 
-    private int i;
-    private ItembuttonStatus status;
+    private int i = 0;
+    private ItembuttonStatus status = ItembuttonStatus.Buy;
 
     // Use this for initialization
     void Start()
     {
-        i = 0;
-        status = ItembuttonStatus.Buy;
-
-        statusButton.onClick.AddListener(() => changeStatusButton(i++));
+        //statusButton.onClick.AddListener(() => changeStatusButton(i++));
     }
 
     // Update is called once per frame
@@ -39,25 +38,34 @@ public class SampleItem : MonoBehaviour
         Debug.Log(statusButton.GetComponentInChildren<Text>().text);
     }
 
-    public void changeStatusButton(int integer)
+    public void changeStatusButton()
     {
-        Debug.Log(integer);
         string tempstatus = "";
-        switch(integer)
+
+        switch(status)
         {
-            case 0:
-                tempstatus = ItembuttonStatus.Buy.ToString();
-                break;
-            case 1:
+            case ItembuttonStatus.Buy:
                 tempstatus = ItembuttonStatus.ConfirmBuy.ToString();
+                status = ItembuttonStatus.ConfirmBuy;
                 break;
-            case 2:
+            case ItembuttonStatus.ConfirmBuy:
                 tempstatus = ItembuttonStatus.Equip.ToString();
+                status = ItembuttonStatus.Equip;
                 break;
-            case 3:
+            case ItembuttonStatus.Equip:
                 tempstatus = ItembuttonStatus.Unequip.ToString();
+                status = ItembuttonStatus.Unequip;
+                break;
+            case ItembuttonStatus.Unequip:
+                tempstatus = ItembuttonStatus.Equip.ToString();
+                status = ItembuttonStatus.Equip;
                 break;
         }
         statusButton.GetComponentInChildren<Text>().text = tempstatus;
+        if(listName == "Items") {
+            ShopManager.CreateManager().shop.items[positionInList].status = status;
+        } else if(listName == "Skins") {
+            ShopManager.CreateManager().shop.skins[positionInList].status = status;
+        }        
     }
 }

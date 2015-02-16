@@ -12,4 +12,7 @@ public class ScriptableObject_Shop : ScriptableObject
 
     public List<cCurrency> Currencies;
     public List<cCurrencyPack> CurrencyPacks;
+
+    public List<Item> items;
+    public List<Item> skins;
 }
