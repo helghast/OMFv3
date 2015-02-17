@@ -6,9 +6,9 @@ public class Comp_Init_MainMenu : MonoBehaviour
 	void Awake ()
     {
         ConnectivityManager.InitializeConnectivity();
-        // 1) SHOP MANAGER
-        
-        //ShopManager.CreateManager();
+
+        // 1) SHOP MANAGER        
+        ShopManager.CreateManager();
         // 2) INVENTORY MANAGER
         //InventoryManager.CreateManager();
         // 3) INICIALIZAR LOS ASSETS DEL IAP

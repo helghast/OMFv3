@@ -12,7 +12,7 @@ public class Item{
     public Sprite itemImage;
     public string itemDescription;
     public int itemQuantity;
-    public string price;
+    public int price;
     public ItembuttonStatus status;
 }
 
@@ -22,9 +22,11 @@ public class CreateScrollableList : MonoBehaviour {
     public Dictionary<string, List<GameObject>> mapaItemsShop = new Dictionary<string, List<GameObject>>();
     public Transform contentPanel;
     public Button[] arrayButtons;
+    public Transform purchasePanel;
 
 	// Use this for initialization
 	void Start () {
+        purchasePanel.gameObject.SetActive(false);
         //populateList();
 	}
 
@@ -52,46 +54,11 @@ public class CreateScrollableList : MonoBehaviour {
             Destroy(contentPanel.GetComponentsInChildren<SampleItem>()[i].gameObject);
         }
 
+        //dependiendo de laky/string obtener una lista de la shop u otra
         if(key == "Items") {
-            for(int i = 0; i < ShopManager.CreateManager().shop.items.Count; i++) {
-                GameObject go = Instantiate(sampleItemPanel) as GameObject;
-                SampleItem si = go.GetComponent<SampleItem>();
-                si.itemTitle.text = ShopManager.CreateManager().shop.items[i].itemName;
-                si.image.sprite = ShopManager.CreateManager().shop.items[i].itemImage;
-                si.description.text = ShopManager.CreateManager().shop.items[i].itemDescription;
-                si.nameQuantity.text = "U Have";
-                si.quantity.text = ShopManager.CreateManager().shop.items[i].itemQuantity.ToString();
-                if(ShopManager.CreateManager().shop.items[i].status == ItembuttonStatus.Buy) {
-                    si.statusButton.GetComponentInChildren<Text>().text = ShopManager.CreateManager().shop.items[i].price;
-                } else {
-                    si.statusButton.GetComponentInChildren<Text>().text = ShopManager.CreateManager().shop.items[i].status.ToString();
-                }
-                si.positionInList = i;
-                si.listName = key;
-                go.transform.SetParent(contentPanel, false);
-
-                mapaItemsShop[key].Add(go);
-            }
+            createlistItems(key, ShopManager.CreateManager().shop.items);
         } else if(key == "Skins") {
-            for(int i = 0; i < ShopManager.CreateManager().shop.skins.Count; i++) {
-                GameObject go = Instantiate(sampleItemPanel) as GameObject;
-                SampleItem si = go.GetComponent<SampleItem>();
-                si.itemTitle.text = ShopManager.CreateManager().shop.skins[i].itemName;
-                si.image.sprite = ShopManager.CreateManager().shop.skins[i].itemImage;
-                si.description.text = ShopManager.CreateManager().shop.skins[i].itemDescription;
-                si.nameQuantity.text = "U Have";
-                si.quantity.text = ShopManager.CreateManager().shop.skins[i].itemQuantity.ToString();
-                if(ShopManager.CreateManager().shop.skins[i].status == ItembuttonStatus.Buy) {
-                    si.statusButton.GetComponentInChildren<Text>().text = ShopManager.CreateManager().shop.skins[i].price;
-                } else {
-                    si.statusButton.GetComponentInChildren<Text>().text = ShopManager.CreateManager().shop.skins[i].status.ToString();
-                }
-                si.positionInList = i;
-                si.listName = key;
-                go.transform.SetParent(contentPanel, false);
-
-                mapaItemsShop[key].Add(go);
-            }
+            createlistItems(key, ShopManager.CreateManager().shop.skins);
         }
     }
 
@@ -103,6 +70,30 @@ public class CreateScrollableList : MonoBehaviour {
             }
         }
         mapaItemsShop.Clear();
+    }
+
+    private void createlistItems(string key, List<Item> list) {
+        for(int i = 0; i < list.Count; i++) {
+            GameObject go = Instantiate(sampleItemPanel) as GameObject;
+            SampleItem si = go.GetComponent<SampleItem>();
+            si.itemTitle.text = list[i].itemName;
+            si.image.sprite = list[i].itemImage;
+            si.description.text = list[i].itemDescription;
+            si.nameQuantity.text = "U Have";
+            si.quantity.text = list[i].itemQuantity.ToString();
+            si.priceElement = list[i].price;
+            if(list[i].status == ItembuttonStatus.Buy) {
+                si.statusButton.GetComponentInChildren<Text>().text = list[i].price.ToString();
+            } else {
+                si.statusButton.GetComponentInChildren<Text>().text = list[i].status.ToString();
+            }
+            si.status = list[i].status;
+            si.positionInList = i;
+            si.listName = key;
+            go.transform.SetParent(contentPanel, false);
+
+            mapaItemsShop[key].Add(go);
+        }
     }
 	
 	// Update is called once per frame

@@ -13,10 +13,11 @@ public class SampleItem : MonoBehaviour
     public Text quantity;
     public Button statusButton;
     public int positionInList;
+    public int priceElement;
     public string listName;
 
-    private int i = 0;
-    private ItembuttonStatus status = ItembuttonStatus.Buy;
+    //private int i = 0;
+    public ItembuttonStatus status;
 
     // Use this for initialization
     void Start()
@@ -27,10 +28,10 @@ public class SampleItem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(i > 3)
+        /*if(i > 3)
         {
             i = 0;
-        }
+        }*/
     }
 
     public void clickButton()
@@ -49,8 +50,13 @@ public class SampleItem : MonoBehaviour
                 status = ItembuttonStatus.ConfirmBuy;
                 break;
             case ItembuttonStatus.ConfirmBuy:
-                tempstatus = ItembuttonStatus.Equip.ToString();
-                status = ItembuttonStatus.Equip;
+                if(confirmBuyCheck() == true) {
+                    tempstatus = ItembuttonStatus.Equip.ToString();
+                    status = ItembuttonStatus.Equip;
+                } else {
+                    tempstatus = ItembuttonStatus.Buy.ToString();
+                    status = ItembuttonStatus.Buy;
+                }              
                 break;
             case ItembuttonStatus.Equip:
                 tempstatus = ItembuttonStatus.Unequip.ToString();
@@ -67,5 +73,17 @@ public class SampleItem : MonoBehaviour
         } else if(listName == "Skins") {
             ShopManager.CreateManager().shop.skins[positionInList].status = status;
         }        
+    }
+
+    private bool confirmBuyCheck() {
+        if(ShopManager.CreateManager().MangosQuantity < priceElement) {
+            Debug.Log("te faltan mangos");
+            GameObject.Find("New_Shop_Panel").GetComponent<CreateScrollableList>().purchasePanel.gameObject.SetActive(true);            
+            return false;
+        } else {
+            ShopManager.CreateManager().MangosQuantity -= priceElement;
+            GameObject.Find("CantidadMangos").GetComponent<Text>().text = ShopManager.CreateManager().MangosQuantity.ToString();
+            return true;
+        }
     }
 }

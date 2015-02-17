@@ -25,7 +25,6 @@ public class ShopManager
     //-----------------------------------------------
     private static ShopManager instance = null;
     private static Dictionary<string, List<Item>> _mapaListItems = new Dictionary<string, List<Item>>();
-    //private static Dictionary<string, List<GameObject>> _mapaListItemsGO = new Dictionary<string, List<GameObject>>();
 
     public static ShopManager Instance
     {
@@ -82,7 +81,26 @@ public class ShopManager
         } else {
             return null;
         }
-    }    
+    }
+
+    //temporal para guardar u obtener cantidad de mangos que estan almacenados en la shop del player
+    public int MangosQuantity {
+        get {
+            return shop.mangosQuantity;
+        }
+        set {
+            shop.mangosQuantity = value;
+        }
+    }
+
+    public int CoctelesQuantity {
+        get {
+            return shop.coctelesQuantity;
+        }
+        set {
+            shop.coctelesQuantity = value;
+        }
+    }
 
     //-----------------------------------------------
     //  FUNCTIONS
@@ -106,23 +124,4 @@ public class ShopManager
             }            
         }        
     }
-
-    /*public List<GameObject> getListFromKey(string key) {
-        if(_mapaListItemsGO.ContainsKey(key)) {
-            return _mapaListItemsGO[key];
-        } else {
-            return null;
-        }
-    }*/
-
-   /* public void addToMapGameObjects(string key, GameObject go) {
-        if(!_mapaListItemsGO.ContainsKey(key)) {
-            _mapaListItemsGO.Add(key, new List<GameObject>());
-        }
-        _mapaListItemsGO[key].Add(go);     
-    }
-
-    public void clearListFromMap(string key) {
-        _mapaListItemsGO[key].Clear();
-    }*/
 }

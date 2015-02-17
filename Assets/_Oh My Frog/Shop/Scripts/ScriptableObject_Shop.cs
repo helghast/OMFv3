@@ -15,4 +15,7 @@ public class ScriptableObject_Shop : ScriptableObject
 
     public List<Item> items;
     public List<Item> skins;
+
+    public int coctelesQuantity;
+    public int mangosQuantity;
 }

@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System;
+using UnityEngine.UI;
 
 public class MainMenu3DGUI : MonoBehaviour
 {
@@ -32,7 +33,11 @@ public class MainMenu3DGUI : MonoBehaviour
     public GameObject canvasMain;
     public GameObject panelOptions;
     public GameObject newShopPanel;
+    public Text textCoins;
     private float temptime = 0f;
+
+    //booleano que nos sirve para saber si hay un UI delante del escenario 3D o no. Para desactivar raycast o no.
+    public bool UI2DStatus = false;
 
     //before start
     void Awake()
@@ -85,22 +90,29 @@ public class MainMenu3DGUI : MonoBehaviour
             Touch touch = Input.GetTouch(0);
             if (touch.phase == TouchPhase.Began)
             {
-                Ray ray = Camera.main.ScreenPointToRay(new Vector3(touch.position.x, touch.position.y, transform.position.z));
+                //no hay ningun panel UI delante del escenario 3D? si es que no, pues lanzar Ray
+                if(!UI2DStatus) {
+                    Ray ray = Camera.main.ScreenPointToRay(new Vector3(touch.position.x, touch.position.y, transform.position.z));
 
-                RaycastHit hit;
-                commonRayCast(ray, out hit);
+                    RaycastHit hit;
+                    commonRayCast(ray, out hit);
+                }
+                
             }
         }
         else
         {
             if (Input.GetMouseButtonDown(0))
             {
-                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                //no hay ningun panel UI delante del escenario 3D? si es que no, pues lanzar Ray
+                if(!UI2DStatus) {
+                    Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-                RaycastHit hit;
-                Debug.DrawRay(ray.origin, ray.direction * 10, Color.red, 2);
+                    RaycastHit hit;
+                    Debug.DrawRay(ray.origin, ray.direction * 10, Color.red, 2);
 
-                commonRayCast(ray, out hit);
+                    commonRayCast(ray, out hit);
+                }
             }
         }
         
@@ -130,6 +142,9 @@ public class MainMenu3DGUI : MonoBehaviour
             {
                 arrayButtons[0].setClickedButtonState(true);
 
+                //evitar usar los ray
+                UI2DStatus = true;
+
                 //animar entrada panel seleccion mapa
                 go = canvasMain.GetComponent<Comp_MM_Panels>().panels[2];
                 go.SetActive(true);
@@ -141,6 +156,9 @@ public class MainMenu3DGUI : MonoBehaviour
             else if(hcname == "shopcollider")
             {
                 arrayButtons[1].setClickedButtonState(true);
+
+                //evitar usar los ray
+                UI2DStatus = true;
 
                 //buscar, activar y animar shop panel                
                 newShopPanel.SetActive(true);
@@ -157,13 +175,19 @@ public class MainMenu3DGUI : MonoBehaviour
                         anim.Rebind();
                     }
                 }*/
+                //mostrar coins actuales disponibles
+                textCoins.text = ShopManager.CreateManager().MangosQuantity.ToString();
+
                 //la lista de items por defecto que se carga al abrir la shop es Items.
                 GameObject.Find("New_Shop_Panel").GetComponent<CreateScrollableList>().populateList("Items");
                 Debug.Log(hcname);
             }
             else if(hcname == "fbcollider")
             {
-                Debug.Log(hcname);                
+                Debug.Log(hcname);
+
+                //evitar usar los ray
+                //UI2DStatus = true;
 
                 //activar aniimacion Shake panel
                 anim = hit.collider.transform.GetComponentInParent<Animator>();
@@ -177,11 +201,18 @@ public class MainMenu3DGUI : MonoBehaviour
             {
                 arrayButtons[2].setClickedButtonState(true);
 
+                //evitar usar los ray
+                //UI2DStatus = true;
+
                 Debug.Log(hcname);
             }
             else if(hcname == "optionscollider")
             {
                 arrayButtons[3].setClickedButtonState(true);
+
+                //evitar usar los ray
+                UI2DStatus = true;
+
                 panelOptions.SetActive(true);
                 Debug.Log(hcname);
             }
@@ -192,5 +223,10 @@ public class MainMenu3DGUI : MonoBehaviour
     {
         //logear y crear feed
         Comp_Facebook_Feed.Initialize().CallFBLogin();
-    }    
+    }
+
+    //para usar desde los botones close de los paneles UI, por ejemplo.
+    public void statusRayCast(bool status) {
+        UI2DStatus = status;
+    }
 }
