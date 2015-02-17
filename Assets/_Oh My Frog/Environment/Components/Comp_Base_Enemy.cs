@@ -33,6 +33,10 @@ public class Comp_Base_Enemy : MonoBehaviour
         transform.Translate(Vector3.right * speed * Time.deltaTime, Space.World);
     }
 
+    public void advance(float new_speed) {
+        transform.Translate(Vector3.right * new_speed * Time.deltaTime, Space.World);
+    }
+
     public void spawn()
     {
         if (!this.gameObject.activeSelf)

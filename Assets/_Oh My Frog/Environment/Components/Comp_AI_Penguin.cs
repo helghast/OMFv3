@@ -37,25 +37,8 @@ public class Comp_AI_Penguin : Comp_Base_Enemy
                 state = 2;
             }
         }
-        //advance();
+        advance(speed/2f);
 
-       /* float time = anim.GetCurrentAnimatorStateInfo(0).length;
-        float time2 = anim.GetCurrentAnimatorStateInfo(0)..normalizedTime;
-        if (time2 > 1f) { 
-            bool transicio = anim.IsInTransition(0);
-            if (transicio) {
-                int b = 0;
-            }
-        }
-        int aux = 0;
-        */
-        /*timer -= Time.deltaTime;
-        if (timer <= 0)
-            state = 2;*/
-        /*
-        if (anim.GetCurrentAnimatorStateInfo(0).normalizedTime > 1 && !anim.IsInTransition(0)) {
-            state = 2;
-        } */
     }
 
     void OnTriggerEnter(Collider other) {
