@@ -126,8 +126,8 @@ public class Comp_Environment_Manager : MonoBehaviour {
         timer2NextObject -= Time.deltaTime;
         if (timer2NextObject <= 0) {
             float timeDificulty = currentScene.dificultats[currentDificulty].timeDificulty;
-
-            if (timerLevel < timeDificulty - 2) {
+            //TODO: El "2" se tiene que cambiar por el tiempo de plataforma / 2
+            if (timerLevel < timeDificulty - 2) {   
                 int random = UnityEngine.Random.Range(0, 100);
                 if (random < currentScene.dificultats[currentDificulty].percentObstacles) {
                     timer2NextObject = currentScene.dificultats[currentDificulty].injectObstacle(random);

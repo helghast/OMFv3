@@ -10,6 +10,7 @@ GameObject:
   - 4: {fileID: 417636}
   - 95: {fileID: 9517694}
   - 114: {fileID: 11426242}
+  - 136: {fileID: 13611898}
   m_Layer: 0
   m_Name: tortugaoveja
   m_TagString: Untagged
@@ -463,7 +464,7 @@ Transform:
   m_GameObject: {fileID: 117636}
   m_LocalRotation: {x: 0, y: .707106829, z: 0, w: -.707106829}
   m_LocalPosition: {x: 3.4309876, y: -1.84525299, z: .5}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: .5, y: .5, z: .5}
   m_Children:
   - {fileID: 417638}
   - {fileID: 417640}
@@ -867,15 +868,30 @@ MonoBehaviour:
   m_GameObject: {fileID: 117636}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90bca36baec69f6469b466577b8b0b62, type: 3}
+  m_Script: {fileID: 11500000, guid: 2e3732df304224942a2f40ea21436d1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   enemyName: 
   speed: 0
   y: -2.1500001
+  state: 0
   environmentTransform: {fileID: 0}
   injectTransform: {fileID: 0}
   poolTransform: {fileID: 0}
+  anim: {fileID: 0}
+--- !u!136 &13611898
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 117636}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: .800000012
+  m_Height: 3.20000005
+  m_Direction: 2
+  m_Center: {x: 0, y: .600000024, z: .200000003}
 --- !u!137 &13717690
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
