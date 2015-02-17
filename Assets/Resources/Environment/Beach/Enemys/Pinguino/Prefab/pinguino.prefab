@@ -10,6 +10,7 @@ GameObject:
   - 4: {fileID: 467374}
   - 95: {fileID: 9567484}
   - 114: {fileID: 11456852}
+  - 136: {fileID: 13635612}
   m_Layer: 0
   m_Name: pinguino
   m_TagString: Untagged
@@ -1655,11 +1656,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90bca36baec69f6469b466577b8b0b62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyName: 
   speed: 0
   y: -2
+  state: 0
   environmentTransform: {fileID: 0}
   injectTransform: {fileID: 0}
   poolTransform: {fileID: 0}
+  anim: {fileID: 0}
+--- !u!136 &13635612
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 167374}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: .300000012
+  m_Height: 1.5
+  m_Direction: 2
+  m_Center: {x: 0, y: .340000004, z: -.600000024}
 --- !u!137 &13767482
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

@@ -7,10 +7,12 @@ public class Comp_Base_Enemy : MonoBehaviour
     public string enemyName;
     public float speed;
     public float y;
+    public int state;
 
     public Transform environmentTransform;
     public Transform injectTransform;
     public Transform poolTransform;
+
 
     void Awake() { }
 
@@ -20,6 +22,7 @@ public class Comp_Base_Enemy : MonoBehaviour
         injectTransform = GameObject.Find("EnvironmentSpawnPoint").GetComponent<Transform>();
         poolTransform = GameObject.Find("Pool_Enemys").transform;
         speed = -3;
+        state = 0;
     }
 
     void Start() { }
@@ -34,6 +37,7 @@ public class Comp_Base_Enemy : MonoBehaviour
     {
         if (!this.gameObject.activeSelf)
         {
+            state = 0;
             this.gameObject.SetActive(true);
             this.transform.position = new Vector3(injectTransform.position.x, y, EnvironmentManager.Instance.ZLayer9);
             this.transform.parent = this.environmentTransform;
