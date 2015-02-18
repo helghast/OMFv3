@@ -39,9 +39,5 @@ public class Comp_Init_InGame : MonoBehaviour
 
         //Provisional
         EnvironmentManager.Instance.loadLevel("Beach");
-
-        //inicializar pool de enemys_obstacles
-        /*Obstacle_Enemys_Manager.Instance.Initialize();
-        Debug.Log("ELEP - Obstacle_Enemys_Manager - initialized");*/
 	}
 }
