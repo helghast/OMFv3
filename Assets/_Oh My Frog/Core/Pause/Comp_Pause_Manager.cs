@@ -6,6 +6,7 @@ public class Comp_Pause_Manager : MonoBehaviour {
 
     private bool isPaused;
     public Transform panel_Pause_Menu_Transform;
+    public Transform panel_Continue;
 
     void Awake()
     {

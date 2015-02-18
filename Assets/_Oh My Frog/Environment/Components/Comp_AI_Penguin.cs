@@ -47,6 +47,10 @@ public class Comp_AI_Penguin : Comp_Base_Enemy
             state = 1;
             anim.SetBool("receiveHit", true);
             timer = anim.GetNextAnimatorStateInfo(0).length;
+
+            //para juego y preguntar si continuar?
+            GameObject.Find("Button_Pause").GetComponent<Comp_Pause_Manager>().panel_Continue.gameObject.SetActive(true);
+            Time.timeScale = 0f;
         }
     }
     
