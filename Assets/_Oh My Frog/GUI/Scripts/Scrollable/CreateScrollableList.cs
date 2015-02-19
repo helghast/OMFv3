@@ -4,7 +4,8 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using System.Collections.Generic;
 
-public enum ItembuttonStatus{ Buy = 0, ConfirmBuy, Equip, Unequip };
+public enum ItembuttonStatus{ Locked, Buy = 0, ConfirmBuy, Equip, Unequip };
+public enum ItemAvaliable { Locked, Unlocked };
 
 [System.Serializable]
 public class Item{
@@ -13,6 +14,7 @@ public class Item{
     public string itemDescription;
     public int itemQuantity;
     public int price;
+    public ItemAvaliable avaliable;
     public ItembuttonStatus status;
 }
 
@@ -76,16 +78,29 @@ public class CreateScrollableList : MonoBehaviour {
         for(int i = 0; i < list.Count; i++) {
             GameObject go = Instantiate(sampleItemPanel) as GameObject;
             SampleItem si = go.GetComponent<SampleItem>();
-            si.itemTitle.text = list[i].itemName;
-            si.image.sprite = list[i].itemImage;
-            si.description.text = list[i].itemDescription;
-            si.nameQuantity.text = "U Have";
-            si.quantity.text = list[i].itemQuantity.ToString();
-            si.priceElement = list[i].price;
-            if(list[i].status == ItembuttonStatus.Buy) {
-                si.statusButton.GetComponentInChildren<Text>().text = list[i].price.ToString();
-            } else {
-                si.statusButton.GetComponentInChildren<Text>().text = list[i].status.ToString();
+            if(list[i].avaliable == ItemAvaliable.Locked) {
+                si.itemTitle.text = "????";
+                si.image.sprite = list[i].itemImage;
+                si.image.color = Color.magenta;
+                si.description.text = "????";
+                si.nameQuantity.text = "U Have";
+                si.quantity.text = "?";
+                si.priceElement = 0;
+                si.statusButton.interactable = false;
+                si.statusButton.GetComponentInChildren<Text>().text = ItemAvaliable.Locked.ToString();
+            } else if(list[i].avaliable == ItemAvaliable.Unlocked) {
+                si.itemTitle.text = list[i].itemName;
+                si.image.sprite = list[i].itemImage;
+                si.description.text = list[i].itemDescription;
+                si.nameQuantity.text = "U Have";
+                si.quantity.text = list[i].itemQuantity.ToString();
+                si.priceElement = list[i].price;
+                si.statusButton.interactable = true;
+                if(list[i].status == ItembuttonStatus.Buy) {
+                    si.statusButton.GetComponentInChildren<Text>().text = list[i].price.ToString();
+                } else {
+                    si.statusButton.GetComponentInChildren<Text>().text = list[i].status.ToString();
+                }
             }
             si.status = list[i].status;
             si.positionInList = i;

@@ -25,8 +25,8 @@ public class PurchaseCoins : MonoBehaviour {
                 currentCoinQuantity.text = ShopManager.CreateManager().MangosQuantity.ToString();
                 break;
             case "Cocteles":
-                ShopManager.CreateManager().CoctelesQuantity += coinValue;
-                currentCoinQuantity.text = ShopManager.CreateManager().CoctelesQuantity.ToString();
+                /*ShopManager.CreateManager().CoctelesQuantity += coinValue;
+                currentCoinQuantity.text = ShopManager.CreateManager().CoctelesQuantity.ToString();*/
                 break;
         }
         Debug.Log(coinValue);

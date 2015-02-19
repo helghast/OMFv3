@@ -93,14 +93,14 @@ public class ShopManager
         }
     }
 
-    public int CoctelesQuantity {
+    /*public int CoctelesQuantity {
         get {
             return shop.coctelesQuantity;
         }
         set {
             shop.coctelesQuantity = value;
         }
-    }
+    }*/
 
     //-----------------------------------------------
     //  FUNCTIONS

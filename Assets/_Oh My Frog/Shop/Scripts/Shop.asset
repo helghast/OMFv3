@@ -63,30 +63,35 @@ MonoBehaviour:
     itemDescription: desc item 0
     itemQuantity: 0
     price: 1000
-    status: 0
+    avaliable: 1
+    status: 2
   - itemName: item 1
     itemImage: {fileID: 21300002, guid: b37bd5b93770050409e9cf60ca46db03, type: 3}
     itemDescription: desc item 1
     itemQuantity: 0
     price: 250
-    status: 0
+    avaliable: 1
+    status: 2
   - itemName: item 2
     itemImage: {fileID: 21300004, guid: b37bd5b93770050409e9cf60ca46db03, type: 3}
     itemDescription: desc item 2
     itemQuantity: 0
     price: 500
+    avaliable: 0
     status: 0
   - itemName: item 3
     itemImage: {fileID: 21300006, guid: b37bd5b93770050409e9cf60ca46db03, type: 3}
     itemDescription: desc item 3
     itemQuantity: 0
     price: 400
+    avaliable: 0
     status: 0
   - itemName: item 4
     itemImage: {fileID: 21300008, guid: b37bd5b93770050409e9cf60ca46db03, type: 3}
     itemDescription: desc item 4
     itemQuantity: 0
     price: 300
+    avaliable: 0
     status: 0
   skins:
   - itemName: skin 0
@@ -94,12 +99,13 @@ MonoBehaviour:
     itemDescription: skin 0
     itemQuantity: 0
     price: 500
+    avaliable: 0
     status: 0
   - itemName: skin 1
     itemImage: {fileID: 21300016, guid: b37bd5b93770050409e9cf60ca46db03, type: 3}
     itemDescription: skin 1
     itemQuantity: 0
     price: 1200
+    avaliable: 0
     status: 0
-  coctelesQuantity: 0
-  mangosQuantity: 0
+  mangosQuantity: 1750
