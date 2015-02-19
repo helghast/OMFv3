@@ -77,8 +77,8 @@ MonoBehaviour:
     itemDescription: desc item 2
     itemQuantity: 0
     price: 500
-    avaliable: 0
-    status: 0
+    avaliable: 1
+    status: 3
   - itemName: item 3
     itemImage: {fileID: 21300006, guid: b37bd5b93770050409e9cf60ca46db03, type: 3}
     itemDescription: desc item 3
@@ -108,4 +108,4 @@ MonoBehaviour:
     price: 1200
     avaliable: 0
     status: 0
-  mangosQuantity: 1750
+  mangosQuantity: 1000

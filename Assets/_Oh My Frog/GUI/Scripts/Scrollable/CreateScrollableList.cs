@@ -32,6 +32,11 @@ public class CreateScrollableList : MonoBehaviour {
         //populateList();
 	}
 
+    // Update is called once per frame
+    void Update() {
+
+    }
+
     //ugly!
     public void populateList(string key)
     {
@@ -81,7 +86,7 @@ public class CreateScrollableList : MonoBehaviour {
             if(list[i].avaliable == ItemAvaliable.Locked) {
                 si.itemTitle.text = "????";
                 si.image.sprite = list[i].itemImage;
-                si.image.color = Color.magenta;
+                si.image.color = Color.gray;
                 si.description.text = "????";
                 si.nameQuantity.text = "U Have";
                 si.quantity.text = "?";
@@ -110,9 +115,8 @@ public class CreateScrollableList : MonoBehaviour {
             mapaItemsShop[key].Add(go);
         }
     }
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+
+    public void statusSecondCam(GameObject camstatus) {
+        camstatus.SetActive(false);
+    }
 }

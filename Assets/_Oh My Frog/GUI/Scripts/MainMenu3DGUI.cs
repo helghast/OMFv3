@@ -164,6 +164,7 @@ public class MainMenu3DGUI : MonoBehaviour
                 newShopPanel.SetActive(true);
                 newShopPanel.GetComponent<Animator>().enabled = true;
                 newShopPanel.GetComponent<Animator>().Rebind();
+                newShopPanel.GetComponentInChildren<Comp_RenderCamOnUI>().kappa_camera.gameObject.SetActive(true);
                 
                 //mostrar coins actuales disponibles
                 textCoins.text = ShopManager.CreateManager().MangosQuantity.ToString();
