@@ -55,6 +55,7 @@ public class Comp_GameOver : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //isgameoverbuttonclicked se pondra a true desde el init_go cuando se vuelva del ingame mode
         if(isGameOverButtonClicked == true)
         {
             timer = timer - Time.deltaTime;
@@ -71,9 +72,26 @@ public class Comp_GameOver : MonoBehaviour
         }
     }
 
+    //para modificar el private bool desde otras clases
+    public bool gameOverStatus {
+        get {
+            return isGameOverButtonClicked;
+        }
+        set {
+            isGameOverButtonClicked = value;
+        }
+    }
+
     //cuando se clicka en el boton de prueba para ver el gameover panel
     public void showStructContent()
     {
+        //activar animacion del panel
+        
+        gameObject.GetComponent<Animator>().enabled = true;
+        gameObject.GetComponent<Animator>().Rebind();
+        
+
+        //rellenar panel
         fillMap();
         fillScorePanelMap();
 

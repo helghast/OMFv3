@@ -52,6 +52,8 @@ public class Comp_Pause_Manager : MonoBehaviour {
     public void returnMainMenu()
     {
         //volver al mainmenu da problemas pues parece que no vuelve a llamar a algunos objetos necesarios
+        //o al intentar reinicializar la soomlastore
+        PlayerPrefs.SetString("gameover", "mostrar");
         Application.LoadLevel("MainMenu");
     }
 }

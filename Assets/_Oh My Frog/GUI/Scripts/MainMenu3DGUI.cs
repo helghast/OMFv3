@@ -164,17 +164,7 @@ public class MainMenu3DGUI : MonoBehaviour
                 newShopPanel.SetActive(true);
                 newShopPanel.GetComponent<Animator>().enabled = true;
                 newShopPanel.GetComponent<Animator>().Rebind();
-                //go = canvasMain.GetComponent<Comp_MM_Panels>().panels[1];
-                //go.SetActive(true);
-                /*foreach(Transform item in go.GetComponentsInChildren<Transform>())
-                {
-                    if(item.name == "Panel_StoreMain")
-                    {
-                        anim = item.GetComponent<Animator>();
-                        anim.enabled = true;
-                        anim.Rebind();
-                    }
-                }*/
+                
                 //mostrar coins actuales disponibles
                 textCoins.text = ShopManager.CreateManager().MangosQuantity.ToString();
 
