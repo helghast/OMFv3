@@ -4,7 +4,7 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using System.Collections.Generic;
 
-public enum ItembuttonStatus{ Locked, Buy = 0, ConfirmBuy, Equip, Unequip };
+public enum ItembuttonStatus{ Buy, ConfirmBuy, Equip, Unequip };
 public enum ItemAvaliable { Locked, Unlocked };
 
 [System.Serializable]
@@ -93,6 +93,7 @@ public class CreateScrollableList : MonoBehaviour {
                 si.priceElement = 0;
                 si.statusButton.interactable = false;
                 si.statusButton.GetComponentInChildren<Text>().text = ItemAvaliable.Locked.ToString();
+                list[i].status = ItembuttonStatus.Buy;
             } else if(list[i].avaliable == ItemAvaliable.Unlocked) {
                 si.itemTitle.text = list[i].itemName;
                 si.image.sprite = list[i].itemImage;

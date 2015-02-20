@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using System.Collections.Generic;
 
 public class SampleItem : MonoBehaviour {
     public GameObject item;
@@ -20,6 +21,7 @@ public class SampleItem : MonoBehaviour {
     // Use this for initialization
     void Start() {
         //statusButton.onClick.AddListener(() => changeStatusButton(i++));
+
     }
 
     // Update is called once per frame
@@ -35,33 +37,23 @@ public class SampleItem : MonoBehaviour {
     }
 
     public void changeStatusButton() {
-        string tempstatus = "";
-
         switch(status) {
             case ItembuttonStatus.Buy:
-                tempstatus = ItembuttonStatus.ConfirmBuy.ToString();
                 status = ItembuttonStatus.ConfirmBuy;
                 break;
             case ItembuttonStatus.ConfirmBuy:
-                if(confirmBuyCheck() == true) {
-                    tempstatus = ItembuttonStatus.Equip.ToString();
-                    status = ItembuttonStatus.Equip;
-                } else {
-                    tempstatus = ItembuttonStatus.Buy.ToString();
-                    status = ItembuttonStatus.Buy;
-                }
+                status = confirmBuyCheck() ? ItembuttonStatus.Equip : ItembuttonStatus.Buy;
                 break;
             case ItembuttonStatus.Equip:
-                tempstatus = ItembuttonStatus.Unequip.ToString();
                 status = ItembuttonStatus.Unequip;
+                equipOrUnEquip(true);
                 break;
             case ItembuttonStatus.Unequip:
-                tempstatus = ItembuttonStatus.Equip.ToString();
                 status = ItembuttonStatus.Equip;
+                equipOrUnEquip(false);
                 break;
         }
-        statusButton.GetComponentInChildren<Text>().text = tempstatus;
-
+        statusButton.GetComponentInChildren<Text>().text = status.ToString();
         allUnequipToEquip();
     }
 
@@ -72,6 +64,16 @@ public class SampleItem : MonoBehaviour {
             return false;
         } else {
             ShopManager.CreateManager().MangosQuantity -= priceElement;
+            switch(listName) {
+                case "Items":
+                    ShopManager.CreateManager().shop.items[positionInList].itemQuantity += 1;
+                    quantity.text = ShopManager.CreateManager().shop.items[positionInList].itemQuantity.ToString();
+                    break;
+                case "Skins":
+                    ShopManager.CreateManager().shop.skins[positionInList].itemQuantity += 1;
+                    quantity.text = ShopManager.CreateManager().shop.skins[positionInList].itemQuantity.ToString();
+                    break;
+            }
             GameObject.Find("CantidadMangos").GetComponent<Text>().text = ShopManager.CreateManager().MangosQuantity.ToString();
             return true;
         }
@@ -83,7 +85,7 @@ public class SampleItem : MonoBehaviour {
                 ShopManager.CreateManager().shop.items[positionInList].status = status;
                 for(int i = 0; i < ShopManager.CreateManager().shop.items.Count; i++) {
                     if(ShopManager.CreateManager().shop.items[i].status == ItembuttonStatus.Unequip && i != positionInList) {
-                        ShopManager.CreateManager().shop.items[i].status = ItembuttonStatus.Equip;    
+                        ShopManager.CreateManager().shop.items[i].status = ItembuttonStatus.Equip;
                     }
                 }
                 break;
@@ -95,6 +97,14 @@ public class SampleItem : MonoBehaviour {
                     }
                 }
                 break;
+        }
+    }
+
+    public void equipOrUnEquip(bool newStatus) {
+        if(listName == "Skins") {
+            Comp_Kappa_Skins skins = GameObject.Find("Kappa2_007").GetComponent<Comp_Kappa_Skins>();
+            skins.arraySkins[positionInList].SetActive(newStatus);
+            skins.arraySkins[positionInList + 1].SetActive(newStatus);
         }
     }
 }
