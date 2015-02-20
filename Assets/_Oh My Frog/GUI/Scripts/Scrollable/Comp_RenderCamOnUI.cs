@@ -40,7 +40,7 @@ public class Comp_RenderCamOnUI : MonoBehaviour {
         yield return new WaitForEndOfFrame();
         texture.ReadPixels(new Rect(0, 0, kappa_camera.GetScreenHeight(), kappa_camera.GetScreenHeight()), 0, 0, false);
         texture.Apply();
-        //screenshotMat.mainTexture = texture;
-        gameObject.GetComponent<RawImage>().texture = texture;
+        screenshotMat.mainTexture = texture;
+        //gameObject.GetComponent<RawImage>().texture = texture;
     }
 }
