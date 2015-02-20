@@ -2938,7 +2938,7 @@ Transform:
   m_PrefabInternal: {fileID: 1981401764}
   m_GameObject: {fileID: 123953137}
   m_LocalRotation: {x: -4.3297803e-17, y: .707106769, z: .707106888, w: -4.32978096e-17}
-  m_LocalPosition: {x: .00600000005, y: -.023, z: -.354000002}
+  m_LocalPosition: {x: 0, y: 0, z: -.300000012}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 663909194}
@@ -8655,7 +8655,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 445669704}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3, y: .419999987, z: 2.66000009}
+  m_LocalPosition: {x: -2.63000011, y: .419999987, z: 2.66000009}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -26205,6 +26205,7 @@ GameObject:
   - 114: {fileID: 1515514165}
   - 114: {fileID: 1515514164}
   - 114: {fileID: 1515514167}
+  - 114: {fileID: 1515514168}
   m_Layer: 5
   m_Name: ButtonDer
   m_TagString: Untagged
@@ -26268,19 +26269,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1515514165}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1515514167}
-        m_MethodName: rotateDirection
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
-            Culture=neutral, PublicKeyToken=null
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1515514165
@@ -26321,8 +26310,57 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22bac304e34a12a42965c69f2037905d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  kappaTransform: {fileID: 2018909329}
+  kappaTransform: {fileID: 123953138}
   buttonText: {fileID: 87956116}
+  direction: -1
+--- !u!114 &1515514168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1515514162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1515514167}
+          m_MethodName: pressed
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1515514167}
+          m_MethodName: notPressed
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!1 &1525463735
 GameObject:
   m_ObjectHideFlags: 0
@@ -34158,15 +34196,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 9c94c06de8f63b84fae8bb1e92460421, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -.023
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 9c94c06de8f63b84fae8bb1e92460421, type: 3}
       propertyPath: m_LocalPosition.x
-      value: .00600000005
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 9c94c06de8f63b84fae8bb1e92460421, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -.354000002
+      value: -.300000012
       objectReference: {fileID: 0}
     - target: {fileID: 13700000, guid: 9c94c06de8f63b84fae8bb1e92460421, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -34931,6 +34969,7 @@ GameObject:
   - 114: {fileID: 2020209407}
   - 114: {fileID: 2020209406}
   - 114: {fileID: 2020209409}
+  - 114: {fileID: 2020209410}
   m_Layer: 5
   m_Name: ButtonIzq
   m_TagString: Untagged
@@ -34994,19 +35033,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2020209407}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2020209409}
-        m_MethodName: rotateDirection
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
-            Culture=neutral, PublicKeyToken=null
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &2020209407
@@ -35047,8 +35074,57 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22bac304e34a12a42965c69f2037905d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  kappaTransform: {fileID: 2018909329}
+  kappaTransform: {fileID: 123953138}
   buttonText: {fileID: 1094323757}
+  direction: 1
+--- !u!114 &2020209410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2020209404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2020209409}
+          m_MethodName: pressed
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2020209409}
+          m_MethodName: notPressed
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!1 &2032944052
 GameObject:
   m_ObjectHideFlags: 0
@@ -37426,7 +37502,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Content: {fileID: 1348923036}
   m_Horizontal: 1
-  m_Vertical: 0
+  m_Vertical: 1
   m_MovementType: 1
   m_Elasticity: .100000001
   m_Inertia: 1

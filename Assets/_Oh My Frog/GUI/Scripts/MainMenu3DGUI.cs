@@ -41,13 +41,12 @@ public class MainMenu3DGUI : MonoBehaviour {
     public Transform point_Kappa_Inside_Env;
     public Transform point_Kappa_Out_Env;
 
-
     //booleano que nos sirve para saber si hay un UI delante del escenario 3D o no. Para desactivar raycast o no.
     public bool UI2DStatus = false;
 
     //before start
     void Awake() {
-
+        
     }
 
     // Use this for initialization
@@ -207,7 +206,8 @@ public class MainMenu3DGUI : MonoBehaviour {
     }
 
     public void returnAllToEnvPosition() {
-        transform_kappa.position = point_Kappa_Inside_Env.position;
+        transform_kappa.position = new Vector3(-3.897404f, 0.07999998f, 4.144251f);
+        transform_kappa.FindChild("KAPPA_RIG").rotation = Quaternion.Euler(270,180,0);
         transform_env.position = point_InEnv.position;
     }
 }
