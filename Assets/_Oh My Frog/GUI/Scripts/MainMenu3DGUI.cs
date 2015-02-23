@@ -25,7 +25,7 @@ public class MainMenu3DGUI : MonoBehaviour {
     public ButtonStateX2[] arrayButtons = new ButtonStateX2[] { new ButtonStateX2("playButton"), new ButtonStateX2("shopButton"), new ButtonStateX2("logrosButton"), new ButtonStateX2("optionsButton") };
 
     public LayerMask layerMask;
-    private LoadLevel_GUI levelLoader;
+    //private LoadLevel_GUI levelLoader;
     //objecto del canvas
     public GameObject canvasMain;
     public GameObject panelOptions;
@@ -72,7 +72,7 @@ public class MainMenu3DGUI : MonoBehaviour {
         panelOptions.SetActive(false);
         newShopPanel.SetActive(false);
 
-        levelLoader = GetComponent<LoadLevel_GUI>();
+        //levelLoader = GetComponent<LoadLevel_GUI>();
 
         //poner botones clickados a false
         for(int i = 0; i < arrayButtons.Length; i++) {

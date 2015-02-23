@@ -64,21 +64,21 @@ MonoBehaviour:
     itemQuantity: 1
     price: 1000
     avaliable: 1
-    status: 2
+    status: 0
   - itemName: item 1
     itemImage: {fileID: 21300002, guid: b37bd5b93770050409e9cf60ca46db03, type: 3}
     itemDescription: desc item 1
     itemQuantity: 1
     price: 250
     avaliable: 1
-    status: 2
+    status: 0
   - itemName: item 2
     itemImage: {fileID: 21300004, guid: b37bd5b93770050409e9cf60ca46db03, type: 3}
     itemDescription: desc item 2
     itemQuantity: 1
     price: 500
     avaliable: 1
-    status: 2
+    status: 0
   - itemName: item 3
     itemImage: {fileID: 21300006, guid: b37bd5b93770050409e9cf60ca46db03, type: 3}
     itemDescription: desc item 3
@@ -106,7 +106,7 @@ MonoBehaviour:
     itemDescription: Conjunto Cazabichos
     itemQuantity: 1
     price: 1200
-    avaliable: 0
+    avaliable: 1
     status: 0
   - itemName: Chef
     itemImage: {fileID: 21300016, guid: b37bd5b93770050409e9cf60ca46db03, type: 3}
@@ -114,14 +114,14 @@ MonoBehaviour:
     itemQuantity: 0
     price: 1200
     avaliable: 1
-    status: 2
+    status: 0
   - itemName: Fontanero
     itemImage: {fileID: 21300016, guid: b37bd5b93770050409e9cf60ca46db03, type: 3}
     itemDescription: Conjunto Fontanero
     itemQuantity: 0
     price: 1200
     avaliable: 1
-    status: 2
+    status: 0
   - itemName: Enfermero
     itemImage: {fileID: 21300016, guid: b37bd5b93770050409e9cf60ca46db03, type: 3}
     itemDescription: Conjunto Enfermero

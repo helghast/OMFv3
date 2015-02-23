@@ -55,6 +55,7 @@ public static class ConnectivityManager
 
         // 3) Social --> Logros, rankings...
         ESocial = new cSocial();
+        // falta iniciar sesion SocialAuthenticate
     }
 
     private static void InitiliazeCloudServices()
@@ -95,7 +96,6 @@ public static class ConnectivityManager
     public static bool SocialAuthenticate()
     {
         bool autenticate_success = false;
-
         Social.localUser.Authenticate((bool success) =>
         {
             if (success)

@@ -242,6 +242,7 @@ public class Comp_Debug : MonoBehaviour
         {
             Debug.Log("Current mangos: " + ConnectivityManager.EIAP.VirtualCurrencies["mango"].GetBalance());
             ConnectivityManager.EIAP.BuyVirtual(ConnectivityManager.EIAP.VirtualCurrencyPacks["1000 Mangos"].ID);
+            //
             Debug.Log("Current mangos: " + ConnectivityManager.EIAP.VirtualCurrencies["mango"].GetBalance());
         }
 
@@ -254,6 +255,7 @@ public class Comp_Debug : MonoBehaviour
         {
             Debug.Log("Current mangos: " + ConnectivityManager.EIAP.VirtualCurrencies["mango"].GetBalance());
             ConnectivityManager.EIAP.BuyVirtual(ConnectivityManager.EIAP.VirtualGoods["Red_material"].ID);
+            //
             Debug.Log("Current mangos: " + ConnectivityManager.EIAP.VirtualCurrencies["mango"].GetBalance());
         }
         GUILayout.Space(5);
