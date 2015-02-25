@@ -10,6 +10,6 @@ public class TestGithub : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+	    //test para github despues de usar branch omf-v2 como master. la master eliminada?
 	}
 }
