@@ -16,4 +16,8 @@ public class TestGithub : MonoBehaviour {
     public void test() {
         Debug.Log("prueba local ok. Ficheros bajados de github que conecta a git instalado en server local");
     }
+
+    public void exit() {
+        Application.Quit();
+    }
 }
