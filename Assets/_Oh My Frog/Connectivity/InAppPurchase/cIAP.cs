@@ -17,6 +17,7 @@ public class cIAP
         parser = new cIAP_Parser();
         StoreEvents.OnSoomlaStoreInitialized += onSoomlaStoreInitialized;
         loadIAPData(xml_filename);
+        //inicializar soomla
         SoomlaStore.Initialize(ourIAPAssets);    
     }
 

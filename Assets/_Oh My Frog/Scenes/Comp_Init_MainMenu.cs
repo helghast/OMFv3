@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
+using Soomla;
+using Soomla.Profile;
 
 public class Comp_Init_MainMenu : MonoBehaviour
 {
@@ -7,10 +9,10 @@ public class Comp_Init_MainMenu : MonoBehaviour
 
 	void Awake ()
     {
-        ConnectivityManager.InitializeConnectivity();
+        //ConnectivityManager.InitializeConnectivity();
 
         // 1) SHOP MANAGER        
-        ShopManager.CreateManager();
+        //ShopManager.CreateManager();
         // 2) INVENTORY MANAGER
         //InventoryManager.CreateManager();
         // 3) INICIALIZAR LOS ASSETS DEL IAP
@@ -19,13 +21,24 @@ public class Comp_Init_MainMenu : MonoBehaviour
         //ConnectivityManager.InitiliazeCloudServices();
 
         //mirar si se ha vuelto del modo ingame y se debe mostrar el GameOver panel.
-        checkGameOver();        
+               
 	}
 
     void Start()
     {
+        //segun la documentacion de soomla se ha de iniciar en el start y no en el awake.
+        ConnectivityManager.InitializeConnectivity();
+       
+        //inicializar soomlaprofile
+        //SoomlaProfile.Initialize();
+
+        // 1) SHOP MANAGER        
+        ShopManager.CreateManager();
+
         // 1) INICIALIZAR MANAGER DE IAP
         //IAPManager.CreateManager();
+
+        checkGameOver(); 
     }
 
     public void checkGameOver() {

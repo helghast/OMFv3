@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using System.Text;
 
 public class PurchaseCoins : MonoBehaviour {
 
@@ -19,17 +20,31 @@ public class PurchaseCoins : MonoBehaviour {
 	}
 
     public void comprar() {
-        switch(coinType) {
+        /*switch(coinType) {
             case "Mangos":
-                ShopManager.CreateManager().MangosQuantity += coinValue;
-                currentCoinQuantity.text = ShopManager.CreateManager().MangosQuantity.ToString();
+                if(ConnectivityManager.EIAP.BuyVirtual(ConnectivityManager.EIAP.VirtualCurrencyPacks["1000 Mangos"].ID)) {
+                    Debug.Log("Transaccion realizada");
+                    ShopManager.CreateManager().MangosQuantity += coinValue;
+                    currentCoinQuantity.text = ShopManager.CreateManager().MangosQuantity.ToString();
+                } else {
+                    Debug.Log("Transaccion no realizada");
+                }               
                 break;
             case "Cocteles":
-                /*ShopManager.CreateManager().CoctelesQuantity += coinValue;
-                currentCoinQuantity.text = ShopManager.CreateManager().CoctelesQuantity.ToString();*/
+                ShopManager.CreateManager().CoctelesQuantity += coinValue;
+                currentCoinQuantity.text = ShopManager.CreateManager().CoctelesQuantity.ToString();
                 break;
+        }*/
+        string namepack = coinValue + "_" + coinType;
+
+        if(ConnectivityManager.EIAP.BuyVirtual(ConnectivityManager.EIAP.VirtualCurrencyPacks[namepack].ID)) {
+            Debug.Log("Transaccion realizada");
+            ShopManager.CreateManager().MangosQuantity += coinValue;
+            currentCoinQuantity.text = ShopManager.CreateManager().MangosQuantity.ToString();
+        } else {
+            Debug.Log("Transaccion no realizada");
         }
-        Debug.Log(coinValue);
+        Debug.Log(namepack);
         
     }
 }

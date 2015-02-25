@@ -2,6 +2,8 @@
 using System.Collections;
 using System;
 using UnityEngine.UI;
+using Soomla;
+using Soomla.Profile;
 
 public class MainMenu3DGUI : MonoBehaviour {
     [System.Serializable]
@@ -191,8 +193,12 @@ public class MainMenu3DGUI : MonoBehaviour {
     }
 
     public void clickOrTouchSocialFBButton() {
+        //usar soomla para gestionar la conexion a FB
+        //tryLoginFB();
+        makeFBFeed();
+        
         //logear y crear feed
-        Comp_Facebook_Feed.Initialize().CallFBLogin();
+        //Comp_Facebook_Feed.Initialize().CallFBLogin();
     }
 
     //para usar desde los botones close de los paneles UI, por ejemplo.
@@ -209,5 +215,47 @@ public class MainMenu3DGUI : MonoBehaviour {
         transform_kappa.position = new Vector3(-3.897404f, 0.07999998f, 4.144251f);
         transform_kappa.FindChild("KAPPA_RIG").rotation = Quaternion.Euler(270,180,0);
         transform_env.position = point_InEnv.position;
+    }
+
+    //intenta logear a facebook mediante soomla
+    public void tryLoginFB() {
+        if(!isloggedFB()) {
+            SoomlaProfile.Login(Provider.FACEBOOK);
+        } else {
+            Debug.LogWarning("Ya esta logeado en FB");
+        }        
+    }
+
+    //intenta deslogear de facebook mediante soomla
+    public void tryLogoutFB() {
+        if(isloggedFB()) {
+            SoomlaProfile.Logout(Provider.FACEBOOK);
+        } else {
+            Debug.LogWarning("No esta logeado en FB");
+        }
+    }
+
+    //comprueba si esta logeado en facebook mediante soomla
+    public bool isloggedFB() {
+        return SoomlaProfile.IsLoggedIn(Provider.FACEBOOK);
+    }
+
+    //intenta crear un feed/mensaje en el muro del usuario logeado en facebook, usando soomla
+    public void makeFBFeed() {
+        if(isloggedFB()) {
+            SoomlaProfile.UpdateStory(
+                Provider.FACEBOOK,
+                "Check out this great game: OMF",
+                "OMF: SurfRescue!",
+                "OMF is amazing!",
+                "omf game from electroplasmatic games",
+                "https://www.facebook.com/ohmyfrog.surfrescue",
+                "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xap1/v/t1.0-1/p160x160/10665697_304545143067074_11542050484542634_n.jpg?oh=00b8a665b3f03bd5f4b2a00ab4c2bed2&oe=554BBF35&__gda__=1435501571_ea7f4a4e8eeeb811ceff4a73a31ce8e1",
+                string.Empty,
+                null);
+        } else {
+            Debug.LogWarning("No esta logeado en FB");
+            tryLoginFB();
+        }
     }
 }

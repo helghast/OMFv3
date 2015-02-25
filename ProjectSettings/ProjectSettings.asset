@@ -8,6 +8,7 @@ PlayerSettings:
   defaultScreenOrientation: 3
   targetDevice: 2
   targetGlesGraphics: 1
+  targetIOSGraphics: -1
   targetResolution: 0
   accelerometerFrequency: 60
   companyName: Electroplasmatic games
@@ -72,6 +73,7 @@ PlayerSettings:
   metroEnableLowLatencyPresentationAPI: 0
   productGUID: 5c596556decb141888be121e4494e18f
   iPhoneBundleVersion: 1.0
+  iPhoneShortBundleVersion: 1.0
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 19
   AndroidPreferredInstallLocation: 1
@@ -101,10 +103,19 @@ PlayerSettings:
   iPadHighResPortraitSplashScreen: {fileID: 0}
   iPadLandscapeSplashScreen: {fileID: 0}
   iPadHighResLandscapeSplashScreen: {fileID: 0}
+  iOSLaunchScreenType: 0
+  iOSLaunchScreenPortrait: {fileID: 0}
+  iOSLaunchScreenLandscape: {fileID: 0}
+  iOSLaunchScreenBackgroundColor:
+    serializedVersion: 2
+    rgba: 4287728489
+  iOSLaunchScreenFillPct: 100
+  iOSLaunchScreenSize: 100
+  iOSLaunchScreenCustomXibPath: 
   AndroidTargetDevice: 0
   AndroidSplashScreenScale: 0
-  AndroidKeystoreName: D:/GitRepositories/omf2015/elep_omf_test.keystore
-  AndroidKeyaliasName: 
+  AndroidKeystoreName: D:/GitRepositories/omf2015/elep_omf_test_v2.keystore
+  AndroidKeyaliasName: elep
   resolutionDialogBanner: {fileID: 0}
   m_BuildTargetIcons:
   - m_BuildTarget: 
@@ -189,9 +200,10 @@ PlayerSettings:
   flashStrippingLevel: 2
   spritePackerPolicy: 
   scriptingDefineSymbols:
-    1: 
-    2: 
-    7: 
+    1: SOOMLA_FACEBOOK
+    2: SOOMLA_FACEBOOK
+    4: SOOMLA_FACEBOOK
+    7: SOOMLA_FACEBOOK
   metroPackageName: 
   metroPackageLogo: 
   metroPackageLogo140: 

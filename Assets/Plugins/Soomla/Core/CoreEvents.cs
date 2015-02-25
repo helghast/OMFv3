@@ -23,8 +23,7 @@ namespace Soomla {
 	/// <summary>
 	/// This class provides functions for event handling.
 	/// </summary>
-	public class CoreEvents : MonoBehaviour
-    {
+	public class CoreEvents : MonoBehaviour {
 
 #if UNITY_IOS && !UNITY_EDITOR
 		[DllImport ("__Internal")]
@@ -38,22 +37,17 @@ namespace Soomla {
 		/// <summary>
 		/// Initializes game state before the game starts.
 		/// </summary>
-		void Awake()
-        {
-			if(instance == null)
-            { 	// making sure we only initialize one instance.
+		void Awake(){
+			if(instance == null){ 	// making sure we only initialize one instance.
 				instance = this;
 				GameObject.DontDestroyOnLoad(this.gameObject);
 				Initialize();
-			}
-            else
-            {				// Destroying unused instances.
+			} else {				// Destroying unused instances.
 				GameObject.Destroy(this.gameObject);
 			}
 		}
 
-		public static void Initialize()
-        {
+		public static void Initialize() {
 			SoomlaUtils.LogDebug(TAG, "Initializing CoreEvents and Soomla Core ...");
 #if UNITY_ANDROID && !UNITY_EDITOR
 			AndroidJNI.PushLocalFrame(100);

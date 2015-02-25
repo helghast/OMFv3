@@ -231,6 +231,7 @@ public class Comp_Debug : MonoBehaviour
         GUILayout.BeginVertical("box");
         GUILayout.Label("InAppPurchase TESTING");
 
+        //virtuales, ni comprados
         if (GUILayout.Button("Give Player 25 Mangos"))
         {
             Debug.Log("Current mangos: " + ConnectivityManager.EIAP.VirtualCurrencies["mango"].GetBalance());
@@ -238,6 +239,7 @@ public class Comp_Debug : MonoBehaviour
             Debug.Log("Current mangos: " + ConnectivityManager.EIAP.VirtualCurrencies["mango"].GetBalance());
         }
 
+        //comprados
         if (GUILayout.Button("Buy 1000 Mangos"))
         {
             Debug.Log("Current mangos: " + ConnectivityManager.EIAP.VirtualCurrencies["mango"].GetBalance());

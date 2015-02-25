@@ -15,11 +15,19 @@ MonoBehaviour:
     values:
     - name: SoomlaSecret
       value: electroplasmatic
+    - name: HighwayGameKey
+      value: '[YOUR GAME KEY]'
+    - name: HighwayEnvKey
+      value: '[YOUR ENV KEY]'
+    - name: TwitterConsumerKey
+      value: YOUR TWITTER CONSUMER KEY
+    - name: TwitterConsumerSecret
+      value: YOUR TWITTER CONSUMER SECRET
+    - name: GPClientId
+      value: YOUR GOOGLE+ CLIENT ID
+    - name: DebugUnityMessages
+      value: True
     - name: GPlayBP
       value: True
     - name: AndroidPublicKey
-      value: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApxD6iTETFJa3wbQneuEg6Ae/xfav9oH9EtRez5xiTQsiWx/ee/Ddzf3endgiY1Rqllg2hLHDImSlYW9QdAEmXvbcs/wvZNx0l0BlW5Oo6YnlTd1TXDl1MyLOfAV/P+nK+2xIruNfmufbV4OKpWPcghmBLFooYgesu7uuV/OSALjWCCX2AvefgMXuOvWI7v4zmAVSIeD3H7jMp3qzyGBpahy75N5dZ5XAGEwmiTutu71cOjshuYSw20Gq1/KO7h7AfLrRxwO5kxFUCPl3/4eIuxeikk5ZVJQ2SK5f5mStOY5RtLX71AeSPcgVrVafPQreyZV8KcgavbFOUzGUiE03gQIDAQAB
-    - name: DebugMessages
-      value: True
-    - name: AndroidTestPurchases
-      value: True
+      value: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAhGaJeq2xIUuH07oS5r3gDTAiWCI17oyidPR3S9ZUj2VnXz8RF8Eonod8JyIiZWhDcgmAqPX2yogf0aekI9x4nx22R5WVrWZDFy4E3BiU3T1oKE3Mku1t0MPsvfc0ewHIWjt7yp0lAyYnuYnZz7o7EsoPr/w9SfihSYPy653O7sYfWxAP13MJlKgaGO69cgcbNRJ1nVPeZNo2QTk2MWOzsCw9l50aCgkLzqw4d7/f4LH4eUeTeKcOSrzDRApN32hWXPPmHL3tEJ4+uCH+oWzvDzX3CRXiyIEVV5H2CguQi5lNwfLxYQoLsc9m8aU3QYupeG5ngfcP7tR5OiwPV7tq3QIDAQAB

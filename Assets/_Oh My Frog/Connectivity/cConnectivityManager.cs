@@ -28,7 +28,7 @@ public static class ConnectivityManager
     public static cCloudGameState ECloudGameState;
     public static cSocial ESocial;
     public static GAME_STATE_OPERATION eOperation;
-
+    
     public enum eANDROID_CLOUD_SLOTS
     {
         COINS = 0
