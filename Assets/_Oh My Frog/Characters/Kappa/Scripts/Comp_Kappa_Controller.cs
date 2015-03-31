@@ -245,10 +245,17 @@ public class Comp_Kappa_Controller : MonoBehaviour
 
     private void updateInputs()
     {
+        //eliminar?
         EInputManager.UpdateInputTouch();
-        if (comp_debug)
+
+        //mejorar!
+        UpdateTouchMotion();
+        UpdateTouchActions();
+        UpdateKeyboardMotion();
+        UpdateKeyboardActions();
+        /*if (comp_debug)
         {
-            if (comp_debug.EntradaTactil)
+            /*if (comp_debug.EntradaTactil)
             {
                 //Debug.Log("tactil");
                 // Touch control
@@ -267,7 +274,7 @@ public class Comp_Kappa_Controller : MonoBehaviour
             // keyboard control
             UpdateKeyboardMotion();
             UpdateKeyboardActions();
-        }
+        }*/
     }
 
     //-------------------------------------------------------------------------------- 

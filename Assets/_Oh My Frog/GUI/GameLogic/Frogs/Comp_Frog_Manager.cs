@@ -14,7 +14,7 @@ public class Comp_Frog_Manager : MonoBehaviour
     void Awake()
     {
         enabled_frogs = 0;
-        frogs_container = GameObject.Find("FrogsContainer").transform;
+        /*frogs_container = GameObject.Find("FrogsContainer").transform;
 
         // POOL DE FROGS
         pool_frogs = new List<cFrog>();
@@ -26,12 +26,23 @@ public class Comp_Frog_Manager : MonoBehaviour
 
             pool_frogs[i].Disable();
             pool_frogs[i].index = i;
-        }
+        }*/
     }
 	// Use this for initialization
 	void Start ()
     {
-	
+        frogs_container = GameObject.Find("FrogsContainer").transform;
+
+        // POOL DE FROGS
+        pool_frogs = new List<cFrog>();
+        for(int i = 0; i < pool_size; ++i) {
+            GameObject go_frog = (GameObject) Instantiate(frog_Prefab, Vector3.zero, Quaternion.Euler(new Vector3(-15, 150, 0)));
+            pool_frogs.Add(go_frog.GetComponent<Comp_IA_Frog>().frog);
+            go_frog.transform.parent = frogs_container;
+
+            pool_frogs[i].Disable();
+            pool_frogs[i].index = i;
+        }
 	}
 	
 	// Update is called once per frame
@@ -73,7 +84,8 @@ public class Comp_Frog_Manager : MonoBehaviour
 
     public void SpawnFrog(string name, Vector3 position)
     {
-        Vector3 spawn_position = position;
+        //Vector3 spawn_position = position;
+        Vector3 spawn_position = Pelican_Frog_Emissor.position;
         /*
         if (GameLogicManager.Instance.GetPlayerPosition().x + 2 > position.x)
             return;*/

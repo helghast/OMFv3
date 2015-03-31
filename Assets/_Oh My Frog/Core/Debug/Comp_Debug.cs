@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Achievements.Android;
-using Soomla.Store;
+//using Soomla.Store;
 
 public class Comp_Debug : MonoBehaviour
 {
@@ -63,9 +63,9 @@ public class Comp_Debug : MonoBehaviour
         EntradaTactil = true;
 
         // RESETEAMOS MANGOS PARA TESTEAR COMPRAS
-        ConnectivityManager.EIAP.ResetPlayerMangos(0);
+        //ConnectivityManager.EIAP.ResetPlayerMangos(0);
         // RESETEAMOS EL ESTADO DE RED MATERIAL PARA TESTEAR COMPRAS (Es un LifetimeGood, por eso lo reseteo al inicio cada vez)
-        ConnectivityManager.EIAP.VirtualGoods["Red_material"].ResetBalance(0);
+        //ConnectivityManager.EIAP.VirtualGoods["Red_material"].ResetBalance(0);
     }
 
     // Esto es una guarrada, lo pongo solo para testeo. Cuando implementemos esto habrña que hacerlo bien.
@@ -95,7 +95,7 @@ public class Comp_Debug : MonoBehaviour
 
     void OnGUI()
     {
-        drawTestHUD();
+        /*drawTestHUD();
         if (!debug_on)
             return;
 
@@ -103,7 +103,7 @@ public class Comp_Debug : MonoBehaviour
         drawInAppPurchaseTest();
         drawSocialTest();
         drawKappaItemsTest();
-        drawDebugInfo();
+        drawDebugInfo();*/
     }
 
     public void addDebugMessage(string msg)

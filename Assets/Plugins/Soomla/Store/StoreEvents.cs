@@ -53,12 +53,12 @@ namespace Soomla.Store
 				GameObject.DontDestroyOnLoad(this.gameObject);
 				Initialize();
 			}
-            /*
+            
             else
             {	
                 // Destroying unused instances.
 				GameObject.Destroy(this.gameObject);
-			}*/
+			}
 		}
 
         private void manualAwake()

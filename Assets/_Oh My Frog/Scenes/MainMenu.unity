@@ -10195,7 +10195,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 558704238}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b2638dfe64ecd8946a7b22bdf6fd0701, type: 3}
   m_Name: 
@@ -12327,7 +12327,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22400048, guid: 0d87e6d22e74c2d42ad05616b982be6c, type: 2}
       propertyPath: m_SizeDelta.y
-      value: -420.965851
+      value: -378.78894
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0d87e6d22e74c2d42ad05616b982be6c, type: 2}
