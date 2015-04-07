@@ -114,8 +114,8 @@ PlayerSettings:
   iOSLaunchScreenCustomXibPath: 
   AndroidTargetDevice: 0
   AndroidSplashScreenScale: 0
-  AndroidKeystoreName: D:/GitRepositories/omf2015/elep_omf_test_v2.keystore
-  AndroidKeyaliasName: elep
+  AndroidKeystoreName: 
+  AndroidKeyaliasName: 
   resolutionDialogBanner: {fileID: 0}
   m_BuildTargetIcons:
   - m_BuildTarget: 
